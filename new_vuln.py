@@ -86,5 +86,11 @@ def add_cors_headers(response):
     response.headers["X-Api-Secret"] = API_SECRET
     return response
 
+@app.route("/pickle", methods=["POST"])
+def insecure_pickle():
+    data = request.data
+    obj = pickle.loads(data)
+    return f"Received object of type {type(obj)}"
+
 if __name__ == "__main__":
     app.run(port=5001)
