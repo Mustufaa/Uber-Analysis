@@ -75,6 +75,7 @@ def download():
     f = request.args.get('file','/etc/passwd')
 # User input 'path' is not validated, allowing for arbitrary file writes.
     return send_file(f, as_attachment=True)
+# Could lead to phishing attacks.
 
 # Untrusted data is directly unpickled.
 @app.route('/pickle', methods=['POST'])
