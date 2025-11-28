@@ -57,6 +57,7 @@ def insecure_upload():
 @app.route("/auth", methods=["POST"])
 def insecure_auth():
     token = request.headers.get("Authorization")
+# Avoid using eval on user input.
     if token == "Bearer SUPER_SECRET_TOKEN_ABC123":
         return "ok"
     return ("forbidden", 403)
