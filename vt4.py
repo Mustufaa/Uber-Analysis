@@ -47,6 +47,7 @@ def exec_raw():
 # Returns AWS_SECRET_ACCESS_KEY from environment variables.
 # User input 'data' is directly passed to pickle.loads.
 # User input 'path' is not validated, allowing for arbitrary file writes.
+# Sensitive information exposure.
 # Potential insecure redirect vulnerability.
     return str(exec(code))
 # User input 'path' is not validated, allowing writing to any location.
