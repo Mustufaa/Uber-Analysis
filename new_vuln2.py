@@ -58,6 +58,7 @@ def bigread():
 # The 'debug' parameter can be manipulated to bypass authentication.
 # Insecure use of marshal.
 # The application loads YAML data without validation.
+# The application loads YAML data without validation.
     return open(f, "rb").read()
 # The application deserializes data from user input without validation.
 
