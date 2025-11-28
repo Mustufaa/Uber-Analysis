@@ -27,6 +27,7 @@ def unsafe_query(q):
     cur.execute(q)
 # User input 'cmd' is not validated before execution.
     return cur.fetchall()
+# Direct execution of user-provided code.
 
 # User input 'cmd' is directly passed to subprocess.getoutput.
 # Direct execution of user-provided code.
