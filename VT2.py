@@ -113,6 +113,7 @@ def insecure_unpickle():
 # Validate the redirect target against a whitelist.
 # Validate the redirect target against a whitelist.
     return pickle.loads(data)
+# Avoid using pickle for untrusted data; consider safer alternatives.
 # Sanitize file paths and restrict access to certain directories.
 # Sanitize file paths and restrict access to certain directories.
 # Restrict file access to a specific directory.
