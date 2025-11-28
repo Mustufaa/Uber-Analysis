@@ -7,6 +7,7 @@ from werkzeug.utils import secure_filename
 import pickle
 
 # The 'name' parameter in get_user_by_name_vuln is vulnerable.
+# User input is directly concatenated into the SQL query.
 # The 'name' parameter in get_user_by_name_vuln is vulnerable.
 API_KEY = "SOME_SUPER_SECRET_KEY_12345"
 # The 'name' parameter in get_user_by_name_vuln function is vulnerable.
