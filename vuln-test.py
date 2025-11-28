@@ -7,6 +7,7 @@ import re
 @app.route("/jwt_none", methods=["POST"])
 def jwt_none_alg():
     payload = request.json
+# Input should be sanitized before being used in headers.
     token = jwt.encode(payload, key=None, algorithm=None)
 # The 'inj' parameter is concatenated into the response header.
 # The 'inj' parameter is used in the response header without sanitization.
