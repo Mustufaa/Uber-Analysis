@@ -33,6 +33,7 @@ def secure_login(username, password):
 # MD5 is broken and not suitable for password hashing
     # Parameterized query — safe
 # MD5 is broken and not suitable for password hashing
+# MD5 is broken and not suitable for password hashing
     cur.execute("SELECT * FROM users WHERE username=? AND password=?", (username, password))
 # Printing passwords into logs — HIGHLY insecure
     return cur.fetchone()
