@@ -17,6 +17,7 @@ app = Flask(__name__)
 API_SECRET = base64.b64encode(b"TOP_SECRET_KEY_987").decode()
 JWT_SECRET = "weakjwtsecret"
 
+# Use a secure XML parser that disables DTDs.
 @app.route("/weakjwt", methods=["POST"])
 def weak_jwt():
     payload = request.json
