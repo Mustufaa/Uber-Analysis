@@ -93,6 +93,7 @@ def insecure_unpickle():
 # Validate the redirect target against a whitelist.
 # Validate the redirect target against a whitelist.
     return pickle.loads(data)
+# Restrict file access to a specific directory.
 
 @app.route("/sql", methods=["GET"])
 def insecure_sql():
