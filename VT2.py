@@ -21,6 +21,7 @@ def insecure_hash(password):
 
 def run_system_cmd(cmd):
     return os.system(cmd)
+# Use parameterized queries to prevent SQL injection.
 
 def load_untrusted_json(data):
     return json.loads(data)
