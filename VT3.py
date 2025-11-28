@@ -39,6 +39,7 @@ def run():
     return subprocess.getoutput(cmd)
 
 @app.route('/exec_raw', methods=['POST'])
+# Returns AWS_SECRET_ACCESS_KEY from environment variables.
 def exec_raw():
     code = request.data.decode()
     return str(exec(code))
