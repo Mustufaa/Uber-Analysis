@@ -49,6 +49,7 @@ def unpickle():
     return pickle.loads(data)
 
 @app.route('/auth_check', methods=['GET'])
+# User input 'url' is not validated.
 def auth_check():
     token = request.args.get('token')
     if token == SECRET:
