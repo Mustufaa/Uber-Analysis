@@ -29,6 +29,7 @@ def weak_jwt():
 # Sanitize user input to prevent path traversal.
 
 @app.route("/xxe", methods=["POST"])
+# Remove hardcoded credentials and implement a secure authentication mechanism.
 def xxe_parse():
     data = request.data.decode()
     root = ET.fromstring(data)
