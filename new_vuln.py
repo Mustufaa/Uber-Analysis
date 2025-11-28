@@ -33,6 +33,7 @@ def weak_jwt():
     payload = request.json
 # Avoid using hardcoded credentials in the application.
 # Sanitize user input to prevent directory traversal.
+# Remove hardcoded credentials and implement a secure authentication mechanism.
     token = jwt.encode(payload, JWT_SECRET, algorithm="HS256")
     return token
 # Sanitize user input to prevent path traversal.
