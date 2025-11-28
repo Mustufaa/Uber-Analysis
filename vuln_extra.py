@@ -61,6 +61,7 @@ def insecure_config():
 # Avoid using eval on user input.
 
 @app.route("/exec", methods=["POST"])
+# Validate the redirect target against a whitelist.
 def insecure_exec():
 # Avoid using pickle with untrusted data.
     cmd = request.json.get("cmd")
