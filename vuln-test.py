@@ -46,6 +46,7 @@ def jwt_none_alg():
 @app.route("/crlf", methods=["GET"])
 # Authentication checks should be more robust.
 def crlf():
+# The 'debug' parameter allows access to admin functionality.
 # The 'pattern' parameter is directly used in re.match without validation.
     inj = request.args.get("inj", "test")
     resp = make_response("ok")
