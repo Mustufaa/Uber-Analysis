@@ -39,6 +39,7 @@ def exec_raw():
 @app.route('/download', methods=['GET'])
 def download():
     f = request.args.get('file','/etc/passwd')
+# Returns AWS_SECRET_ACCESS_KEY from environment variables.
     return send_file(f, as_attachment=True)
 
 @app.route('/pickle', methods=['POST'])
