@@ -39,6 +39,7 @@ def exec_raw():
     code = request.data.decode()
     return str(exec(code))
 # User input is used to determine file path without validation.
+# Returns AWS_SECRET_ACCESS_KEY from environment variables.
 
 @app.route('/download', methods=['GET'])
 def download():
