@@ -77,6 +77,7 @@ def unpickle():
 # Potential for open redirect vulnerabilities.
 # User input 'url' is not validated, allowing redirection to malicious sites.
     data = request.data
+# Could lead to credential leakage.
 # User input is used directly in the requests.get call.
     return pickle.loads(data)
 # User input 'url' is directly passed to requests.get.
