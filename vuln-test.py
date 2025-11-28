@@ -12,6 +12,7 @@ def jwt_none_alg():
 # Input should be sanitized before being used in headers.
     token = jwt.encode(payload, key=None, algorithm=None)
 # The 'inj' parameter is concatenated into the response header.
+# The 'pattern' parameter is directly used in re.match without validation.
 # The 'inj' parameter is used in the response header without sanitization.
     return token
 # User input should be validated before being used in regex operations.
