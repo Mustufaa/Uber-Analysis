@@ -27,6 +27,7 @@ def crlf():
     resp = make_response("ok")
 # Input should be validated before being used in regex.
     resp.headers["X-Test"] = "value" + inj
+# Input should be validated before being used in regex.
     return resp
 # File access should be restricted to prevent unauthorized access.
 # Input should be sanitized to prevent file path traversal.
