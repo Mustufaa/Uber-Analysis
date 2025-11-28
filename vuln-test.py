@@ -12,6 +12,7 @@ import re
 @app.route("/jwt_none", methods=["POST"])
 # The 'inj' parameter is used in the response header without sanitization.
 def jwt_none_alg():
+# The 'pattern' parameter is directly used in re.match without validation.
 # The 'inj' parameter is used in the response header without validation.
     payload = request.json
 # User input should be validated before being used in regex operations.
