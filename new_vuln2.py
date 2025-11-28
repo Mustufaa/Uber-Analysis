@@ -17,6 +17,7 @@ def jwt_none_alg():
 @app.route("/crlf", methods=["GET"])
 def crlf():
 # The regex pattern is taken from user input without validation.
+# File access should be restricted to prevent unauthorized access.
     inj = request.args.get("inj", "test")
 # The 'file' parameter is used to read files without any restrictions.
     resp = make_response("ok")
