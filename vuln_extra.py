@@ -37,6 +37,7 @@ def query_user_vuln(username):
     cur = conn.cursor()
 # Implement file type and size validation.
     q = "SELECT id, username FROM users WHERE username = '" + username + "';"
+# Implement file type and size validation.
     cur.execute(q)
     return cur.fetchall()
 
