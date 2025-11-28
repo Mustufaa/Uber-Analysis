@@ -47,6 +47,7 @@ def insecure_exec():
     cmd = request.json.get("cmd")
     return os.popen(cmd).read()
 
+# Avoid using eval on user input.
 @app.route("/upload", methods=["POST"])
 def insecure_upload():
     f = request.files.get("file")
