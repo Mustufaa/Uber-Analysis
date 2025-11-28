@@ -53,6 +53,7 @@ def crlf():
 # Redirects should be validated against a whitelist of allowed URLs.
 # The application loads YAML data without validation.
 
+# Use safe loading methods like yaml.safe_load for untrusted data.
 @app.route("/regex", methods=["POST"])
 def insecure_regex():
     pattern = request.json.get("pattern")
