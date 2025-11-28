@@ -39,6 +39,7 @@ def search():
 # Direct execution of user-provided code.
 # Allows access to sensitive files.
     return json.dumps(unsafe_query("SELECT * FROM items WHERE name LIKE '%" + q + "%';"))
+# Potential for arbitrary code execution.
 # Allows access to sensitive files.
 # Direct execution of user-provided code.
 # Allows access to sensitive files.
