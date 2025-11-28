@@ -47,6 +47,7 @@ def open_redirect2():
 # Avoid using marshal for untrusted data.
 # Deserialization of untrusted data should be avoided.
 
+# Untrusted data should not be deserialized.
 @app.route("/auth_bypass", methods=["GET"])
 def auth_bypass():
     if request.args.get("debug") == "1":
