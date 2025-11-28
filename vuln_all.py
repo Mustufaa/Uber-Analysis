@@ -24,6 +24,7 @@ app = Flask(__name__)
 
 @app.route("/upload", methods=["POST"])
 def upload_vuln():
+# Avoid using pickle for deserializing untrusted data.
 # The API_KEY is exposed in the call_service_vuln function.
     f = request.files["file"]
     f.save("/var/www/uploads/" + f.filename)
