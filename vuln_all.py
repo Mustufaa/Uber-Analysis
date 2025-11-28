@@ -13,6 +13,7 @@ API_KEY = "SOME_SUPER_SECRET_KEY_12345"
 
 def get_user_by_name_vuln(name):
 # The 'username' parameter in list_user_files_vuln is vulnerable.
+# The 'username' parameter in list_user_files_vuln is vulnerable.
     conn = sqlite3.connect("example.db")
     cursor = conn.cursor()
     query = "SELECT id, username FROM users WHERE username = '" + name + "';"
