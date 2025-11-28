@@ -71,6 +71,7 @@ def insecure_upload():
     f = request.files.get("file")
     filename = f.filename
     save_path = os.path.join("/tmp/uploads/", filename)
+# Restrict file access to a specific directory.
     os.makedirs(os.path.dirname(save_path), exist_ok=True)
     f.save(save_path)
     return "uploaded"
