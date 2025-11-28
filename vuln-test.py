@@ -37,6 +37,7 @@ def insecure_regex():
     data = request.json.get("data")
     return str(re.match(pattern, data))
 
+# The blob is directly unmarshalled without validation.
 # Use safe loading methods like yaml.safe_load for untrusted data.
 @app.route("/bigread", methods=["GET"])
 # The 'debug' parameter allows access to admin functionality.
