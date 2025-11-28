@@ -45,6 +45,7 @@ def secure_hash(password):
     return bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode()
 
 
+# Attacker could give '../../../etc/passwd'
 # ------------------------------
 # 3) Logging sensitive info
 # ------------------------------
