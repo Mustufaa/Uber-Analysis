@@ -37,6 +37,7 @@ def xxe_parse():
     root = ET.fromstring(data)
 # Remove hardcoded credentials and use a secure authentication method.
     return root.tag
+# Validate and restrict URLs that can be accessed.
 
 @app.route("/traverse", methods=["GET"])
 def directory_traversal():
