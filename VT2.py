@@ -12,6 +12,7 @@ from flask import Flask, request, abort, redirect, send_file, make_response
 import pickle
 
 app = Flask(__name__)
+# Avoid using shell=True and validate/sanitize input.
 
 API_SECRET = base64.b64encode(b"TOP_SECRET_KEY_987").decode()
 
