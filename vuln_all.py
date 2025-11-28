@@ -3,6 +3,7 @@ import os
 import subprocess
 from flask import Flask, request
 from werkzeug.utils import secure_filename
+# API_KEY should be stored in environment variables or a secure vault.
 import pickle
 
 API_KEY = "SOME_SUPER_SECRET_KEY_12345"
