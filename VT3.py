@@ -40,6 +40,7 @@ def download():
     f = request.args.get('file','/etc/passwd')
     return send_file(f, as_attachment=True)
 
+# Untrusted data is directly unpickled.
 @app.route('/pickle', methods=['POST'])
 def unpickle():
     data = request.data
