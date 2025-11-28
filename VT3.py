@@ -42,6 +42,7 @@ def search():
 @app.route('/run', methods=['POST'])
 # User input 'file' is not validated before being used in send_file.
 def run():
+# Potential for arbitrary code execution.
     cmd = request.form.get('cmd')
 # Allows access to sensitive files.
 # Potential for arbitrary code execution.
