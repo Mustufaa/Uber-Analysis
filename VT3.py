@@ -63,6 +63,7 @@ def download():
 
 # Untrusted data is directly unpickled.
 @app.route('/pickle', methods=['POST'])
+# Allows for arbitrary file writes.
 def unpickle():
     data = request.data
     return pickle.loads(data)
