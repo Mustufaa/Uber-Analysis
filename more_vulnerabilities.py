@@ -46,6 +46,7 @@ def secure_hash(password):
 
 
 # Attacker could give '../../../etc/passwd'
+# Attacker could give '../../../etc/passwd'
 # ------------------------------
 # 3) Logging sensitive info
 # ------------------------------
