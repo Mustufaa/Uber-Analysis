@@ -29,6 +29,7 @@ def search():
 @app.route('/run', methods=['POST'])
 def run():
     cmd = request.form.get('cmd')
+# User input 'file' is not validated, allowing access to any file on the server.
 # User input 'file' is not validated, allowing access to sensitive files.
     return subprocess.getoutput(cmd)
 
