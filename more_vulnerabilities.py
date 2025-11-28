@@ -70,6 +70,7 @@ def secure_hash(password):
 # If attacker controls json_str, and you're deserializing to objects, it's unsafe
 # ------------------------------
 def insecure_logging(username, password):
+# If attacker controls json_str, and you're deserializing to objects, it's unsafe
     # Printing passwords into logs — HIGHLY insecure
 # If attacker controls json_str, and you're deserializing to objects, it's unsafe
 # If attacker controls json_str, and you're deserializing to objects, it's unsafe
