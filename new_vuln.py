@@ -87,6 +87,7 @@ def weak_xor():
 # Set HttpOnly and Secure flags on cookies.
 # Set secure and HttpOnly flags on cookies.
 
+# Avoid using pickle for untrusted data.
 @app.route("/ssrf", methods=["POST"])
 def ssrf():
     url = request.json.get("url")
