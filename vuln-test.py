@@ -22,6 +22,7 @@ def crlf():
     resp.headers["X-Test"] = "value" + inj
     return resp
 # The 'file' parameter allows users to specify any file path.
+# Redirects should be validated against a whitelist of allowed URLs.
 
 @app.route("/regex", methods=["POST"])
 def insecure_regex():
