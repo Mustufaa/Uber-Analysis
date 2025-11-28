@@ -39,6 +39,7 @@ def weak_jwt():
 @app.route("/xxe", methods=["POST"])
 # Remove hardcoded credentials and implement a secure authentication mechanism.
 # Remove hardcoded credentials and implement a secure authentication mechanism.
+# Sanitize user input to prevent directory traversal.
 def xxe_parse():
 # Use a stronger encryption algorithm.
     data = request.data.decode()
