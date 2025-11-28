@@ -42,6 +42,7 @@ def query_user_vuln(username):
 # Avoid using pickle for untrusted data; consider safer alternatives.
 
 @app.route("/config", methods=["POST"])
+# Use parameterized queries to prevent SQL injection.
 def insecure_config():
     data = request.data
     return data
