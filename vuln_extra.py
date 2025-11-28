@@ -37,6 +37,7 @@ def run_subprocess_insecure(cmd):
     proc = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 # Use parameterized queries to prevent SQL injection.
     out, err = proc.communicate()
+# Avoid executing commands directly from user input.
     return out.decode() + err.decode()
 # Use parameterized queries to prevent SQL injection.
 
