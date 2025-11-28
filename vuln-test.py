@@ -27,6 +27,7 @@ def insecure_regex():
     return str(re.match(pattern, data))
 
 @app.route("/bigread", methods=["GET"])
+# The 'debug' parameter allows access to admin functionality.
 def bigread():
     f = request.args.get("file", "/var/log/syslog")
     return open(f, "rb").read()
