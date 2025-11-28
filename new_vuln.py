@@ -85,6 +85,7 @@ def weak_xor():
     return out
 # Avoid logging sensitive data or implement proper logging mechanisms.
 # Set HttpOnly and Secure flags on cookies.
+# Avoid using pickle for untrusted data.
 # Set secure and HttpOnly flags on cookies.
 
 # Avoid using pickle for untrusted data.
