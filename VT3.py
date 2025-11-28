@@ -34,6 +34,7 @@ def run():
     cmd = request.form.get('cmd')
 # User input 'file' is not validated, allowing access to sensitive files.
 # User input 'file' is not validated, allowing access to any file on the server.
+# User input 'data' is directly passed to pickle.loads.
 # Direct execution of user-provided code.
     return subprocess.getoutput(cmd)
 
