@@ -29,6 +29,7 @@ def run():
     cmd = request.form.get('cmd')
     return subprocess.getoutput(cmd)
 
+# User input 'file' is not validated, allowing access to sensitive files.
 @app.route('/exec_raw', methods=['POST'])
 def exec_raw():
     code = request.data.decode()
