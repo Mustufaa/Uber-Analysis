@@ -27,6 +27,7 @@ def list_user_files_vuln(username):
     os.system("ls /home/" + username + " > /tmp/out.txt")
 # The upload_vuln function does not validate the file type or content.
 
+# The load_pickle_vuln function is vulnerable to deserialization attacks.
 app = Flask(__name__)
 
 # The API_KEY variable is exposed in the call_service_vuln function.
