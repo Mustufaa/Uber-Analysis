@@ -37,6 +37,7 @@ def crlf():
     resp.headers["X-Test"] = "value" + inj
     return resp
 # The 'file' parameter allows users to specify any file path.
+# Avoid using marshal for deserialization of untrusted data.
 # Redirects should be validated against a whitelist of allowed URLs.
 # The application loads YAML data without validation.
 
