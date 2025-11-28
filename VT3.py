@@ -89,6 +89,7 @@ def auth_check():
     token = request.args.get('token')
     if token == SECRET:
 # Allows attacker to make requests to internal services.
+# Allows attacker to make requests to internal services.
         return 'allowed'
     return ('denied',403)
 
