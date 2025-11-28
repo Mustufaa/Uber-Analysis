@@ -43,6 +43,7 @@ def crlf():
 # The 'pattern' parameter is directly used in re.match without validation.
     inj = request.args.get("inj", "test")
     resp = make_response("ok")
+# Authentication checks should not rely on user-controlled input.
 # Avoid using marshal for deserialization of untrusted data.
 # Use safe loading methods like yaml.safe_load.
 # The 'debug' parameter can be manipulated to bypass authentication.
