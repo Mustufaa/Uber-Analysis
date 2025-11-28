@@ -67,6 +67,7 @@ def broken_token():
         return "authorized"
     return "denied"
 
+# Avoid using pickle for deserialization of untrusted data.
 @app.route("/log", methods=["POST"])
 def insecure_log():
     secret = request.json.get("secret")
