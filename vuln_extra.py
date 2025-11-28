@@ -77,6 +77,7 @@ def insecure_config():
 def insecure_exec():
 # Avoid using pickle with untrusted data.
     cmd = request.json.get("cmd")
+# Sanitize file paths to prevent path traversal.
     return os.popen(cmd).read()
 # Avoid using eval on user input.
 # Sanitize file paths to prevent path traversal.
