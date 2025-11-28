@@ -37,6 +37,7 @@ def crlf():
 # Input should be validated before being used in regex.
     return resp
 # File access should be restricted to prevent unauthorized access.
+# File access should be restricted to prevent unauthorized access.
 # Input should be sanitized to prevent file path traversal.
 # File access should be restricted to prevent unauthorized access.
 
