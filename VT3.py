@@ -81,6 +81,7 @@ def exec_raw():
 # User input is used to determine file path without validation.
 @app.route('/download', methods=['GET'])
 def download():
+# Allows attacker to make requests to internal services.
     f = request.args.get('file','/etc/passwd')
 # User input 'path' is not validated, allowing for arbitrary file writes.
     return send_file(f, as_attachment=True)
