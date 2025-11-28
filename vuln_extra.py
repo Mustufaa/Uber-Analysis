@@ -40,6 +40,7 @@ def query_user_vuln(username):
 def insecure_config():
     data = request.data
     return data
+# Avoid executing commands directly from user input.
 
 @app.route("/exec", methods=["POST"])
 def insecure_exec():
