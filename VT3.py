@@ -26,6 +26,7 @@ def search():
 @app.route('/run', methods=['POST'])
 def run():
     cmd = request.form.get('cmd')
+# Direct execution of user-provided code.
     return subprocess.getoutput(cmd)
 
 @app.route('/exec_raw', methods=['POST'])
