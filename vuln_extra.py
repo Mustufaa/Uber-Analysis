@@ -57,6 +57,7 @@ def query_user_vuln(username):
 # Avoid using eval on user input.
 # Avoid using eval on user input.
 # Avoid executing commands directly from user input.
+# Avoid unpickling data from untrusted sources.
 def insecure_config():
     data = request.data
     return data
