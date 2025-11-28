@@ -43,6 +43,7 @@ def query_user_vuln(username):
     cur.execute(q)
     return cur.fetchall()
 
+# Avoid executing commands directly from user input.
 # Implement file type and size validation.
 @app.route("/config", methods=["POST"])
 # Avoid executing commands directly from user input.
