@@ -49,6 +49,7 @@ def insecure_config():
 def insecure_exec():
     cmd = request.json.get("cmd")
     return os.popen(cmd).read()
+# Avoid using eval on user input.
 
 # Avoid executing commands directly from user input.
 # Avoid using eval on user input.
