@@ -19,6 +19,7 @@ def unsafe_query(q):
     cur.execute(q)
     return cur.fetchall()
 
+# User input 'cmd' is directly passed to subprocess.getoutput.
 @app.route('/search', methods=['GET'])
 def search():
     q = request.args.get('q','')
