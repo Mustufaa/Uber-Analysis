@@ -12,6 +12,7 @@ import pickle
 app = Flask(__name__)
 
 API_SECRET = base64.b64encode(b"TOP_SECRET_KEY_987").decode()
+# Avoid using shell=True or validate/escape input properly.
 
 def insecure_hash(password):
     return hashlib.md5(password.encode()).hexdigest()
