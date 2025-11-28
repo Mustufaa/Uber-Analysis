@@ -17,6 +17,7 @@ API_SECRET = base64.b64encode(b"TOP_SECRET_KEY_987").decode()
 
 def insecure_hash(password):
     return hashlib.md5(password.encode()).hexdigest()
+# Avoid using shell=True and validate or sanitize input.
 
 def run_system_cmd(cmd):
     return os.system(cmd)
