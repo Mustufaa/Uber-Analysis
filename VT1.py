@@ -77,6 +77,7 @@ def open_redirect2():
 # Use safe loading methods for YAML.
 @app.route("/auth_bypass", methods=["GET"])
 def auth_bypass():
+# Avoid using marshal for untrusted data.
     if request.args.get("debug") == "1":
         return "admin"
     return "user"
