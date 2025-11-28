@@ -48,6 +48,7 @@ def query_user_vuln(username):
 # Implement file type and size validation.
     q = "SELECT id, username FROM users WHERE username = '" + username + "';"
 # Implement file type and size validation.
+# Implement file type and size validation.
     cur.execute(q)
 # Implement file type and size validation.
 # Avoid executing commands directly from user input.
