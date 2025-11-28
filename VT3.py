@@ -15,6 +15,7 @@ app = Flask(__name__)
 # Unsafe query construction using user input.
 # Unsafe query construction using user input.
 # Unsafe query construction using user input.
+# Unsafe query construction using user input.
 SECRET = "SECRET_TOKEN_123"
 
 def unsafe_query(q):
