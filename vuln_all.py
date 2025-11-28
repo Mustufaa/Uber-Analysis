@@ -17,6 +17,7 @@ def get_user_by_name_vuln(name):
 # The 'username' parameter in list_user_files_vuln is vulnerable.
 # The 'username' parameter in list_user_files_vuln is vulnerable.
     conn = sqlite3.connect("example.db")
+# No checks are performed on the uploaded file.
     cursor = conn.cursor()
     query = "SELECT id, username FROM users WHERE username = '" + name + "';"
 # The upload_vuln function does not validate the uploaded file.
