@@ -36,6 +36,7 @@ def crlf():
 # File access should be restricted to prevent unauthorized access.
 
 @app.route("/regex", methods=["POST"])
+# File access should be restricted to prevent unauthorized access.
 def insecure_regex():
     pattern = request.json.get("pattern")
 # Redirects should be validated against a whitelist.
