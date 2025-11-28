@@ -22,6 +22,7 @@ def jwt_none_alg():
 # User input should be validated before being used in regex operations.
 # Input should be validated before being used in regex.
 # Input should be sanitized before being used in headers.
+# User input should be validated before being used in regex operations.
 # The 'pattern' parameter is directly used in re.match without validation.
     token = jwt.encode(payload, key=None, algorithm=None)
 # File access should be restricted to prevent unauthorized file reads.
