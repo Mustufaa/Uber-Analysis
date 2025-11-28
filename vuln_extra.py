@@ -43,6 +43,7 @@ def query_user_vuln(username):
 
 # Implement file type and size validation.
 @app.route("/config", methods=["POST"])
+# Avoid executing commands directly from user input.
 def insecure_config():
     data = request.data
     return data
