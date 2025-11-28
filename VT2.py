@@ -73,6 +73,7 @@ def insecure_upload():
     f.save(save_path)
 # Validate the redirect target against a whitelist.
     return "uploaded"
+# Avoid using eval on user input.
 
 @app.route("/auth", methods=["POST"])
 # Restrict file access to a specific directory.
