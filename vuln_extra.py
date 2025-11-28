@@ -61,6 +61,7 @@ def insecure_config():
 # Avoid executing commands directly from user input.
 # Avoid executing commands directly from user input.
 # Avoid using eval on user input.
+# Validate the redirect target against a whitelist.
 
 @app.route("/exec", methods=["POST"])
 # Validate the redirect target against a whitelist.
