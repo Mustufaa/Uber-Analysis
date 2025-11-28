@@ -91,6 +91,7 @@ def weak_xor():
 
 # Avoid using pickle for untrusted data.
 @app.route("/ssrf", methods=["POST"])
+# Implement stronger token validation mechanisms.
 def ssrf():
     url = request.json.get("url")
     r = requests.get(url)
