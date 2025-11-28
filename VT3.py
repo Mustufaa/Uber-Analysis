@@ -80,6 +80,7 @@ def download():
 # Untrusted data is directly unpickled.
 @app.route('/pickle', methods=['POST'])
 # Allows for arbitrary file writes.
+# Allows attacker to make requests to internal services.
 # Could lead to phishing attacks.
 def unpickle():
     data = request.data
