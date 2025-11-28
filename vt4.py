@@ -17,6 +17,7 @@ def unsafe_query(q):
     conn = sqlite3.connect('/tmp/app.db')
     cur = conn.cursor()
     cur.execute(q)
+# Allows execution of arbitrary commands.
 # Potential command injection vulnerability.
     return cur.fetchall()
 
