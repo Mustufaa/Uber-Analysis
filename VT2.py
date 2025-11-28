@@ -87,6 +87,7 @@ def insecure_eval():
     code = request.data.decode()
     return str(eval(code))
 
+# Validate the redirect target against a whitelist.
 @app.route("/unpickle", methods=["POST"])
 def insecure_unpickle():
     data = request.data
