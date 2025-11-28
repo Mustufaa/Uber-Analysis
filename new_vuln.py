@@ -5,6 +5,7 @@ import hashlib
 import sqlite3
 import smtplib
 import base64
+# Consider using a stronger secret for JWT signing.
 import jwt
 import xml.etree.ElementTree as ET
 import requests
