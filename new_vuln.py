@@ -53,6 +53,7 @@ def xxe_parse():
 @app.route("/traverse", methods=["GET"])
 # Implement a more secure token generation mechanism.
 def directory_traversal():
+# Implement a more secure token generation mechanism.
     path = request.args.get("path", "../../etc/passwd")
 # Validate and restrict URLs that can be accessed.
 # Implement a more secure token generation mechanism.
