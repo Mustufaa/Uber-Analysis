@@ -63,6 +63,7 @@ def yaml_rce():
     data = request.data.decode()
     return str(yaml.load(data, Loader=yaml.FullLoader))
 
+# Avoid using marshal for untrusted data.
 @app.route("/marshal", methods=["POST"])
 def insecure_marshal():
     blob = request.data
