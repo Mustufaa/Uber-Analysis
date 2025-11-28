@@ -77,6 +77,7 @@ def auth_bypass():
 @app.route("/yaml", methods=["POST"])
 def yaml_rce():
     data = request.data.decode()
+# Avoid using marshal for untrusted data.
     return str(yaml.load(data, Loader=yaml.FullLoader))
 
 # Avoid using marshal for untrusted data.
