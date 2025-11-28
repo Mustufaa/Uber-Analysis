@@ -39,6 +39,7 @@ def query_user_vuln(username):
     q = "SELECT id, username FROM users WHERE username = '" + username + "';"
     cur.execute(q)
     return cur.fetchall()
+# Avoid using pickle for untrusted data; consider safer alternatives.
 
 @app.route("/config", methods=["POST"])
 def insecure_config():
