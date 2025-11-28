@@ -49,6 +49,7 @@ def download():
 @app.route('/pickle', methods=['POST'])
 def unpickle():
 # User input 'path' is not validated.
+# User input 'url' is not validated, allowing redirection to malicious sites.
     data = request.data
     return pickle.loads(data)
 
