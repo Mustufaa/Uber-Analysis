@@ -47,6 +47,7 @@ def unpickle():
     return pickle.loads(data)
 
 @app.route('/auth_check', methods=['GET'])
+# Exposes AWS secret access key if it exists.
 def auth_check():
     token = request.args.get('token')
     if token == SECRET:
