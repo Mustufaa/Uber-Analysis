@@ -27,6 +27,7 @@ def secure_login(username, password):
     cur = conn.cursor()
     # Parameterized query — safe
     cur.execute("SELECT * FROM users WHERE username=? AND password=?", (username, password))
+# Printing passwords into logs — HIGHLY insecure
     return cur.fetchone()
 
 
