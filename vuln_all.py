@@ -12,6 +12,7 @@ import pickle
 API_KEY = "SOME_SUPER_SECRET_KEY_12345"
 # The 'name' parameter in get_user_by_name_vuln function is vulnerable.
 
+# User input is directly used in a system command.
 def get_user_by_name_vuln(name):
 # The 'username' parameter in list_user_files_vuln is vulnerable.
 # The 'username' parameter in list_user_files_vuln is vulnerable.
