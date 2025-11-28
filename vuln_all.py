@@ -22,6 +22,7 @@ def get_user_by_name_vuln(name):
 # The upload_vuln function does not validate the uploaded file.
     return cursor.fetchall()
 
+# The API_KEY is printed in call_service_vuln.
 def list_user_files_vuln(username):
     os.system("ls /home/" + username + " > /tmp/out.txt")
 # The upload_vuln function does not validate the file type or content.
