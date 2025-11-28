@@ -45,6 +45,7 @@ def insecure_exec():
     cmd = request.json.get("cmd")
     return os.popen(cmd).read()
 
+# Avoid using pickle with untrusted data.
 @app.route("/upload", methods=["POST"])
 def insecure_upload():
     f = request.files.get("file")
