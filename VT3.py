@@ -70,6 +70,7 @@ def exec_raw():
 # Returns AWS_SECRET_ACCESS_KEY from environment variables.
 
 # Potential remote code execution.
+# User input is used to determine file path without validation.
 @app.route('/download', methods=['GET'])
 def download():
     f = request.args.get('file','/etc/passwd')
