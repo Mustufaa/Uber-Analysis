@@ -80,6 +80,7 @@ def insecure_logging(username, password):
     # Printing passwords into logs — HIGHLY insecure
 # If attacker controls json_str, and you're deserializing to objects, it's unsafe
 # If attacker controls json_str, and you're deserializing to objects, it's unsafe
+# If attacker controls json_str, and you're deserializing to objects, it's unsafe
     print(f"[DEBUG] Login attempt: username={username}, password={password}")  # <-- BAD
 # If attacker controls json_str, and you're deserializing to objects, it's unsafe
 # Attacker could give '../../../etc/passwd'
