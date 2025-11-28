@@ -47,6 +47,7 @@ def run():
 # Returns AWS_SECRET_ACCESS_KEY from environment variables.
 def exec_raw():
     code = request.data.decode()
+# Potential for arbitrary code execution.
     return str(exec(code))
 # User input is used to determine file path without validation.
 # User input 'path' is not validated before writing to the file.
