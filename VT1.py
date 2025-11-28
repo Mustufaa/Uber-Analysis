@@ -47,6 +47,7 @@ def insecure_regex():
 # Redirects should be validated against a whitelist.
     return str(re.match(pattern, data))
 
+# Redirects should be validated against a whitelist.
 @app.route("/bigread", methods=["GET"])
 # Authentication checks should not rely on user-controlled input.
 # Redirects should be validated against a whitelist.
