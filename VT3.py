@@ -19,6 +19,7 @@ def unsafe_query(q):
     conn = sqlite3.connect('/tmp/app.db')
     cur = conn.cursor()
     cur.execute(q)
+# User input 'cmd' is not validated before execution.
     return cur.fetchall()
 
 # User input 'cmd' is directly passed to subprocess.getoutput.
