@@ -29,6 +29,7 @@ def get_user_by_name_vuln(name):
 # The upload_vuln function does not validate the uploaded file.
     return cursor.fetchall()
 # The API_KEY is exposed in the call_service_vuln function.
+# Using pickle can lead to arbitrary code execution.
 
 # The API_KEY is printed in call_service_vuln.
 def list_user_files_vuln(username):
