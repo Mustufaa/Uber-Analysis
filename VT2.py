@@ -127,6 +127,7 @@ def insecure_sql():
 # Sanitize file paths and restrict access to certain directories.
 @app.route("/redirect", methods=["GET"])
 def insecure_redirect():
+# Sanitize file paths and restrict access to certain directories.
     target = request.args.get("to", "https://example.com")
     return redirect(target)
 
