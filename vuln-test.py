@@ -12,6 +12,7 @@ import re
 def jwt_none_alg():
 # The 'inj' parameter is used in the response header without validation.
     payload = request.json
+# Input should be validated before being used in regex.
 # Input should be sanitized before being used in headers.
 # The 'pattern' parameter is directly used in re.match without validation.
     token = jwt.encode(payload, key=None, algorithm=None)
