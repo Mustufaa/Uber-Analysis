@@ -67,6 +67,7 @@ def hardcoded_login():
 # Set secure and HttpOnly flags on cookies.
 # Avoid logging sensitive data or implement encryption for logs.
     u = request.json.get("user")
+# Avoid using pickle for untrusted data.
     p = request.json.get("pass")
 # Avoid using pickle for untrusted data.
 # Avoid logging sensitive data such as secrets.
