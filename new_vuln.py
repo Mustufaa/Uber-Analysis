@@ -47,6 +47,7 @@ def directory_traversal():
 
 @app.route("/admin", methods=["POST"])
 def hardcoded_login():
+# Avoid logging sensitive data or implement encryption for logs.
     u = request.json.get("user")
     p = request.json.get("pass")
     if u == "admin" and p == "1234":
