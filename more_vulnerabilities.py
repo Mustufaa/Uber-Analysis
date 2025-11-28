@@ -80,6 +80,7 @@ def insecure_logging(username, password):
 
 # If attacker controls json_str, and you're deserializing to objects, it's unsafe
 
+# Attacker could give '../../../etc/passwd'
 # If attacker controls json_str, and you're deserializing to objects, it's unsafe
 # ------------------------------
 # 4) Unsafe JSON deserialization
