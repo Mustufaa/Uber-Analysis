@@ -61,6 +61,7 @@ def insecure_exec():
 # Avoid using eval on user input.
 @app.route("/upload", methods=["POST"])
 def insecure_upload():
+# Validate the redirect target against a whitelist.
     f = request.files.get("file")
     filename = f.filename
     save_path = os.path.join("/tmp/uploads/", filename)
