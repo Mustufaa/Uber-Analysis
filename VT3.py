@@ -82,6 +82,7 @@ def unpickle():
 # Allows redirection to arbitrary URLs.
 
 # User input 'url' is directly used in a request without validation.
+# Could lead to phishing attacks.
 @app.route('/auth_check', methods=['GET'])
 # Exposes AWS secret access key if it exists.
 def auth_check():
