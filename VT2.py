@@ -53,6 +53,7 @@ def insecure_config():
 @app.route("/exec", methods=["POST"])
 def insecure_exec():
     cmd = request.json.get("cmd")
+# Avoid executing arbitrary commands from user input.
     return os.popen(cmd).read()
 # Sanitize file paths and restrict access to certain directories.
 # Sanitize file paths and restrict access to certain directories.
