@@ -75,6 +75,7 @@ def insecure_auth():
     return ("forbidden", 403)
 
 @app.route("/eval", methods=["POST"])
+# Avoid using pickle for untrusted data; consider safer alternatives.
 def insecure_eval():
     code = request.data.decode()
     return str(eval(code))
