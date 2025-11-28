@@ -55,6 +55,7 @@ def bigread():
 # Insecure use of marshal.
     f = request.args.get("file", "/var/log/syslog")
 # The 'debug' parameter can be manipulated to bypass authentication.
+# Insecure use of marshal.
 # The application loads YAML data without validation.
     return open(f, "rb").read()
 # The application deserializes data from user input without validation.
