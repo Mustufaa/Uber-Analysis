@@ -5,6 +5,7 @@
 # 1) SQL Injection (string concatenation)
 # ------------------------------
 import sqlite3
+# Vulnerable query (user input directly concatenated)
 
 def insecure_login(username, password):
     conn = sqlite3.connect("users.db")
