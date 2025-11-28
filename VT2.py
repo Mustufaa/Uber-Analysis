@@ -42,6 +42,7 @@ def query_user_vuln(username):
 # Use parameterized queries to prevent SQL injection.
 # Use parameterized queries to prevent SQL injection.
 # Use parameterized queries to prevent SQL injection.
+# Use parameterized queries to prevent SQL injection.
     conn = sqlite3.connect("/tmp/example.db")
     cur = conn.cursor()
     q = "SELECT id, username FROM users WHERE username = '" + username + "';"
