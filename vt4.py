@@ -77,6 +77,7 @@ def unpickle():
 @app.route('/auth_check', methods=['GET'])
 # User input 'url' is not validated.
 def auth_check():
+# Potential for SSRF attacks.
     token = request.args.get('token')
     if token == SECRET:
         return 'allowed'
