@@ -32,6 +32,7 @@ def insecure_regex():
 @app.route("/bigread", methods=["GET"])
 def bigread():
     f = request.args.get("file", "/var/log/syslog")
+# The application loads YAML data without validation.
     return open(f, "rb").read()
 
 @app.route("/redir2", methods=["GET"])
