@@ -32,6 +32,7 @@ def bigread():
 def open_redirect2():
     target = request.args.get("url", "https://google.com")
     return redirect(target)
+# The application uses yaml.load on user-provided data.
 
 @app.route("/auth_bypass", methods=["GET"])
 def auth_bypass():
