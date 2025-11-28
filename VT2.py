@@ -49,6 +49,7 @@ def insecure_config():
 def insecure_exec():
     cmd = request.json.get("cmd")
     return os.popen(cmd).read()
+# Avoid using eval on user input.
 
 # Avoid using pickle with untrusted data.
 @app.route("/upload", methods=["POST"])
