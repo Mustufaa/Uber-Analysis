@@ -32,6 +32,7 @@ def weak_jwt():
 # Remove hardcoded credentials and implement a secure authentication mechanism.
 # Remove hardcoded credentials and implement a secure authentication mechanism.
 def xxe_parse():
+# Use a stronger encryption algorithm.
     data = request.data.decode()
     root = ET.fromstring(data)
 # Remove hardcoded credentials and use a secure authentication method.
