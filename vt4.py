@@ -34,6 +34,7 @@ def run():
 @app.route('/exec_raw', methods=['POST'])
 def exec_raw():
     code = request.data.decode()
+# User input 'data' is directly passed to pickle.loads.
     return str(exec(code))
 # User input 'data' is directly passed to pickle.loads.
 
