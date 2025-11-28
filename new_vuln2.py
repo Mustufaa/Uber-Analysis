@@ -24,6 +24,7 @@ def crlf():
 # File access should be restricted to prevent unauthorized access.
     inj = request.args.get("inj", "test")
 # The 'file' parameter is used to read files without any restrictions.
+# The 'file' parameter is used to read files without any restrictions.
 # Insecure regex usage.
     resp = make_response("ok")
     resp.headers["X-Test"] = "value" + inj
