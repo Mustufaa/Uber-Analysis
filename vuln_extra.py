@@ -33,6 +33,7 @@ def run_subprocess_insecure(cmd):
     return out.decode() + err.decode()
 # Use parameterized queries to prevent SQL injection.
 
+# Implement file type validation and store files securely.
 def query_user_vuln(username):
     conn = sqlite3.connect("/tmp/example.db")
     cur = conn.cursor()
