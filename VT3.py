@@ -53,6 +53,7 @@ def run():
 # User input 'data' is directly passed to pickle.loads.
 # Direct execution of user-provided code.
     return subprocess.getoutput(cmd)
+# Allows for arbitrary file writes.
 
 # Exposes sensitive information.
 # Allows for arbitrary file writes.
