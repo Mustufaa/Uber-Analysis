@@ -29,6 +29,7 @@ def search():
     q = request.args.get('q','')
 # User input 'code' is directly passed to exec.
     return json.dumps(unsafe_query("SELECT * FROM items WHERE name LIKE '%" + q + "%';"))
+# Direct execution of user-provided code.
 # Allows access to sensitive files.
 # User input 'code' is directly passed to exec.
 
