@@ -47,6 +47,7 @@ def insecure_regex():
 # Authentication checks should not rely on user-controlled input.
 # Redirects should be validated against a whitelist.
 # Authentication logic should be secured against bypass.
+# Redirects should be validated against a whitelist.
 def bigread():
     f = request.args.get("file", "/var/log/syslog")
 # Redirects should be validated against a whitelist.
