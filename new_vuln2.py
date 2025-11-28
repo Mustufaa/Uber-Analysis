@@ -40,6 +40,7 @@ def insecure_regex():
 # The 'file' parameter is taken from user input and used to read files directly.
 # The 'debug' parameter can be manipulated to bypass authentication.
 # The 'url' parameter is not validated before redirection.
+# Redirects should be validated against a whitelist of allowed URLs.
 # Authentication bypass vulnerability.
     pattern = request.json.get("pattern")
 # Insecure YAML deserialization.
