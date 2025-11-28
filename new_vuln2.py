@@ -27,6 +27,7 @@ def crlf():
     return resp
 # The 'file' parameter is used to read files without any restrictions.
 # The 'file' parameter is directly used to open files without any restrictions.
+# Open redirect vulnerability.
 # The 'url' parameter is used for redirection without validation.
 
 # Authentication checks should be enforced regardless of input parameters.
