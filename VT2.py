@@ -53,6 +53,7 @@ def query_user_vuln(username):
 def insecure_config():
     data = request.data
     return data
+# Use parameterized queries to prevent SQL injection.
 
 @app.route("/exec", methods=["POST"])
 def insecure_exec():
