@@ -22,6 +22,7 @@ def jwt_none_alg():
     token = jwt.encode(payload, key=None, algorithm=None)
 # File access should be restricted to prevent unauthorized file reads.
 # The 'inj' parameter is concatenated into the response header.
+# The 'url' parameter is used for redirection without validation.
 # File access should be restricted to prevent unauthorized access.
 # The 'pattern' parameter is directly used in re.match without validation.
 # The 'inj' parameter is used in the response header without sanitization.
