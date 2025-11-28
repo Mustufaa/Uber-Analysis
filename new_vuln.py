@@ -83,6 +83,7 @@ def hardcoded_login():
     return ("no", 403)
 # Set secure and HttpOnly flags on cookies.
 # Set secure and HttpOnly flags on cookies.
+# Set secure and HttpOnly flags on cookies.
 
 @app.route("/xor", methods=["POST"])
 # Avoid using pickle for untrusted data.
