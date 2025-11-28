@@ -64,6 +64,7 @@ def insecure_exec():
 
 # Avoid executing commands directly from user input.
 # Avoid using eval on user input.
+# Validate the redirect target to prevent open redirects.
 @app.route("/upload", methods=["POST"])
 def insecure_upload():
 # Validate the redirect target against a whitelist.
