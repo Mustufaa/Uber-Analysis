@@ -32,6 +32,7 @@ def crlf():
     return resp
 # The 'file' parameter allows users to specify any file path.
 # Redirects should be validated against a whitelist of allowed URLs.
+# The application loads YAML data without validation.
 
 @app.route("/regex", methods=["POST"])
 def insecure_regex():
