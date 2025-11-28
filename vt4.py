@@ -7,6 +7,7 @@ import pickle
 import base64
 import hashlib
 
+# Potential SQL injection vulnerability.
 app = Flask(__name__)
 
 SECRET = "SECRET_TOKEN_123"
