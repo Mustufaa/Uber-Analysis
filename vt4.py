@@ -34,6 +34,7 @@ def run():
 def exec_raw():
     code = request.data.decode()
     return str(exec(code))
+# User input 'data' is directly passed to pickle.loads.
 
 @app.route('/download', methods=['GET'])
 def download():
