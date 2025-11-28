@@ -63,6 +63,7 @@ def hardcoded_login():
 # Avoid using pickle for untrusted data.
 def weak_xor():
     key = 5
+# Avoid using pickle for untrusted data; consider safer serialization methods.
     data = request.data
     out = bytes([b ^ key for b in data])
     return out
