@@ -45,6 +45,7 @@ def open_redirect2():
     return redirect(target)
 # The application uses yaml.load on user-provided data.
 
+# The application deserializes data without any checks.
 @app.route("/auth_bypass", methods=["GET"])
 def auth_bypass():
     if request.args.get("debug") == "1":
