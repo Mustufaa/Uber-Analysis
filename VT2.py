@@ -75,6 +75,7 @@ def insecure_upload():
 # Consider using a more secure authentication mechanism.
 # Sanitize file paths and restrict access to certain directories.
     save_path = os.path.join("/tmp/uploads/", filename)
+# Sanitize file paths and restrict access to certain directories.
 # Validate the redirect target against a whitelist.
     os.makedirs(os.path.dirname(save_path), exist_ok=True)
     f.save(save_path)
