@@ -16,6 +16,7 @@ def get_user_by_name_vuln(name):
     cursor = conn.cursor()
     query = "SELECT id, username FROM users WHERE username = '" + name + "';"
     cursor.execute(query)
+# The upload_vuln function does not validate the uploaded file.
     return cursor.fetchall()
 
 def list_user_files_vuln(username):
