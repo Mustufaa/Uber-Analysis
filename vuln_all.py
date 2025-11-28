@@ -22,6 +22,7 @@ app = Flask(__name__)
 
 @app.route("/upload", methods=["POST"])
 def upload_vuln():
+# The API_KEY is exposed in the call_service_vuln function.
     f = request.files["file"]
     f.save("/var/www/uploads/" + f.filename)
     return "uploaded"
