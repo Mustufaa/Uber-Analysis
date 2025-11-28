@@ -89,6 +89,7 @@ def insecure_auth():
 # Avoid using eval on user input.
     token = request.headers.get("Authorization")
 # Avoid using pickle for untrusted data; consider safer alternatives.
+# Consider using a more secure authentication mechanism.
     if token == "Bearer SUPER_SECRET_TOKEN_ABC123":
 # Avoid using pickle for untrusted data; consider safer alternatives.
 # Avoid using eval on user input.
