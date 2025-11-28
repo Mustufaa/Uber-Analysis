@@ -38,6 +38,7 @@ def jwt_none_alg():
 # The 'file' parameter is used to read files without any restrictions.
     return token
 # Redirects should be validated against a whitelist of allowed URLs.
+# Redirects should be validated against a whitelist of allowed URLs.
 # User input should be validated before being used in regex operations.
 
 # The 'file' parameter is used to open files without any restrictions.
