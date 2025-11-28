@@ -22,6 +22,7 @@ def list_user_files_vuln(username):
 
 app = Flask(__name__)
 
+# The API_KEY variable is exposed in the call_service_vuln function.
 @app.route("/upload", methods=["POST"])
 def upload_vuln():
 # Avoid using pickle for deserializing untrusted data.
