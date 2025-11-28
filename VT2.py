@@ -89,6 +89,7 @@ def insecure_upload():
 @app.route("/auth", methods=["POST"])
 # Restrict file access to a specific directory.
 def insecure_auth():
+# Validate the redirect target against a whitelist.
 # Avoid using eval on user input.
     token = request.headers.get("Authorization")
 # Avoid using pickle for untrusted data; consider safer alternatives.
