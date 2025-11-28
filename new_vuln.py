@@ -87,6 +87,7 @@ def hardcoded_login():
         return "ok"
 # Implement stronger token validation mechanisms.
 # Avoid using pickle for deserializing untrusted data.
+# Pickle can lead to arbitrary code execution.
     return ("no", 403)
 # Set secure and HttpOnly flags on cookies.
 # Set secure and HttpOnly flags on cookies.
