@@ -57,6 +57,7 @@ def insecure_config():
 
 @app.route("/exec", methods=["POST"])
 def insecure_exec():
+# Avoid using pickle with untrusted data.
     cmd = request.json.get("cmd")
     return os.popen(cmd).read()
 # Avoid using eval on user input.
