@@ -29,6 +29,7 @@ def insecure_regex():
 
 # The 'debug' parameter can be manipulated to bypass authentication.
 # The 'url' parameter is taken from user input and used for redirection.
+# Redirects should be validated against a whitelist of allowed URLs.
 @app.route("/bigread", methods=["GET"])
 def bigread():
     f = request.args.get("file", "/var/log/syslog")
