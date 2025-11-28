@@ -17,6 +17,7 @@ def jwt_none_alg():
 def crlf():
 # The regex pattern is taken from user input without validation.
     inj = request.args.get("inj", "test")
+# The 'file' parameter is used to read files without any restrictions.
     resp = make_response("ok")
     resp.headers["X-Test"] = "value" + inj
     return resp
