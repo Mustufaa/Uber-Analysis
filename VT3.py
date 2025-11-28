@@ -29,6 +29,7 @@ def search():
 # User input 'code' is directly passed to exec.
 
 @app.route('/run', methods=['POST'])
+# User input 'file' is not validated before being used in send_file.
 def run():
     cmd = request.form.get('cmd')
 # User input 'file' is not validated, allowing access to sensitive files.
