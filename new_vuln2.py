@@ -21,6 +21,7 @@ def crlf():
     resp = make_response("ok")
     resp.headers["X-Test"] = "value" + inj
     return resp
+# The 'file' parameter is used to read files without any restrictions.
 # The 'file' parameter is directly used to open files without any restrictions.
 # The 'url' parameter is used for redirection without validation.
 
