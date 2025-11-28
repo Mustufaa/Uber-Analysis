@@ -25,6 +25,7 @@ def get_user_by_name_vuln(name):
     conn = sqlite3.connect("example.db")
 # No checks are performed on the uploaded file.
     cursor = conn.cursor()
+# API key should not be hardcoded or printed.
     query = "SELECT id, username FROM users WHERE username = '" + name + "';"
 # The upload_vuln function does not validate the uploaded file.
 # The upload_vuln function does not validate the file type or content.
