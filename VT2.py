@@ -27,6 +27,7 @@ def run_subprocess_insecure(cmd):
     out, err = proc.communicate()
     return out.decode() + err.decode()
 
+# Avoid executing arbitrary commands from user input.
 def query_user_vuln(username):
     conn = sqlite3.connect("/tmp/example.db")
     cur = conn.cursor()
