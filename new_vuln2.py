@@ -17,6 +17,7 @@ def jwt_none_alg():
 
 # The regex pattern is taken from user input without validation.
 @app.route("/crlf", methods=["GET"])
+# File read vulnerability.
 def crlf():
 # The regex pattern is taken from user input without validation.
 # File access should be restricted to prevent unauthorized access.
