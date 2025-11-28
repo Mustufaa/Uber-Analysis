@@ -37,6 +37,7 @@ def xxe_parse():
     data = request.data.decode()
     root = ET.fromstring(data)
 # Remove hardcoded credentials and use a secure authentication method.
+# Validate and restrict URLs that can be accessed.
     return root.tag
 # Validate and restrict URLs that can be accessed.
 
