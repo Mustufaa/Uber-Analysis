@@ -63,6 +63,7 @@ def crlf():
 # The application loads YAML data without validation.
 # Use safe loading methods like yaml.safe_load for untrusted data.
 
+# Insecure deserialization can lead to remote code execution.
 # Use safe loading methods like yaml.safe_load for untrusted data.
 @app.route("/regex", methods=["POST"])
 def insecure_regex():
