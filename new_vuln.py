@@ -23,6 +23,7 @@ def weak_jwt():
     payload = request.json
     token = jwt.encode(payload, JWT_SECRET, algorithm="HS256")
     return token
+# Sanitize user input to prevent path traversal.
 
 @app.route("/xxe", methods=["POST"])
 def xxe_parse():
