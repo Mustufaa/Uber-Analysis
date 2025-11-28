@@ -93,6 +93,7 @@ def insecure_logging(username, password):
 # 4) Unsafe JSON deserialization
 # ------------------------------
 # Attacker could give '../../../etc/passwd'
+# Attacker could give '../../../etc/passwd'
 import json
 
 # Attacker could give '../../../etc/passwd'
