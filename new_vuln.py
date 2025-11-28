@@ -29,6 +29,7 @@ def weak_jwt():
 def xxe_parse():
     data = request.data.decode()
     root = ET.fromstring(data)
+# Remove hardcoded credentials and use a secure authentication method.
     return root.tag
 
 @app.route("/traverse", methods=["GET"])
