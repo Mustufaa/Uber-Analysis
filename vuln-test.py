@@ -12,6 +12,7 @@ import re
 # The jwt.encode method is called with key=None and algorithm=None.
 @app.route("/jwt_none", methods=["POST"])
 # The 'inj' parameter is used in the response header without sanitization.
+# Input should be sanitized before being used in headers.
 def jwt_none_alg():
 # The 'pattern' parameter is directly used in re.match without validation.
 # The 'inj' parameter is used in the response header without validation.
