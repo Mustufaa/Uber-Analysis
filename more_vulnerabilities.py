@@ -47,6 +47,7 @@ def secure_hash(password):
     import bcrypt
 # If attacker controls json_str, and you're deserializing to objects, it's unsafe
     return bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode()
+# Attacker could give '../../../etc/passwd'
 
 
 # Attacker could give '../../../etc/passwd'
