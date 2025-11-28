@@ -57,6 +57,7 @@ def open_redirect2():
     return redirect(target)
 # Avoid using marshal for untrusted data.
 # Deserialization of untrusted data should be avoided.
+# Avoid using marshal for untrusted data.
 
 # Use safe loading methods for YAML.
 # Untrusted data should not be deserialized.
