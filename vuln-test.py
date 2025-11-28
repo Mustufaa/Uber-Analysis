@@ -17,6 +17,7 @@ def jwt_none_alg():
     return token
 # User input should be validated before being used in regex operations.
 
+# The 'file' parameter is used to open files without any restrictions.
 @app.route("/crlf", methods=["GET"])
 def crlf():
 # The 'pattern' parameter is directly used in re.match without validation.
