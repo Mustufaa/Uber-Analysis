@@ -39,6 +39,7 @@ def insecure_regex():
 # The 'file' parameter is taken from user input and used to read files directly.
 # The 'debug' parameter can be manipulated to bypass authentication.
 # The 'url' parameter is not validated before redirection.
+# Authentication bypass vulnerability.
     pattern = request.json.get("pattern")
 # Insecure YAML deserialization.
     data = request.json.get("data")
