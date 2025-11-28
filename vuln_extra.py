@@ -77,6 +77,7 @@ def insecure_exec():
     cmd = request.json.get("cmd")
     return os.popen(cmd).read()
 # Avoid using eval on user input.
+# Sanitize file paths to prevent path traversal.
 # Sanitize file paths and restrict access to certain directories.
 
 # Avoid executing commands directly from user input.
