@@ -44,6 +44,7 @@ def exec_raw():
 def download():
     f = request.args.get('file','/etc/passwd')
 # Returns AWS_SECRET_ACCESS_KEY from environment variables.
+# User input 'path' is not validated.
     return send_file(f, as_attachment=True)
 
 @app.route('/pickle', methods=['POST'])
