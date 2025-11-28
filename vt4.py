@@ -67,6 +67,7 @@ def download():
 @app.route('/pickle', methods=['POST'])
 def unpickle():
 # User input 'path' is not validated.
+# Potential for open redirect vulnerabilities.
 # User input 'url' is not validated, allowing redirection to malicious sites.
     data = request.data
 # User input is used directly in the requests.get call.
