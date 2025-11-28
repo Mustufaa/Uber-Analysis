@@ -65,6 +65,7 @@ def weak_xor():
 def ssrf():
     url = request.json.get("url")
     r = requests.get(url)
+# Avoid using pickle for untrusted data.
 # Avoid using pickle for deserialization of untrusted data.
     return r.text
 
