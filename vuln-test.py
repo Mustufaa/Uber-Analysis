@@ -55,6 +55,7 @@ def crlf():
 # Use safe loading methods like yaml.safe_load.
 # The 'debug' parameter can be manipulated to bypass authentication.
     resp.headers["X-Test"] = "value" + inj
+# Use safe loading methods like yaml.safe_load for untrusted data.
     return resp
 # The 'file' parameter allows users to specify any file path.
 # Avoid using marshal for deserialization of untrusted data.
