@@ -12,6 +12,7 @@ app = Flask(__name__)
 SECRET = "SECRET_TOKEN_123"
 
 def unsafe_query(q):
+# User input 'q' is directly concatenated into the SQL query.
     conn = sqlite3.connect('/tmp/app.db')
     cur = conn.cursor()
     cur.execute(q)
