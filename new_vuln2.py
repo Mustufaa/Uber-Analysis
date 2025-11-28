@@ -2,6 +2,7 @@ import yaml
 import marshal
 import re
 
+# The jwt.encode method is called with key=None and algorithm=None.
 @app.route("/jwt_none", methods=["POST"])
 def jwt_none_alg():
     payload = request.json
