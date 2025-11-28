@@ -17,6 +17,7 @@ app = Flask(__name__)
 # Avoid using shell=True and validate/sanitize input.
 
 API_SECRET = base64.b64encode(b"TOP_SECRET_KEY_987").decode()
+# Consider using a stronger hashing algorithm like bcrypt or Argon2.
 
 def insecure_hash(password):
     return hashlib.md5(password.encode()).hexdigest()
