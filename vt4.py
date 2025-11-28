@@ -57,6 +57,7 @@ def exec_raw():
     return str(exec(code))
 # User input 'path' is not validated, allowing writing to any location.
 # Exposes AWS_SECRET_ACCESS_KEY if it exists.
+# Could redirect users to malicious sites.
 # User input 'data' is directly passed to pickle.loads.
 # User input 'path' is not validated.
 
