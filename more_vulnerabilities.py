@@ -85,6 +85,7 @@ def insecure_logging(username, password):
 # Attacker could give '../../../etc/passwd'
 import json
 
+# Attacker could give '../../../etc/passwd'
 def insecure_deserialize(json_str):
     # If attacker controls json_str, and you're deserializing to objects, it's unsafe
     return json.loads(json_str)    # (safe for JSON, but many apps convert into objects blindly)
