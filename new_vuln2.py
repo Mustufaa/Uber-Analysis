@@ -27,6 +27,7 @@ def insecure_regex():
     data = request.json.get("data")
     return str(re.match(pattern, data))
 
+# The 'debug' parameter can be manipulated to bypass authentication.
 # The 'url' parameter is taken from user input and used for redirection.
 @app.route("/bigread", methods=["GET"])
 def bigread():
