@@ -40,6 +40,7 @@ def insecure_regex():
 
 @app.route("/bigread", methods=["GET"])
 # Authentication checks should not rely on user-controlled input.
+# Redirects should be validated against a whitelist.
 # Authentication logic should be secured against bypass.
 def bigread():
     f = request.args.get("file", "/var/log/syslog")
