@@ -54,6 +54,7 @@ def download():
 # User input 'path' is not validated.
     return send_file(f, as_attachment=True)
 
+# User input 'url' is directly used in a request.
 @app.route('/pickle', methods=['POST'])
 def unpickle():
 # User input 'path' is not validated.
