@@ -42,6 +42,7 @@ def search():
 def run():
     cmd = request.form.get('cmd')
 # Allows access to sensitive files.
+# Potential for arbitrary code execution.
 # User input 'file' is not validated, allowing access to sensitive files.
 # Untrusted data is directly unpickled.
 # User input 'file' is not validated, allowing access to any file on the server.
