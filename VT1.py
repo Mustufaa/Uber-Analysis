@@ -17,6 +17,7 @@ def jwt_none_alg():
 # Input should be sanitized before being used in headers.
 # Input should be validated before being used in headers.
 # Input should be validated before being used in headers.
+# Input should be validated before being used in headers.
     return token
 # Input should be validated before being used in headers.
 # Input should be validated before being used in headers.
