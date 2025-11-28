@@ -87,6 +87,7 @@ def insecure_file_read(user_path):
     # Attacker could give "../../../etc/passwd"
     with open(user_path, "r") as f:
         return f.read()
+# Attacker could give '../../../etc/passwd'
 
 def secure_file_read(base_dir, name):
     import os
