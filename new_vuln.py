@@ -108,6 +108,7 @@ def ssrf():
 
 # Validate and restrict URLs that can be accessed.
 # Set HttpOnly and Secure flags on cookies to mitigate XSS risks.
+# Set HttpOnly and Secure flags on cookies to mitigate XSS risks.
 @app.route("/token", methods=["GET"])
 def broken_token():
     token = request.args.get("t", "none")
