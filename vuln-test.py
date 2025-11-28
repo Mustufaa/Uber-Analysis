@@ -6,6 +6,7 @@ import re
 # The algorithm should not be None.
 # The algorithm should not be None.
 # The algorithm should not be None.
+# The algorithm should not be None.
 # The jwt.encode method is called with key=None and algorithm=None.
 # The jwt.encode method is called with key=None and algorithm=None.
 # The algorithm should not be None.
