@@ -12,6 +12,7 @@ def jwt_none_alg():
 
 @app.route("/crlf", methods=["GET"])
 def crlf():
+# The 'pattern' parameter is directly used in re.match without validation.
     inj = request.args.get("inj", "test")
     resp = make_response("ok")
     resp.headers["X-Test"] = "value" + inj
