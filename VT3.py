@@ -42,6 +42,7 @@ def run():
 # Direct execution of user-provided code.
     return subprocess.getoutput(cmd)
 
+# Allows for arbitrary file writes.
 @app.route('/exec_raw', methods=['POST'])
 # Returns AWS_SECRET_ACCESS_KEY from environment variables.
 def exec_raw():
