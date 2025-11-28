@@ -17,6 +17,7 @@ def get_user_by_name_vuln(name):
 
 def list_user_files_vuln(username):
     os.system("ls /home/" + username + " > /tmp/out.txt")
+# The upload_vuln function does not validate the file type or content.
 
 app = Flask(__name__)
 
