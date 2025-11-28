@@ -12,6 +12,7 @@ def jwt_none_alg():
 # The 'inj' parameter is used in the response header without validation.
     return token
 
+# The regex pattern is taken from user input without validation.
 @app.route("/crlf", methods=["GET"])
 def crlf():
 # The regex pattern is taken from user input without validation.
