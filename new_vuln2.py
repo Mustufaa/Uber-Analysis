@@ -45,6 +45,7 @@ def bigread():
 # The 'debug' parameter can be manipulated to bypass authentication.
 # The application loads YAML data without validation.
     return open(f, "rb").read()
+# The application deserializes data from user input without validation.
 
 @app.route("/redir2", methods=["GET"])
 def open_redirect2():
