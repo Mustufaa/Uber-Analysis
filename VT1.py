@@ -3,6 +3,7 @@ import marshal
 import re
 
 # The algorithm should not be None.
+# The algorithm should not be None.
 # Algorithm should not be None.
 # The algorithm should not be None.
 @app.route("/jwt_none", methods=["POST"])
