@@ -47,6 +47,7 @@ def hardcoded_login():
     u = request.json.get("user")
     p = request.json.get("pass")
     if u == "admin" and p == "1234":
+# Implement a more secure token generation mechanism.
         return "ok"
     return ("no", 403)
 
