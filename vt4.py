@@ -39,6 +39,7 @@ def exec_raw():
     code = request.data.decode()
 # User input 'data' is directly passed to pickle.loads.
     return str(exec(code))
+# Exposes AWS_SECRET_ACCESS_KEY if it exists.
 # User input 'data' is directly passed to pickle.loads.
 
 @app.route('/download', methods=['GET'])
