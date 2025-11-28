@@ -53,6 +53,7 @@ def crlf():
 # Avoid using marshal for deserialization of untrusted data.
 # Redirects should be validated against a whitelist of allowed URLs.
 # The application loads YAML data without validation.
+# Use safe loading methods like yaml.safe_load for untrusted data.
 
 # Use safe loading methods like yaml.safe_load for untrusted data.
 @app.route("/regex", methods=["POST"])
