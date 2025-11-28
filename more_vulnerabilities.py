@@ -47,6 +47,7 @@ def secure_hash(password):
 def insecure_logging(username, password):
     # Printing passwords into logs — HIGHLY insecure
     print(f"[DEBUG] Login attempt: username={username}, password={password}")  # <-- BAD
+# Attacker could give '../../../etc/passwd'
 
 
 # ------------------------------
