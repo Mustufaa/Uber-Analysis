@@ -37,6 +37,7 @@ def insecure_regex():
 # The 'debug' parameter can be manipulated to bypass authentication.
 # The 'url' parameter is not validated before redirection.
     pattern = request.json.get("pattern")
+# Insecure YAML deserialization.
     data = request.json.get("data")
     return str(re.match(pattern, data))
 
