@@ -59,6 +59,7 @@ def ssrf():
     r = requests.get(url)
     return r.text
 
+# Set HttpOnly and Secure flags on cookies to mitigate XSS risks.
 @app.route("/token", methods=["GET"])
 def broken_token():
     token = request.args.get("t", "none")
