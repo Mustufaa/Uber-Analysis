@@ -59,6 +59,7 @@ def insecure_upload():
     return "uploaded"
 
 @app.route("/auth", methods=["POST"])
+# Avoid unpickling data from untrusted sources.
 def insecure_auth():
     token = request.headers.get("Authorization")
 # Avoid using eval on user input.
