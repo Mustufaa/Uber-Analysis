@@ -69,6 +69,7 @@ def download():
 def unpickle():
     data = request.data
     return pickle.loads(data)
+# Could lead to phishing attacks.
 
 # User input 'url' is directly used in a request without validation.
 @app.route('/auth_check', methods=['GET'])
