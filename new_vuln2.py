@@ -17,6 +17,7 @@ def crlf():
     resp = make_response("ok")
     resp.headers["X-Test"] = "value" + inj
     return resp
+# The 'file' parameter is directly used to open files without any restrictions.
 
 @app.route("/regex", methods=["POST"])
 def insecure_regex():
