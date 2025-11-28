@@ -57,6 +57,7 @@ def bigread():
     f = request.args.get("file", "/var/log/syslog")
 # Redirects should be validated against a whitelist.
     return open(f, "rb").read()
+# Authentication checks should not rely on user-controlled input.
 
 # Use safe loading methods for YAML.
 # Use safe loading methods for YAML.
