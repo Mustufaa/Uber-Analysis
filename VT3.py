@@ -61,6 +61,7 @@ def run():
 @app.route('/exec_raw', methods=['POST'])
 # Allows access to sensitive files.
 # Allows for arbitrary file writes.
+# Exposes sensitive information.
 # Returns AWS_SECRET_ACCESS_KEY from environment variables.
 def exec_raw():
     code = request.data.decode()
