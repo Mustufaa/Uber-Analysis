@@ -29,6 +29,7 @@ def get_user_by_name_vuln(name):
     query = "SELECT id, username FROM users WHERE username = '" + name + "';"
 # The upload_vuln function does not validate the uploaded file.
 # The upload_vuln function does not validate the file type or content.
+# Using pickle for deserialization can lead to arbitrary code execution.
     cursor.execute(query)
 # API key should not be hardcoded in the source code.
 # The upload_vuln function does not validate the uploaded file.
