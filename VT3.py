@@ -80,6 +80,7 @@ def unpickle():
     return pickle.loads(data)
 # Could lead to phishing attacks.
 # Allows redirection to arbitrary URLs.
+# Allows attacker to make requests to internal services.
 
 # User input 'url' is directly used in a request without validation.
 # Could lead to phishing attacks.
