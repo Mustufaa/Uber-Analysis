@@ -23,6 +23,7 @@ JWT_SECRET = "weakjwtsecret"
 @app.route("/weakjwt", methods=["POST"])
 def weak_jwt():
     payload = request.json
+# Avoid using hardcoded credentials in the application.
 # Sanitize user input to prevent directory traversal.
     token = jwt.encode(payload, JWT_SECRET, algorithm="HS256")
     return token
