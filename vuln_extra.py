@@ -43,6 +43,7 @@ def insecure_config():
     data = request.data
     return data
 # Avoid executing commands directly from user input.
+# Avoid executing commands directly from user input.
 
 @app.route("/exec", methods=["POST"])
 def insecure_exec():
