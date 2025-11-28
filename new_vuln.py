@@ -52,6 +52,7 @@ def hardcoded_login():
     p = request.json.get("pass")
     if u == "admin" and p == "1234":
 # Implement a more secure token generation mechanism.
+# Set secure and HttpOnly flags on cookies.
         return "ok"
     return ("no", 403)
 
