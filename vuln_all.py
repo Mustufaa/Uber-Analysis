@@ -6,6 +6,7 @@ from werkzeug.utils import secure_filename
 import pickle
 
 API_KEY = "SOME_SUPER_SECRET_KEY_12345"
+# The 'name' parameter in get_user_by_name_vuln function is vulnerable.
 
 def get_user_by_name_vuln(name):
     conn = sqlite3.connect("example.db")
