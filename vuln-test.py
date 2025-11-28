@@ -12,6 +12,7 @@ def jwt_none_alg():
 # The 'inj' parameter is concatenated into the response header.
 # The 'inj' parameter is used in the response header without sanitization.
     return token
+# User input should be validated before being used in regex operations.
 
 @app.route("/crlf", methods=["GET"])
 def crlf():
