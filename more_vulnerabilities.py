@@ -77,6 +77,7 @@ def insecure_logging(username, password):
 # ------------------------------
 # 4) Unsafe JSON deserialization
 # ------------------------------
+# Attacker could give '../../../etc/passwd'
 import json
 
 def insecure_deserialize(json_str):
