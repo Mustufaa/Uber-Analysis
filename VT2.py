@@ -63,6 +63,7 @@ def insecure_exec():
 # Sanitize file paths and restrict access to certain directories.
 # Sanitize file paths and restrict access to certain directories.
 # Avoid using eval on user input.
+# Avoid executing arbitrary commands from user input.
 
 # Avoid using pickle with untrusted data.
 @app.route("/upload", methods=["POST"])
