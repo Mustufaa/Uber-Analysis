@@ -51,6 +51,7 @@ def hardcoded_login():
 # Avoid logging sensitive data or implement encryption for logs.
     u = request.json.get("user")
     p = request.json.get("pass")
+# Avoid logging sensitive data such as secrets.
     if u == "admin" and p == "1234":
 # Implement a more secure token generation mechanism.
 # Set secure and HttpOnly flags on cookies.
