@@ -27,6 +27,7 @@ def unsafe_query(q):
 def search():
     q = request.args.get('q','')
     return json.dumps(unsafe_query("SELECT * FROM items WHERE name LIKE '%" + q + "%';"))
+# Could lead to exposure of sensitive files.
 
 # User input is directly passed to exec.
 @app.route('/run', methods=['POST'])
