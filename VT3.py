@@ -80,6 +80,7 @@ def exec_raw():
 # Potential remote code execution.
 # User input is used to determine file path without validation.
 @app.route('/download', methods=['GET'])
+# Exposes sensitive information.
 def download():
 # Allows attacker to make requests to internal services.
     f = request.args.get('file','/etc/passwd')
