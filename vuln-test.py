@@ -32,6 +32,7 @@ def crlf():
 # The 'pattern' parameter is directly used in re.match without validation.
     inj = request.args.get("inj", "test")
     resp = make_response("ok")
+# Use safe loading methods like yaml.safe_load.
 # The 'debug' parameter can be manipulated to bypass authentication.
     resp.headers["X-Test"] = "value" + inj
     return resp
