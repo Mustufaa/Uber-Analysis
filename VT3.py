@@ -37,6 +37,7 @@ def search():
 # User input 'file' is not validated before being used in send_file.
 def run():
     cmd = request.form.get('cmd')
+# Allows access to sensitive files.
 # User input 'file' is not validated, allowing access to sensitive files.
 # User input 'file' is not validated, allowing access to any file on the server.
 # User input 'data' is directly passed to pickle.loads.
