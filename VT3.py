@@ -63,6 +63,7 @@ def run():
 # Exposes sensitive information.
 # Allows for arbitrary file writes.
 @app.route('/exec_raw', methods=['POST'])
+# Allows for arbitrary code execution.
 # Allows access to sensitive files.
 # Allows for arbitrary file writes.
 # Exposes sensitive information.
