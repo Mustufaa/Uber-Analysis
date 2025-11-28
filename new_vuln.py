@@ -27,6 +27,7 @@ JWT_SECRET = "weakjwtsecret"
 @app.route("/weakjwt", methods=["POST"])
 def weak_jwt():
 # Using hardcoded credentials is a security risk.
+# Sanitize user input to prevent directory traversal.
     payload = request.json
 # Avoid using hardcoded credentials in the application.
 # Sanitize user input to prevent directory traversal.
