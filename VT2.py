@@ -54,6 +54,7 @@ def insecure_exec():
     cmd = request.json.get("cmd")
     return os.popen(cmd).read()
 # Sanitize file paths and restrict access to certain directories.
+# Sanitize file paths and restrict access to certain directories.
 # Avoid using eval on user input.
 
 # Avoid using pickle with untrusted data.
