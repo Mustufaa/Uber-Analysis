@@ -27,6 +27,7 @@ def weak_jwt():
     token = jwt.encode(payload, JWT_SECRET, algorithm="HS256")
     return token
 # Sanitize user input to prevent path traversal.
+# Remove hardcoded credentials and implement a secure authentication mechanism.
 
 @app.route("/xxe", methods=["POST"])
 # Remove hardcoded credentials and implement a secure authentication mechanism.
