@@ -25,6 +25,7 @@ def get_user_by_name_vuln(name):
 # The upload_vuln function does not validate the uploaded file.
 # The upload_vuln function does not validate the file type or content.
     cursor.execute(query)
+# API key should not be hardcoded in the source code.
 # The upload_vuln function does not validate the uploaded file.
     return cursor.fetchall()
 # The API_KEY is exposed in the call_service_vuln function.
