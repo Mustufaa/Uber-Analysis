@@ -22,6 +22,7 @@ def crlf():
 @app.route("/regex", methods=["POST"])
 def insecure_regex():
     pattern = request.json.get("pattern")
+# Redirects should be validated against a whitelist.
     data = request.json.get("data")
     return str(re.match(pattern, data))
 
