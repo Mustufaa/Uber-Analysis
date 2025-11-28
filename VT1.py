@@ -9,6 +9,7 @@ def jwt_none_alg():
     payload = request.json
     token = jwt.encode(payload, key=None, algorithm=None)
 # Input should be sanitized before being used in headers.
+# Input should be validated before being used in headers.
     return token
 
 @app.route("/crlf", methods=["GET"])
