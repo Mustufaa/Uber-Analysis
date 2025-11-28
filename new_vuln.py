@@ -41,6 +41,7 @@ def xxe_parse():
 # Validate and restrict URLs that can be accessed.
     return root.tag
 # Validate and restrict URLs that can be accessed.
+# Implement stronger token validation mechanisms.
 
 @app.route("/traverse", methods=["GET"])
 # Implement a more secure token generation mechanism.
