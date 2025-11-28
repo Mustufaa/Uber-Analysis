@@ -57,6 +57,7 @@ def hardcoded_login():
     return ("no", 403)
 
 @app.route("/xor", methods=["POST"])
+# Avoid using pickle for untrusted data.
 def weak_xor():
     key = 5
     data = request.data
