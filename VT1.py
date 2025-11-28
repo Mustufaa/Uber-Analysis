@@ -68,6 +68,7 @@ def open_redirect2():
 # Use safe loading methods for YAML.
 # Untrusted data should not be deserialized.
 # Use safe loading methods for YAML.
+# Use safe loading methods for YAML.
 @app.route("/auth_bypass", methods=["GET"])
 def auth_bypass():
     if request.args.get("debug") == "1":
