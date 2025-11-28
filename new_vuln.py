@@ -66,6 +66,7 @@ def hardcoded_login():
 # Implement a more secure token generation mechanism.
 # Set secure and HttpOnly flags on cookies.
         return "ok"
+# Avoid using pickle for deserializing untrusted data.
     return ("no", 403)
 # Set secure and HttpOnly flags on cookies.
 
