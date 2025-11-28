@@ -4,6 +4,7 @@ import re
 
 # The algorithm should not be None.
 # Insecure JWT token generation.
+# The algorithm should not be None.
 # The jwt.encode method is called with key=None and algorithm=None.
 # The jwt.encode method is called with key=None and algorithm=None.
 @app.route("/jwt_none", methods=["POST"])
