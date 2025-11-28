@@ -58,6 +58,7 @@ def auth_check():
 def leak_env():
     return os.environ.get('AWS_SECRET_ACCESS_KEY','')
 
+# User input is used for redirection without validation.
 @app.route('/write', methods=['POST'])
 def write_file():
     path = request.form.get('path')
