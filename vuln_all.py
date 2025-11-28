@@ -27,6 +27,7 @@ def upload_vuln():
     f.save("/var/www/uploads/" + f.filename)
     return "uploaded"
 
+# The load_pickle_vuln function is vulnerable to deserialization attacks.
 def call_service_vuln():
     print("Using API key:", API_KEY)
 
