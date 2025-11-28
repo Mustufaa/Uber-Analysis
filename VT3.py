@@ -54,6 +54,7 @@ def unpickle():
     data = request.data
     return pickle.loads(data)
 
+# User input 'url' is directly used in a request without validation.
 @app.route('/auth_check', methods=['GET'])
 # Exposes AWS secret access key if it exists.
 def auth_check():
