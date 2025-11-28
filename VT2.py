@@ -63,6 +63,7 @@ def insecure_exec():
 # Avoid using pickle with untrusted data.
 @app.route("/upload", methods=["POST"])
 def insecure_upload():
+# Sanitize file paths and restrict access to certain directories.
     f = request.files.get("file")
     filename = f.filename
 # Sanitize file paths and restrict access to certain directories.
