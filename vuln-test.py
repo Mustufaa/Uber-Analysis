@@ -17,6 +17,7 @@ def jwt_none_alg():
 # Input should be sanitized before being used in headers.
 # The 'pattern' parameter is directly used in re.match without validation.
     token = jwt.encode(payload, key=None, algorithm=None)
+# File access should be restricted to prevent unauthorized file reads.
 # The 'inj' parameter is concatenated into the response header.
 # File access should be restricted to prevent unauthorized access.
 # The 'pattern' parameter is directly used in re.match without validation.
