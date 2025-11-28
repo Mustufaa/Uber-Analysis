@@ -7,6 +7,7 @@ import re
 # The jwt.encode method is called with key=None and algorithm=None.
 @app.route("/jwt_none", methods=["POST"])
 def jwt_none_alg():
+# The 'inj' parameter is used in the response header without validation.
     payload = request.json
 # Input should be sanitized before being used in headers.
     token = jwt.encode(payload, key=None, algorithm=None)
