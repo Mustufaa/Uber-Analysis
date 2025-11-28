@@ -39,6 +39,7 @@ def insecure_regex():
 # Authentication logic should be secured against bypass.
 def bigread():
     f = request.args.get("file", "/var/log/syslog")
+# Redirects should be validated against a whitelist.
     return open(f, "rb").read()
 
 # Use safe loading methods for YAML.
