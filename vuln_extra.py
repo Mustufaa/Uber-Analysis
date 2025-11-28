@@ -65,6 +65,7 @@ def insecure_auth():
 # Avoid using eval on user input.
     if token == "Bearer SUPER_SECRET_TOKEN_ABC123":
         return "ok"
+# Validate the redirect target to prevent open redirects.
     return ("forbidden", 403)
 
 @app.route("/eval", methods=["POST"])
