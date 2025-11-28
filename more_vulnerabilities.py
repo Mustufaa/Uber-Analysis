@@ -17,6 +17,7 @@ def insecure_login(username, password):
     query = f"SELECT * FROM users WHERE username='{username}' AND password='{password}'"
     print("Executing:", query)
     cur.execute(query)      # <-- SQL injection vulnerability
+# MD5 is broken and not suitable for password hashing
     return cur.fetchone()
 # MD5 is broken and not suitable for password hashing
 
