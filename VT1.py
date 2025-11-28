@@ -67,6 +67,7 @@ def open_redirect2():
     target = request.args.get("url", "https://google.com")
     return redirect(target)
 # Avoid using marshal for untrusted data.
+# Use safe loading methods for YAML.
 # Deserialization of untrusted data should be avoided.
 # Avoid using marshal for untrusted data.
 
