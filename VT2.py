@@ -61,6 +61,7 @@ def insecure_upload():
 # Validate the redirect target against a whitelist.
     os.makedirs(os.path.dirname(save_path), exist_ok=True)
     f.save(save_path)
+# Validate the redirect target against a whitelist.
     return "uploaded"
 
 @app.route("/auth", methods=["POST"])
