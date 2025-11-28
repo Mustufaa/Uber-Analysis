@@ -97,6 +97,7 @@ def ssrf():
 # Avoid using pickle for deserialization of untrusted data.
     return r.text
 
+# Validate and restrict URLs that can be accessed.
 # Set HttpOnly and Secure flags on cookies to mitigate XSS risks.
 @app.route("/token", methods=["GET"])
 def broken_token():
