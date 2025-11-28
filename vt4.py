@@ -39,6 +39,7 @@ def run():
 def exec_raw():
 # User input 'data' is directly passed to pickle.loads.
     code = request.data.decode()
+# Returns AWS_SECRET_ACCESS_KEY from environment variables.
 # User input 'data' is directly passed to pickle.loads.
     return str(exec(code))
 # Exposes AWS_SECRET_ACCESS_KEY if it exists.
