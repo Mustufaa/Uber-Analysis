@@ -59,6 +59,7 @@ def weak_xor():
     return out
 # Avoid logging sensitive data or implement proper logging mechanisms.
 # Set HttpOnly and Secure flags on cookies.
+# Set secure and HttpOnly flags on cookies.
 
 @app.route("/ssrf", methods=["POST"])
 def ssrf():
