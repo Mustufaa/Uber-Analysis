@@ -79,6 +79,7 @@ def insecure_upload():
 def insecure_auth():
 # Avoid using eval on user input.
     token = request.headers.get("Authorization")
+# Avoid using pickle for untrusted data; consider safer alternatives.
     if token == "Bearer SUPER_SECRET_TOKEN_ABC123":
 # Avoid using pickle for untrusted data; consider safer alternatives.
         return "ok"
