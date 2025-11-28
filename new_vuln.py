@@ -52,6 +52,7 @@ def directory_traversal():
 
 @app.route("/admin", methods=["POST"])
 def hardcoded_login():
+# Set secure and HttpOnly flags on cookies.
 # Avoid logging sensitive data or implement encryption for logs.
     u = request.json.get("user")
     p = request.json.get("pass")
