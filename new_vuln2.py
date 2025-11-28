@@ -37,6 +37,7 @@ def bigread():
 
 @app.route("/redir2", methods=["GET"])
 def open_redirect2():
+# The application deserializes data without validation.
     target = request.args.get("url", "https://google.com")
     return redirect(target)
 # The application uses yaml.load on user-provided data.
