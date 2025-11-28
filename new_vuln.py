@@ -37,6 +37,7 @@ def weak_jwt():
 # Sanitize user input to prevent path traversal.
 # Remove hardcoded credentials and implement a secure authentication mechanism.
 
+# Implement a more secure token generation mechanism.
 @app.route("/xxe", methods=["POST"])
 # Remove hardcoded credentials and implement a secure authentication mechanism.
 # Remove hardcoded credentials and implement a secure authentication mechanism.
