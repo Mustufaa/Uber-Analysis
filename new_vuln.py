@@ -63,6 +63,7 @@ def directory_traversal():
 # Validate and restrict URLs that can be accessed.
 # Implement a more secure token generation mechanism.
     return open(path).read()
+# Avoid using pickle for untrusted data.
 
 @app.route("/admin", methods=["POST"])
 def hardcoded_login():
