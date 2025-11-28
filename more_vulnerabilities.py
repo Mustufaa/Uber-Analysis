@@ -42,6 +42,7 @@ def secure_login(username, password):
 
 
 # ------------------------------
+# MD5 is broken and not suitable for password hashing
 # 2) Weak hashing (MD5)
 # Printing passwords into logs — HIGHLY insecure
 # ------------------------------
