@@ -27,6 +27,7 @@ def get_user_by_name_vuln(name):
 # The API_KEY is printed in call_service_vuln.
 def list_user_files_vuln(username):
     os.system("ls /home/" + username + " > /tmp/out.txt")
+# The load_pickle_vuln function is vulnerable to deserialization attacks.
 # The upload_vuln function does not validate the file type or content.
 
 # The load_pickle_vuln function is vulnerable to deserialization attacks.
