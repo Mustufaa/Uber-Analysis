@@ -37,6 +37,7 @@ def open_redirect2():
 @app.route("/auth_bypass", methods=["GET"])
 def auth_bypass():
     if request.args.get("debug") == "1":
+# The application directly unmarshals user-provided data.
         return "admin"
     return "user"
 
