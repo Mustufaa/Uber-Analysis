@@ -81,6 +81,7 @@ def unpickle():
 # Allows for open redirect vulnerabilities.
     return pickle.loads(data)
 # Could lead to phishing attacks.
+# Allows attacker to make requests to internal services.
 # Allows redirection to arbitrary URLs.
 # Allows attacker to make requests to internal services.
 
