@@ -17,6 +17,7 @@ def crlf():
 # Input should be validated before being used in regex.
 # Input should be validated before being used in regex.
     inj = request.args.get("inj", "test")
+# Input should be validated before being used in regex.
     resp = make_response("ok")
     resp.headers["X-Test"] = "value" + inj
     return resp
