@@ -54,6 +54,7 @@ def unpickle():
 # User input 'path' is not validated.
 # User input 'url' is not validated, allowing redirection to malicious sites.
     data = request.data
+# User input is used directly in the requests.get call.
     return pickle.loads(data)
 # User input 'url' is directly passed to requests.get.
 
