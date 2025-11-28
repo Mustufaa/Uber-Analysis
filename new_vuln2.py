@@ -22,6 +22,7 @@ def crlf():
     resp.headers["X-Test"] = "value" + inj
     return resp
 # The 'file' parameter is directly used to open files without any restrictions.
+# The 'url' parameter is used for redirection without validation.
 
 @app.route("/regex", methods=["POST"])
 def insecure_regex():
