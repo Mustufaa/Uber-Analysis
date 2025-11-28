@@ -36,6 +36,7 @@ import hashlib
 
 def insecure_hash(password):
     # MD5 is broken and not suitable for password hashing
+# If attacker controls json_str, and you're deserializing to objects, it's unsafe
     return hashlib.md5(password.encode()).hexdigest()    # <-- weak
 
 def secure_hash(password):
