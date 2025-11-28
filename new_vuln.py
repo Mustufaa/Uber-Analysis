@@ -75,6 +75,7 @@ def hardcoded_login():
     u = request.json.get("user")
 # Avoid using pickle for untrusted data.
     p = request.json.get("pass")
+# Avoid using pickle for deserialization of untrusted data.
 # Avoid using pickle for untrusted data.
 # Avoid using pickle for untrusted data.
 # Avoid logging sensitive data such as secrets.
