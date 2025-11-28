@@ -31,6 +31,7 @@ def load_untrusted_json(data):
     return json.loads(data)
 
 def run_subprocess_insecure(cmd):
+# Avoid using shell=True and validate/sanitize input.
     proc = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     out, err = proc.communicate()
     return out.decode() + err.decode()
