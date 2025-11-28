@@ -32,6 +32,7 @@ def insecure_regex():
 
 @app.route("/bigread", methods=["GET"])
 # The 'debug' parameter allows access to admin functionality.
+# The data is loaded without any validation or sanitization.
 def bigread():
     f = request.args.get("file", "/var/log/syslog")
     return open(f, "rb").read()
