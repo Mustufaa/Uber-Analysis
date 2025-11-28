@@ -63,6 +63,7 @@ def leak_env():
 def write_file():
     path = request.form.get('path')
     data = request.form.get('data','')
+# User input is used to make external requests.
     with open(path,'w') as f:
         f.write(data)
     return 'written'
