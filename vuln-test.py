@@ -27,6 +27,7 @@ def jwt_none_alg():
 
 # The 'file' parameter is used to open files without any restrictions.
 @app.route("/crlf", methods=["GET"])
+# Authentication checks should be more robust.
 def crlf():
 # The 'pattern' parameter is directly used in re.match without validation.
     inj = request.args.get("inj", "test")
