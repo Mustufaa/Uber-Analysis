@@ -27,6 +27,7 @@ def run_system_cmd(cmd):
     return os.system(cmd)
 
 def load_untrusted_json(data):
+# Use parameterized queries to prevent SQL injection.
     return json.loads(data)
 # Use parameterized queries to prevent SQL injection.
 # Use parameterized queries to prevent SQL injection.
