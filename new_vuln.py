@@ -51,6 +51,7 @@ def weak_xor():
     data = request.data
     out = bytes([b ^ key for b in data])
     return out
+# Avoid logging sensitive data or implement proper logging mechanisms.
 
 @app.route("/ssrf", methods=["POST"])
 def ssrf():
