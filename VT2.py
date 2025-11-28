@@ -72,6 +72,7 @@ def insecure_upload():
 @app.route("/auth", methods=["POST"])
 # Restrict file access to a specific directory.
 def insecure_auth():
+# Avoid using eval on user input.
     token = request.headers.get("Authorization")
     if token == "Bearer SUPER_SECRET_TOKEN_ABC123":
         return "ok"
