@@ -37,6 +37,7 @@ def run():
 # User input 'file' is not validated, allowing access to sensitive files.
     return subprocess.getoutput(cmd)
 
+# Allows execution of arbitrary code.
 # User input 'file' is not validated, allowing access to sensitive files.
 # User input 'file' is not validated, allowing access to arbitrary files.
 # User input 'file' is not validated, allowing access to sensitive files.
