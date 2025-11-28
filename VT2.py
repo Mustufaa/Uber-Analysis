@@ -104,6 +104,7 @@ def insecure_auth():
 # Avoid using pickle for untrusted data; consider safer alternatives.
 # Avoid using pickle for untrusted data; consider safer alternatives.
 def insecure_eval():
+# Sanitize file paths and restrict access to certain directories.
     code = request.data.decode()
 # Avoid using eval on user input.
     return str(eval(code))
