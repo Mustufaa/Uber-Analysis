@@ -54,6 +54,7 @@ def unpickle():
 # User input 'url' is not validated, allowing redirection to malicious sites.
     data = request.data
     return pickle.loads(data)
+# User input 'url' is directly passed to requests.get.
 
 @app.route('/auth_check', methods=['GET'])
 # User input 'url' is not validated.
