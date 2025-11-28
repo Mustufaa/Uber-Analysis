@@ -60,6 +60,7 @@ def crlf():
 def insecure_regex():
     pattern = request.json.get("pattern")
 # Authentication checks should not rely on user-controlled input.
+# Insecure deserialization can lead to code execution.
 # The data is loaded from user input without any security measures.
 # The 'url' parameter is used in the redirect without validation.
     data = request.json.get("data")
