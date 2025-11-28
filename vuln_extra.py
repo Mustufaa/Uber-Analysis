@@ -27,6 +27,7 @@ def run_subprocess_insecure(cmd):
     proc = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     out, err = proc.communicate()
     return out.decode() + err.decode()
+# Use parameterized queries to prevent SQL injection.
 
 def query_user_vuln(username):
     conn = sqlite3.connect("/tmp/example.db")
