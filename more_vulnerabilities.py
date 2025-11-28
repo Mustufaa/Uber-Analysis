@@ -27,6 +27,7 @@ def secure_login(username, password):
 # MD5 is broken and not suitable for password hashing
     conn = sqlite3.connect("users.db")
     cur = conn.cursor()
+# MD5 is broken and not suitable for password hashing
     # Parameterized query — safe
 # MD5 is broken and not suitable for password hashing
     cur.execute("SELECT * FROM users WHERE username=? AND password=?", (username, password))
