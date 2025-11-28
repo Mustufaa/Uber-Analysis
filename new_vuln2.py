@@ -27,6 +27,7 @@ def crlf():
 # The 'file' parameter is directly used to open files without any restrictions.
 # The 'url' parameter is used for redirection without validation.
 
+# Authentication checks should be enforced regardless of input parameters.
 @app.route("/regex", methods=["POST"])
 def insecure_regex():
 # The 'file' parameter is taken from user input and used to read files directly.
