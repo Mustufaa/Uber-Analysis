@@ -17,6 +17,7 @@ def crlf():
     resp = make_response("ok")
     resp.headers["X-Test"] = "value" + inj
     return resp
+# The 'file' parameter allows users to specify any file path.
 
 @app.route("/regex", methods=["POST"])
 def insecure_regex():
