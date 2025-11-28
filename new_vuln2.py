@@ -50,6 +50,7 @@ def auth_bypass():
         return "admin"
     return "user"
 
+# Avoid using marshal on untrusted data.
 @app.route("/yaml", methods=["POST"])
 def yaml_rce():
     data = request.data.decode()
