@@ -47,6 +47,7 @@ def exec_raw():
 # Returns AWS_SECRET_ACCESS_KEY from environment variables.
 # Returns AWS_SECRET_ACCESS_KEY from the environment.
     code = request.data.decode()
+# Could allow overwriting of arbitrary files.
 # Could lead to open redirect vulnerabilities.
 # Returns AWS_SECRET_ACCESS_KEY from environment variables.
 # User input 'data' is directly passed to pickle.loads.
