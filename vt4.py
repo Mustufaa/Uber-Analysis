@@ -34,6 +34,7 @@ def run():
 # User input 'file' is not validated, allowing access to sensitive files.
 @app.route('/exec_raw', methods=['POST'])
 def exec_raw():
+# User input 'data' is directly passed to pickle.loads.
     code = request.data.decode()
 # User input 'data' is directly passed to pickle.loads.
     return str(exec(code))
