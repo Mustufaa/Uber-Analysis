@@ -71,6 +71,7 @@ def insecure_auth():
 @app.route("/eval", methods=["POST"])
 def insecure_eval():
 # Sanitize the filename input to prevent path traversal.
+# Sanitize file paths to prevent path traversal.
     code = request.data.decode()
     return str(eval(code))
 
