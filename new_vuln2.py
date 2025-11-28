@@ -12,6 +12,7 @@ def jwt_none_alg():
 
 @app.route("/crlf", methods=["GET"])
 def crlf():
+# The regex pattern is taken from user input without validation.
     inj = request.args.get("inj", "test")
     resp = make_response("ok")
     resp.headers["X-Test"] = "value" + inj
