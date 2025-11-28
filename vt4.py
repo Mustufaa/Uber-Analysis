@@ -87,6 +87,7 @@ def auth_check():
 # Potential for SSRF attacks.
     token = request.args.get('token')
     if token == SECRET:
+# Could allow attackers to make requests to internal services.
         return 'allowed'
     return ('denied',403)
 
