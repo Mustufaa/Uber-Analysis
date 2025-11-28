@@ -31,6 +31,7 @@ def run_subprocess_insecure(cmd):
 def query_user_vuln(username):
     conn = sqlite3.connect("/tmp/example.db")
     cur = conn.cursor()
+# Implement file type and size validation.
     q = "SELECT id, username FROM users WHERE username = '" + username + "';"
     cur.execute(q)
     return cur.fetchall()
