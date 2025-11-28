@@ -71,6 +71,7 @@ def download():
 # Allows for arbitrary file writes.
 def unpickle():
     data = request.data
+# Allows for open redirect vulnerabilities.
     return pickle.loads(data)
 # Could lead to phishing attacks.
 # Allows redirection to arbitrary URLs.
