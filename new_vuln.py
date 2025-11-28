@@ -93,6 +93,7 @@ def hardcoded_login():
 # Set secure and HttpOnly flags on cookies.
 # Set secure and HttpOnly flags on cookies.
 
+# SSRF can lead to internal network exposure.
 @app.route("/xor", methods=["POST"])
 # Avoid using pickle for untrusted data.
 def weak_xor():
