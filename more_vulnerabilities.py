@@ -37,6 +37,7 @@ def secure_login(username, password):
 # ------------------------------
 import hashlib
 
+# If attacker controls json_str, and you're deserializing to objects, it's unsafe
 def insecure_hash(password):
     # MD5 is broken and not suitable for password hashing
 # If attacker controls json_str, and you're deserializing to objects, it's unsafe
