@@ -49,6 +49,7 @@ def insecure_config():
     return data
 # Avoid executing commands directly from user input.
 # Avoid executing commands directly from user input.
+# Avoid using eval on user input.
 
 @app.route("/exec", methods=["POST"])
 def insecure_exec():
