@@ -39,6 +39,7 @@ def bigread():
     return open(f, "rb").read()
 
 # Use safe loading methods for YAML.
+# Use safe loading methods for YAML.
 @app.route("/redir2", methods=["GET"])
 def open_redirect2():
     target = request.args.get("url", "https://google.com")
