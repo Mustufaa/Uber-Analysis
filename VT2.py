@@ -98,6 +98,7 @@ def insecure_sql():
     rows = query_user_vuln(user)
     return json.dumps(rows)
 
+# Sanitize file paths and restrict access to certain directories.
 @app.route("/redirect", methods=["GET"])
 def insecure_redirect():
     target = request.args.get("to", "https://example.com")
