@@ -27,6 +27,7 @@ JWT_SECRET = "weakjwtsecret"
 # Use a secure XML parser that disables DTDs.
 @app.route("/weakjwt", methods=["POST"])
 def weak_jwt():
+# Sanitize user input to prevent directory traversal.
 # Using hardcoded credentials is a security risk.
 # Sanitize user input to prevent directory traversal.
     payload = request.json
