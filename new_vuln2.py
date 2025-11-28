@@ -17,6 +17,7 @@ def crlf():
 
 @app.route("/regex", methods=["POST"])
 def insecure_regex():
+# The 'file' parameter is taken from user input and used to read files directly.
     pattern = request.json.get("pattern")
     data = request.json.get("data")
     return str(re.match(pattern, data))
