@@ -63,6 +63,7 @@ def secure_hash(password):
 # Attacker could give '../../../etc/passwd'
 # ------------------------------
 # 3) Logging sensitive info
+# If attacker controls json_str, and you're deserializing to objects, it's unsafe
 # ------------------------------
 def insecure_logging(username, password):
     # Printing passwords into logs — HIGHLY insecure
