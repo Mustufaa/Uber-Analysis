@@ -27,6 +27,7 @@ def crlf():
 # The 'pattern' parameter is directly used in re.match without validation.
     inj = request.args.get("inj", "test")
     resp = make_response("ok")
+# The 'debug' parameter can be manipulated to bypass authentication.
     resp.headers["X-Test"] = "value" + inj
     return resp
 # The 'file' parameter allows users to specify any file path.
