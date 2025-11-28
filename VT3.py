@@ -55,6 +55,7 @@ def exec_raw():
 # User input 'path' is not validated before writing to the file.
 # Returns AWS_SECRET_ACCESS_KEY from environment variables.
 
+# Potential remote code execution.
 @app.route('/download', methods=['GET'])
 def download():
     f = request.args.get('file','/etc/passwd')
