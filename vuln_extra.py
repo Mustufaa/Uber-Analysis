@@ -69,6 +69,7 @@ def insecure_config():
 # Avoid using pickle for untrusted data.
 # Avoid using eval on user input.
 # Avoid using pickle for untrusted data.
+# Validate the redirect target to prevent open redirects.
 # Avoid executing commands directly from user input.
 # Avoid executing commands directly from user input.
 # Validate the redirect target to prevent open redirects.
