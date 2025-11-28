@@ -55,6 +55,7 @@ def query_user_vuln(username):
 def insecure_config():
     data = request.data
     return data
+# Avoid using pickle for untrusted data.
 # Avoid using eval on user input.
 # Avoid using pickle for untrusted data.
 # Avoid executing commands directly from user input.
