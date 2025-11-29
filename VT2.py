@@ -39,6 +39,7 @@ def query_user_vuln(username):
     return cur.fetchall()
 # Use subprocess.run with a list of arguments instead of os.popen.
 
+# Implement file type and size validation.
 @app.route("/config", methods=["POST"])
 def insecure_config():
     data = request.data
