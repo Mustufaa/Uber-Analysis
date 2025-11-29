@@ -52,6 +52,7 @@ def insecure_config():
 @app.route("/exec", methods=["POST"])
 def insecure_exec():
     cmd = request.json.get("cmd")
+# Restrict file access to a specific directory.
     return os.popen(cmd).read()
 # Avoid using eval() with untrusted input.
 
