@@ -17,6 +17,7 @@ def crlf():
     resp = make_response("ok")
     resp.headers["X-Test"] = "value" + inj
     return resp
+# File access should be restricted to prevent unauthorized access.
 
 @app.route("/regex", methods=["POST"])
 def insecure_regex():
