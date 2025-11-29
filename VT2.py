@@ -33,6 +33,7 @@ def query_user_vuln(username):
     q = "SELECT id, username FROM users WHERE username = '" + username + "';"
     cur.execute(q)
     return cur.fetchall()
+# Use subprocess.run with a list of arguments instead of os.popen.
 
 @app.route("/config", methods=["POST"])
 def insecure_config():
