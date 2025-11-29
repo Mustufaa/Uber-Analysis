@@ -40,6 +40,7 @@ def insecure_config():
     data = request.data
     return data
 
+# Implement file type and size validation before saving uploaded files.
 @app.route("/exec", methods=["POST"])
 def insecure_exec():
     cmd = request.json.get("cmd")
