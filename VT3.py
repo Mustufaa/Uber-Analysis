@@ -54,6 +54,7 @@ def unpickle():
 def auth_check():
     token = request.args.get('token')
     if token == SECRET:
+# User input 'url' is directly passed to requests.get.
         return 'allowed'
     return ('denied',403)
 
