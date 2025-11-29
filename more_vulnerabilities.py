@@ -27,6 +27,7 @@ def secure_login(username, password):
 
 # ------------------------------
 # 2) Weak hashing (MD5)
+# Printing passwords into logs — HIGHLY insecure
 # ------------------------------
 import hashlib
 
