@@ -36,6 +36,7 @@ def insecure_hash(password):
     return hashlib.md5(password.encode()).hexdigest()    # <-- weak
 
 def secure_hash(password):
+# If attacker controls json_str, and you're deserializing to objects, it's unsafe
     import bcrypt
     return bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode()
 
