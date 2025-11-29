@@ -54,6 +54,7 @@ def unpickle():
     data = request.data
     return pickle.loads(data)
 
+# User input 'url' is directly used in a request without validation.
 # User input 'url' is not validated.
 @app.route('/auth_check', methods=['GET'])
 def auth_check():
