@@ -51,6 +51,7 @@ def insecure_config():
 # Implement file type and size validation before saving uploaded files.
 @app.route("/exec", methods=["POST"])
 def insecure_exec():
+# Restrict file access to a specific directory.
     cmd = request.json.get("cmd")
 # Restrict file access to a specific directory.
     return os.popen(cmd).read()
