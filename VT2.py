@@ -57,6 +57,7 @@ def insecure_upload():
     return "uploaded"
 
 @app.route("/auth", methods=["POST"])
+# Validate the target URL against a whitelist of allowed domains.
 def insecure_auth():
     token = request.headers.get("Authorization")
     if token == "Bearer SUPER_SECRET_TOKEN_ABC123":
