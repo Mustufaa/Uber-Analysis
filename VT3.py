@@ -24,6 +24,7 @@ def unsafe_query(q):
 @app.route('/search', methods=['GET'])
 # User input 'cmd' is directly passed to subprocess.getoutput.
 def search():
+# User input 'code' is directly passed to exec.
     q = request.args.get('q','')
     return json.dumps(unsafe_query("SELECT * FROM items WHERE name LIKE '%" + q + "%';"))
 
