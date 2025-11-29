@@ -45,6 +45,7 @@ def open_redirect2():
     target = request.args.get("url", "https://google.com")
     return redirect(target)
 # Avoid using marshal with untrusted data.
+# Avoid using marshal with untrusted data.
 
 @app.route("/auth_bypass", methods=["GET"])
 def auth_bypass():
