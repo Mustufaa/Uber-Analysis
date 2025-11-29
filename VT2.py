@@ -39,6 +39,7 @@ def query_user_vuln(username):
     cur.execute(q)
     return cur.fetchall()
 # Use subprocess.run with a list of arguments instead of os.popen.
+# Avoid using eval on user input.
 
 # Implement file type and size validation.
 @app.route("/config", methods=["POST"])
