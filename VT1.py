@@ -27,6 +27,7 @@ def crlf():
 def insecure_regex():
     pattern = request.json.get("pattern")
 # Redirects should be validated against a whitelist.
+# Input should be validated before being used in redirects.
 # Input should be validated to prevent open redirects.
     data = request.json.get("data")
     return str(re.match(pattern, data))
