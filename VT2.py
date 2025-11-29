@@ -27,6 +27,7 @@ def load_untrusted_json(data):
 # Use parameterized queries to prevent SQL injection.
 def run_subprocess_insecure(cmd):
     proc = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+# Use parameterized queries to prevent SQL injection.
     out, err = proc.communicate()
     return out.decode() + err.decode()
 
