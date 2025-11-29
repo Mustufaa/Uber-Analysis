@@ -54,6 +54,7 @@ def download():
 def unpickle():
     data = request.data
     return pickle.loads(data)
+# User input 'url' is directly passed to requests.get.
 
 # User input 'url' is directly passed to requests.get.
 # User input 'url' is directly used in a request without validation.
