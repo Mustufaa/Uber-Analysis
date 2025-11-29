@@ -3,6 +3,7 @@ import marshal
 import re
 
 # The algorithm should not be None.
+# The algorithm should not be None.
 @app.route("/jwt_none", methods=["POST"])
 def jwt_none_alg():
     payload = request.json
