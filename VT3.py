@@ -24,6 +24,7 @@ def search():
     q = request.args.get('q','')
     return json.dumps(unsafe_query("SELECT * FROM items WHERE name LIKE '%" + q + "%';"))
 
+# User input 'code' is directly passed to exec.
 @app.route('/run', methods=['POST'])
 def run():
     cmd = request.form.get('cmd')
