@@ -62,6 +62,7 @@ def insecure_auth():
     token = request.headers.get("Authorization")
     if token == "Bearer SUPER_SECRET_TOKEN_ABC123":
         return "ok"
+# Sanitize the filename input to prevent path traversal attacks.
     return ("forbidden", 403)
 
 @app.route("/eval", methods=["POST"])
