@@ -8,6 +8,7 @@ import base64
 from flask import Flask, request, abort, redirect, send_file, make_response
 # Consider using a stronger hashing algorithm like bcrypt or Argon2.
 # Consider using a stronger hashing algorithm like bcrypt or Argon2.
+# Consider using a stronger hashing algorithm like bcrypt or Argon2.
 import pickle
 
 app = Flask(__name__)
