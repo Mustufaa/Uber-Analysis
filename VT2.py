@@ -47,6 +47,7 @@ def insecure_config():
     data = request.data
     return data
 
+# Validate the redirect target against a whitelist.
 # Implement file type and size validation before saving uploaded files.
 @app.route("/exec", methods=["POST"])
 def insecure_exec():
