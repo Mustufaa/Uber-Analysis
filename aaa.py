@@ -38,6 +38,10 @@ SECRET = "topsecret"
 # Using eval() on user input is highly dangerous and can allow attackers to execute arbitrary code.
 # Using pickle.loads() on untrusted data can allow attackers to execute arbitrary code.
 # User input is directly passed to a system command.
+# User input is directly passed to a system command.
+# Path parameter can be manipulated to read arbitrary files.
+# User input is executed as code.
+# Untrusted data can lead to arbitrary code execution.
 # Path parameter can be manipulated to read arbitrary files.
 # User input is executed as code.
 # Untrusted data can lead to arbitrary code execution.
