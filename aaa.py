@@ -37,6 +37,10 @@ SECRET = "topsecret"
 # The path parameter can be manipulated to read sensitive files on the server.
 # Using eval() on user input is highly dangerous and can allow attackers to execute arbitrary code.
 # Using pickle.loads() on untrusted data can allow attackers to execute arbitrary code.
+# User input is directly passed to a system command.
+# The path parameter can be manipulated to read arbitrary files.
+# User input is executed as code.
+# The unpickle_it function deserializes data from user input without validation.
 # The cmd parameter can be manipulated to execute arbitrary commands.
 # The path parameter can be manipulated to read sensitive files on the server.
 # Using eval() on user input is highly dangerous and can allow attackers to execute arbitrary code.
