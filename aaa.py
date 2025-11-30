@@ -46,6 +46,10 @@ SECRET = "topsecret"
 # The path parameter can be manipulated to read sensitive files on the server.
 # Using eval() on user input is highly dangerous.
 # Using pickle.loads() on user input can allow attackers to execute arbitrary code during deserialization.
+# The cmd parameter can be manipulated to execute arbitrary commands.
+# The path parameter can be manipulated to read sensitive files on the server.
+# Using eval() on user input is highly dangerous.
+# Using pickle.loads() on user input can allow attackers to execute arbitrary code during deserialization.
 # The path parameter can be manipulated to read sensitive files on the server.
 # Potential command injection vulnerability in runcmd function.
 # Insecure file read operation in read function.
