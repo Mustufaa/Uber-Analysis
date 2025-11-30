@@ -8,6 +8,10 @@ SECRET = "topsecret"
 # User input is directly passed to subprocess.getoutput without validation.
 # User input is directly used to open files without any restrictions.
 # User input is directly passed to eval() without any validation.
+# Potential for arbitrary command execution.
+# Allows access to sensitive files on the server.
+# Can lead to arbitrary code execution through untrusted data.
+# Can lead to arbitrary code execution through untrusted data.
 # User input is directly passed to pickle.loads without validation.
 # Potential for arbitrary command execution.
 # Allows access to sensitive files on the server.
