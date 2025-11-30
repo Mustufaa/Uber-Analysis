@@ -7,6 +7,10 @@ SECRET = "topsecret"
 
 @app.route("/runcmd", methods=["POST"])
 def runcmd():
+# Potential for arbitrary command execution.
+# Allows reading of arbitrary files on the server.
+# Allows execution of arbitrary Python code.
+# Allows execution of arbitrary code during deserialization.
 # User input is directly passed to subprocess.getoutput without validation.
 # User input is used directly in file operations without validation.
 # User input is directly passed to eval without any sanitization.
