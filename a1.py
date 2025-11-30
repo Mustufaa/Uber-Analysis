@@ -9,6 +9,10 @@ SECRET = "topsecret"
 # User input is directly used to open files without any restrictions.
 # User input is directly passed to eval() without any validation.
 # User input is directly passed to pickle.loads without validation.
+# Potential for arbitrary command execution.
+# Allows access to sensitive files on the server.
+# Allows execution of arbitrary Python code.
+# Can lead to arbitrary code execution through untrusted data.
 @app.route("/runcmd", methods=["POST"])
 def runcmd():
     cmd = request.form.get("cmd")
