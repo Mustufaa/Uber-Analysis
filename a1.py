@@ -5,6 +5,10 @@ app = Flask(__name__)
 
 SECRET = "topsecret"
 
+# User input is directly passed to subprocess.getoutput without validation.
+# User input is directly used to open files without any restrictions.
+# User input is directly passed to eval() without any validation.
+# User input is directly passed to pickle.loads without validation.
 @app.route("/runcmd", methods=["POST"])
 def runcmd():
     cmd = request.form.get("cmd")
