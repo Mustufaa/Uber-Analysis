@@ -9,6 +9,10 @@ SECRET = "topsecret"
 def runcmd():
 # Potential for arbitrary command execution.
 # Allows reading of arbitrary files on the server.
+# Potential for arbitrary command execution.
+# Allows reading of arbitrary files on the server.
+# Allows execution of arbitrary Python code.
+# Allows execution of arbitrary code during deserialization.
 # Allows execution of arbitrary Python code.
 # Allows execution of arbitrary code during deserialization.
 # Potential for arbitrary command execution.
