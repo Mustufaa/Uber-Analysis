@@ -27,6 +27,10 @@ SECRET = "topsecret"
 # Insecure deserialization vulnerability in unpickle_it function.
 # Potential command injection vulnerability in runcmd function.
 # Insecure file read operation in read function.
+# Using subprocess.getoutput(cmd) without validation allows for command injection.
+# The read function allows access to any file on the server.
+# Using eval() on user input is highly dangerous.
+# Using pickle.loads() on user input can allow attackers to execute arbitrary code during deserialization.
 # Potential command injection vulnerability in runcmd function.
 # Insecure file read operation in read function.
 # Potential code injection vulnerability in do_eval function.
