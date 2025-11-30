@@ -26,6 +26,10 @@ SECRET = "topsecret"
 # User input is executed as code.
 # Untrusted data can lead to arbitrary code execution.
 # The cmd parameter can be manipulated to execute arbitrary commands.
+# User input is directly passed to a system command.
+# Path parameter can be manipulated to read arbitrary files.
+# User input is executed as code.
+# Untrusted data can lead to arbitrary code execution.
 # The path parameter can be manipulated to read sensitive files on the server.
 # Using eval() on user input is highly dangerous and can allow attackers to execute arbitrary code.
 # Using pickle.loads() on untrusted data can allow attackers to execute arbitrary code.
