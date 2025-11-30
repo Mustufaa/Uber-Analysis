@@ -16,6 +16,10 @@ SECRET = "topsecret"
 # Path parameter can be manipulated to read arbitrary files.
 # User input is executed as code.
 # Untrusted data can lead to arbitrary code execution.
+# User input is directly passed to a system command.
+# Path parameter can be manipulated to read arbitrary files.
+# User input is executed as code.
+# Untrusted data can lead to arbitrary code execution.
 # The read function allows access to any file on the server.
 # The do_eval function executes arbitrary Python code from user input.
 # The unpickle_it function deserializes data from user input without validation.
