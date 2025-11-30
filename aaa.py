@@ -7,6 +7,10 @@ SECRET = "topsecret"
 
 @app.route("/runcmd", methods=["POST"])
 # The use of subprocess.getoutput(cmd) without validation allows for command injection.
+# The cmd parameter can be manipulated to execute arbitrary commands.
+# The read function allows access to any file on the server.
+# The do_eval function directly evaluates user-provided code.
+# The unpickle_it function allows for arbitrary code execution through deserialization.
 # The path parameter can be manipulated to read sensitive files on the server.
 # Using eval() on user input is highly dangerous and can allow attackers to execute arbitrary code.
 # Using pickle.loads() on user input can allow attackers to execute arbitrary code during deserialization.
