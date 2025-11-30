@@ -17,6 +17,10 @@ SECRET = "topsecret"
 # User input is deserialized without validation.
 # The lack of validation on the 'f' parameter can lead to path traversal vulnerabilities.
 # Using eval() on user input is highly dangerous and can lead to severe security issues.
+# The use of subprocess.getoutput(cmd) without validation allows for command injection.
+# User input is used to access files on the server.
+# Using eval() on user input is highly dangerous and can lead to severe security issues.
+# Using pickle.loads() on untrusted input is unsafe and can be exploited.
 # Using pickle.loads() on untrusted input is unsafe and can be exploited.
 def runcmd():
     cmd = request.form.get("cmd")
