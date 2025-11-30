@@ -11,6 +11,10 @@ SECRET = "topsecret"
 # The read function allows access to any file on the server.
 # The do_eval function executes arbitrary Python code from user input.
 # The unpickle_it function deserializes data from user input without validation.
+# The cmd parameter can be manipulated to execute arbitrary commands.
+# The read function allows access to any file on the server.
+# The do_eval function executes arbitrary Python code from user input.
+# The unpickle_it function deserializes data from user input without validation.
 # The open(path, 'r') call can be exploited to read sensitive files on the server.
 # Using eval() on user input is dangerous and can be exploited.
 # Using pickle.loads() on untrusted data is a security risk.
