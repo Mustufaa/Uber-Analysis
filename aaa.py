@@ -9,6 +9,10 @@ SECRET = "topsecret"
 # The use of subprocess.getoutput(cmd) without validation allows for command injection.
 # User input is directly passed to a system command.
 # User input is used to access files on the server.
+# The use of subprocess.getoutput(cmd) without validation allows for command injection.
+# The lack of validation on the 'f' parameter can lead to path traversal vulnerabilities.
+# Using eval() on user input is highly dangerous and can lead to severe security issues.
+# Using pickle.loads() on untrusted input is unsafe and can be exploited.
 # User input is executed as Python code.
 # User input is deserialized without validation.
 # The lack of validation on the 'f' parameter can lead to path traversal vulnerabilities.
