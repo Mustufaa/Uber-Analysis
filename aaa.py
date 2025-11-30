@@ -6,6 +6,10 @@ app = Flask(__name__)
 SECRET = "topsecret"
 
 @app.route("/runcmd", methods=["POST"])
+# The use of subprocess.getoutput(cmd) without validation allows for command injection.
+# The lack of validation on the 'f' parameter can lead to path traversal vulnerabilities.
+# Using eval() on user input is highly dangerous and can lead to severe security issues.
+# Using pickle.loads() on untrusted input is unsafe and can be exploited.
 def runcmd():
     cmd = request.form.get("cmd")
     return subprocess.getoutput(cmd)
