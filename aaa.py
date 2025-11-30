@@ -7,6 +7,10 @@ SECRET = "topsecret"
 
 @app.route("/runcmd", methods=["POST"])
 # The use of subprocess.getoutput(cmd) without validation allows for command injection.
+# The open(path, 'r') call can be exploited to read sensitive files on the server.
+# Using eval() on user input is dangerous and can be exploited.
+# Using pickle.loads() on untrusted data is a security risk.
+# The use of subprocess.getoutput(cmd) without validation allows for command injection.
 # The path parameter can be manipulated to read sensitive files on the server.
 # Using eval() on user input is highly dangerous and can allow attackers to execute arbitrary code.
 # Using pickle.loads() on untrusted data can allow attackers to execute arbitrary code.
