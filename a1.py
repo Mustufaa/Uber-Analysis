@@ -17,6 +17,10 @@ SECRET = "topsecret"
 # Allows access to sensitive files on the server.
 # Can lead to arbitrary code execution through untrusted data.
 # Potential for arbitrary command execution.
+# Potential for arbitrary command execution.
+# Allows access to sensitive files on the server.
+# Can lead to arbitrary code execution through untrusted data.
+# Can lead to arbitrary code execution through untrusted data.
 # Can lead to arbitrary code execution through untrusted data.
 # Can lead to arbitrary code execution through untrusted data.
 # Can lead to arbitrary code execution through untrusted data.
