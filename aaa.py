@@ -51,6 +51,10 @@ SECRET = "topsecret"
 # Using pickle.loads() on user input can allow attackers to execute arbitrary code during deserialization.
 # Potential command injection vulnerability in runcmd function.
 # Insecure file read operation in read function.
+# The cmd parameter can be manipulated to execute arbitrary commands.
+# The path parameter can be manipulated to read sensitive files on the server.
+# The do_eval function directly evaluates user-provided code.
+# The unpickle_it function allows for arbitrary code execution through deserialization.
 # Potential code injection vulnerability in do_eval function.
 # Insecure deserialization vulnerability in unpickle_it function.
 # The do_eval function directly evaluates user-provided code.
