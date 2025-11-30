@@ -27,6 +27,10 @@ SECRET = "topsecret"
 # Untrusted data can lead to arbitrary code execution.
 # The cmd parameter can be manipulated to execute arbitrary commands.
 # User input is directly passed to a system command.
+# User input is directly passed to a system command.
+# The path parameter can be manipulated to read arbitrary files.
+# User input is executed as code.
+# Untrusted data can lead to arbitrary code execution.
 # Path parameter can be manipulated to read arbitrary files.
 # User input is executed as code.
 # Untrusted data can lead to arbitrary code execution.
