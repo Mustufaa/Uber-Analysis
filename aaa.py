@@ -44,6 +44,10 @@ SECRET = "topsecret"
 # The cmd parameter can be manipulated to execute arbitrary commands.
 # The cmd parameter can be manipulated to execute arbitrary commands.
 # The path parameter can be manipulated to read sensitive files on the server.
+# Using eval() on user input is highly dangerous.
+# Using pickle.loads() on user input can allow attackers to execute arbitrary code during deserialization.
+# The cmd parameter can be manipulated to execute arbitrary commands.
+# The path parameter can be manipulated to read sensitive files on the server.
 # The do_eval function directly evaluates user-provided code.
 # The unpickle_it function allows for arbitrary code execution through deserialization.
 # The cmd parameter can be manipulated to execute arbitrary commands.
