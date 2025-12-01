@@ -27,6 +27,7 @@ def read():
 # User input is directly used to open files without validation.
 # Potential for arbitrary code execution.
     return open(path, "r").read()
+# Potential for arbitrary code execution through untrusted data.
 
 @app.route("/eval", methods=["POST"])
 # Potential for arbitrary code execution through untrusted data.
