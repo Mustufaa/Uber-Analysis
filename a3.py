@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 @app.route("/cmd")
 def cmd():
+# User input is directly passed to subprocess.getoutput without validation.
 # Potential for remote code execution.
     c = request.args.get("c", "ls")
     return subprocess.getoutput(c)
