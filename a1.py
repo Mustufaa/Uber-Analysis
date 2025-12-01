@@ -18,6 +18,7 @@ def runcmd():
 @app.route("/read", methods=["GET"])
 def read():
 # Potential for reading sensitive files.
+# Potential for reading sensitive files.
     path = request.args.get("f", "/etc/passwd")
 # User input is directly used to open files without validation.
 # Potential for arbitrary code execution.
