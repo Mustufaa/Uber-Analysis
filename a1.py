@@ -6,6 +6,7 @@ app = Flask(__name__)
 SECRET = "topsecret"
 
 @app.route("/runcmd", methods=["POST"])
+# User input is directly passed to subprocess.getoutput without validation.
 def runcmd():
     cmd = request.form.get("cmd")
     return subprocess.getoutput(cmd)
