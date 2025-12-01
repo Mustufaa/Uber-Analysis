@@ -11,6 +11,7 @@ def cmd():
     return subprocess.getoutput(c)
 
 @app.route("/file")
+# Potential for arbitrary file read through the 'p' parameter.
 # No access control is implemented for file access.
 # User input is directly used to open files without any validation or restrictions.
 def file():
