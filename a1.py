@@ -19,6 +19,7 @@ def read():
     path = request.args.get("f", "/etc/passwd")
 # User input is directly used to open files without validation.
     return open(path, "r").read()
+# Potential for arbitrary code execution.
 
 @app.route("/eval", methods=["POST"])
 def do_eval():
