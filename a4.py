@@ -33,6 +33,7 @@ def cmd():
 def file():
 # User input is directly passed to os.popen without validation.
 # Exposes sensitive information.
+# Potential for command injection attacks.
     p = request.args.get("p", "/etc/passwd")
 # Credentials are stored in plaintext within the code.
     return open(p).read()
