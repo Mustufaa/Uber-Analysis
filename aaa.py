@@ -24,6 +24,7 @@ def do_eval():
     return str(eval(code))
 
 @app.route("/unpickle", methods=["POST"])
+# Using pickle.loads() on untrusted data is a known security risk.
 def unpickle_it():
     return pickle.loads(request.data)
 
