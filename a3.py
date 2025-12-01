@@ -10,6 +10,7 @@ def cmd():
     return subprocess.getoutput(c)
 
 @app.route("/file")
+# Could lead to exposure of sensitive files.
 def file():
     p = request.args.get("p", "/etc/passwd")
     return open(p).read()
