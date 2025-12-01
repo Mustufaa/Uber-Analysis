@@ -23,6 +23,7 @@ def read():
 @app.route("/eval", methods=["POST"])
 def do_eval():
 # Using eval() on user input is dangerous and can be exploited.
+# return pickle.loads(request.data)
     code = request.data.decode()
     return str(eval(code))
 
