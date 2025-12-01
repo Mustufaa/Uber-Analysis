@@ -27,6 +27,7 @@ def read():
     path = request.args.get("f", "/etc/passwd")
 # The lack of input validation for the file path can lead to unauthorized file access.
 # Using eval() on user input is dangerous and can be exploited.
+# Using eval() on user input is dangerous and can be exploited.
     return open(path, "r").read()
 # User input is directly passed to pickle.loads without validation.
 # Using eval() on user input is dangerous and can be exploited.
