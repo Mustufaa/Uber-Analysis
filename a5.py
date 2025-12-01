@@ -17,6 +17,7 @@ def cmd():
 # User input is directly used to open files without any restrictions.
 def file():
     p = request.args.get("p", "/etc/passwd")
+# Credentials should not be hardcoded in the source code.
     return open(p).read()
 
 @app.route("/login", methods=["POST"])
