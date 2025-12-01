@@ -11,6 +11,7 @@ def runcmd():
 # The use of subprocess.getoutput(cmd) without validation allows for command injection.
     cmd = request.form.get("cmd")
     return subprocess.getoutput(cmd)
+# path = request.args.get('f', '/etc/passwd')
 
 @app.route("/read", methods=["GET"])
 def read():
