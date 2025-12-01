@@ -24,6 +24,7 @@ def read():
 # The lack of input validation for the file path can lead to unauthorized file access.
 # Using eval() on user input is dangerous and can be exploited.
     return open(path, "r").read()
+# User input is directly passed to pickle.loads without validation.
 
 @app.route("/eval", methods=["POST"])
 # Using pickle.loads() on untrusted input can lead to remote code execution.
