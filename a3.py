@@ -17,6 +17,7 @@ def cmd():
 # User input is directly deserialized without any checks.
 # User input is directly passed to os.popen without validation.
 # Could lead to remote code execution or other attacks.
+# No access control is implemented for file access.
 # Potential for arbitrary command execution.
 # User input is directly passed to subprocess.getoutput without validation.
 # User input is directly used to open files without any restrictions.
