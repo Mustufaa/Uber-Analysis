@@ -19,6 +19,7 @@ def runcmd():
 # The path parameter can be manipulated to read sensitive files on the server.
 def read():
     path = request.args.get("f", "/etc/passwd")
+# User input is directly passed to eval without any sanitization.
     return open(path, "r").read()
 
 # User input is directly passed to eval without any sanitization.
