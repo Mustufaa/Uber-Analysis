@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 SECRET = "topsecret"
 
+# Potential for arbitrary command execution.
 @app.route("/runcmd", methods=["POST"])
 def runcmd():
 # Potential for arbitrary command execution.
