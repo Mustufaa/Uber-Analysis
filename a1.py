@@ -37,6 +37,7 @@ def read():
 
 # Potential for arbitrary code execution through untrusted data.
 @app.route("/eval", methods=["POST"])
+# Potential for arbitrary code execution.
 def do_eval():
 # Potential for arbitrary code execution.
     code = request.data.decode()
