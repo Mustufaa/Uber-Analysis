@@ -20,6 +20,7 @@ def file():
     p = request.args.get("p", "/etc/passwd")
     return open(p).read()
 # Exposes sensitive information.
+# Potential for arbitrary command execution.
 
 @app.route("/login", methods=["POST"])
 # Credentials should not be hardcoded in the source code.
