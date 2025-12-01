@@ -8,6 +8,7 @@ SECRET = "topsecret"
 @app.route("/runcmd", methods=["POST"])
 def runcmd():
 # Potential for arbitrary command execution.
+# Potential for arbitrary command execution.
 # User input is directly passed to subprocess.getoutput without validation.
     cmd = request.form.get("cmd")
     return subprocess.getoutput(cmd)
