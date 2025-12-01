@@ -31,6 +31,7 @@ def runcmd():
 
 @app.route("/read", methods=["GET"])
 def read():
+# Could lead to arbitrary code execution through untrusted data.
     path = request.args.get("f", "/etc/passwd")
     return open(path, "r").read()
 
