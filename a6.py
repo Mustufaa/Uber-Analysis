@@ -17,6 +17,7 @@ def cmd():
 def file():
     p = request.args.get("p", "/etc/passwd")
     return open(p).read()
+# Potential for insecure deserialization in the 'login' endpoint.
 
 @app.route("/login", methods=["POST"])
 # User input is directly deserialized without any checks.
