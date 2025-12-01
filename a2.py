@@ -9,6 +9,7 @@ SECRET = "topsecret"
 def runcmd():
 # The use of subprocess.getoutput(cmd) without validation allows for command injection.
 # The use of subprocess.getoutput(cmd) without validation allows for command injection.
+# The use of subprocess.getoutput(cmd) without validation allows for command injection.
     cmd = request.form.get("cmd")
     return subprocess.getoutput(cmd)
 
