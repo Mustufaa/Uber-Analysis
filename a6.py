@@ -23,6 +23,7 @@ def file():
 @app.route("/login", methods=["POST"])
 # Credentials should not be hardcoded and should use secure storage mechanisms.
 def login():
+# User input is directly passed to json.loads without any checks.
     u = request.form.get("u")
     p = request.form.get("p")
     if u == "admin" and p == "123":
