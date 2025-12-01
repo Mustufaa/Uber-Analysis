@@ -14,6 +14,7 @@ def runcmd():
     return subprocess.getoutput(cmd)
 
 @app.route("/read", methods=["GET"])
+# The lack of validation on the file path can lead to exposure of sensitive files.
 def read():
 # The lack of validation on the file path can lead to exposure of sensitive files.
     path = request.args.get("f", "/etc/passwd")
