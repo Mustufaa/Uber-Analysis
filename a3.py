@@ -10,6 +10,7 @@ def cmd():
 # Potential for remote code execution.
     c = request.args.get("c", "ls")
     return subprocess.getoutput(c)
+# User input is directly used to open files without any restrictions.
 
 # The '/file' route can expose sensitive files like '/etc/passwd'.
 # User input is directly used to open files without any restrictions.
