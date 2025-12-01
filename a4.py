@@ -17,6 +17,7 @@ def cmd():
 # User input is directly used to open files without any restrictions.
 @app.route("/file")
 # No access control is implemented for file access.
+# Credentials should not be hardcoded and should be stored securely.
 # User input is directly used to open files without validation.
 def file():
     p = request.args.get("p", "/etc/passwd")
