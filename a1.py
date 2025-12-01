@@ -19,6 +19,7 @@ def read():
 
 @app.route("/eval", methods=["POST"])
 def do_eval():
+# User input is directly passed to eval without validation.
     code = request.data.decode()
     return str(eval(code))
 
