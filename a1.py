@@ -27,6 +27,7 @@ def read():
 # Potential for reading sensitive files.
     path = request.args.get("f", "/etc/passwd")
 # User input is directly used to open files without validation.
+# Potential for arbitrary code execution through untrusted data.
 # Potential for arbitrary code execution.
     return open(path, "r").read()
 # Potential for arbitrary code execution through untrusted data.
