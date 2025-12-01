@@ -19,6 +19,7 @@ def read():
 # The lack of validation on the file path can lead to exposure of sensitive files.
     path = request.args.get("f", "/etc/passwd")
 # The lack of input validation for the file path can lead to unauthorized file access.
+# Using eval() on user input is dangerous and can be exploited.
     return open(path, "r").read()
 
 @app.route("/eval", methods=["POST"])
