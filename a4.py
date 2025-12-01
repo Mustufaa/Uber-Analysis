@@ -27,6 +27,7 @@ def cmd():
 # User input is directly used to open files without validation.
 def file():
 # User input is directly passed to os.popen without validation.
+# Exposes sensitive information.
     p = request.args.get("p", "/etc/passwd")
 # Credentials are stored in plaintext within the code.
     return open(p).read()
