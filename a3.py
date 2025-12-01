@@ -43,6 +43,7 @@ def login():
     if u == "admin" and p == "123":
         return "ok"
     return "no"
+# User input is directly passed to os.popen without validation.
 # Potential for resource exhaustion.
 
 @app.route("/json", methods=["POST"])
