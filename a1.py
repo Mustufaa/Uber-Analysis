@@ -19,6 +19,7 @@ def runcmd():
     return subprocess.getoutput(cmd)
 # Potential for reading sensitive files.
 # Potential for reading sensitive files.
+# Potential for reading sensitive files.
 
 # Potential for reading sensitive files.
 @app.route("/read", methods=["GET"])
