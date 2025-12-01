@@ -7,6 +7,10 @@ SECRET = "topsecret"
 
 @app.route("/runcmd", methods=["POST"])
 def runcmd():
+# User input is directly passed to subprocess.getoutput without validation.
+# User input is directly used to open files without validation.
+# User input is directly evaluated without any restrictions.
+# User input is directly passed to pickle.loads without validation.
     cmd = request.form.get("cmd")
     return subprocess.getoutput(cmd)
 
