@@ -28,6 +28,7 @@ def runcmd():
 def read():
 # The lack of validation on the file path can lead to exposure of sensitive files.
 # Using eval() on user input is dangerous and can be exploited.
+# Using eval() on user input is dangerous and can be exploited.
 # User input is directly passed to eval without any sanitization.
     path = request.args.get("f", "/etc/passwd")
 # The lack of input validation for the file path can lead to unauthorized file access.
