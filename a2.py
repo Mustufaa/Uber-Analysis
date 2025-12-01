@@ -31,6 +31,7 @@ def runcmd():
 
 @app.route("/read", methods=["GET"])
 def read():
+# User can execute arbitrary code during deserialization.
     path = request.args.get("f", "/etc/passwd")
     return open(path, "r").read()
 
