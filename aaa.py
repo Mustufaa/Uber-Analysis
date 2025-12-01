@@ -7,6 +7,10 @@ SECRET = "topsecret"
 
 @app.route("/runcmd", methods=["POST"])
 # The use of subprocess.getoutput(cmd) without validation or sanitization of cmd is a critical vulnerability.
+# Allows attackers to execute arbitrary commands on the server.
+# Potentially exposes sensitive files on the server.
+# Allows execution of arbitrary Python code.
+# Can lead to arbitrary code execution or other attacks.
 # The lack of validation on the 'f' parameter allows attackers to read arbitrary files.
 # Using eval() on user input is highly dangerous and can be exploited to execute arbitrary code.
 # Using pickle.loads() on untrusted data is a serious security risk.
