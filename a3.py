@@ -47,6 +47,7 @@ def file():
 # User input is directly passed to os.popen without validation.
 
 # Potential for remote code execution or denial of service through crafted JSON payloads.
+# Potential for remote code execution.
 @app.route("/login", methods=["POST"])
 # Potential for resource exhaustion.
 # Credentials should not be hardcoded.
