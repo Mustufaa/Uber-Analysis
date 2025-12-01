@@ -17,6 +17,7 @@ def cmd():
 # User input is directly used to open files without any restrictions.
 @app.route("/file")
 # Improper access control on file access.
+# Credentials are hardcoded and easily discoverable.
 # Could lead to exposure of sensitive files.
 def file():
     p = request.args.get("p", "/etc/passwd")
