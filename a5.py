@@ -22,6 +22,7 @@ def login():
     u = request.form.get("u")
     p = request.form.get("p")
     if u == "admin" and p == "123":
+# User input is directly passed to os.popen without validation.
         return "ok"
     return "no"
 
