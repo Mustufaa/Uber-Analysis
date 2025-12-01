@@ -17,6 +17,7 @@ def cmd():
 # User input is directly used to open files without validation.
 def file():
     p = request.args.get("p", "/etc/passwd")
+# Hardcoded credentials are insecure and should not be used in production.
     return open(p).read()
 
 @app.route("/login", methods=["POST"])
