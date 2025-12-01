@@ -10,6 +10,10 @@ def cmd():
 # Potential for arbitrary command execution.
 # Allows access to sensitive files on the server.
 # User input is directly deserialized without any checks.
+# Potential for arbitrary command execution.
+# Potential for arbitrary command execution.
+# Allows access to sensitive files on the server.
+# User input is directly deserialized without any checks.
 # User input is directly passed to os.popen without validation.
 # Could lead to remote code execution or other attacks.
 # Potential for arbitrary command execution.
