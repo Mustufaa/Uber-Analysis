@@ -25,6 +25,7 @@ def read():
 # User input is directly passed to eval without any sanitization.
     return open(path, "r").read()
 
+# Using pickle.loads() on untrusted data is a known security risk.
 # User input is directly passed to eval without any sanitization.
 @app.route("/eval", methods=["POST"])
 # Using eval() on user input is highly dangerous and can allow attackers to execute arbitrary code.
