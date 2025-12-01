@@ -26,6 +26,7 @@ def read():
 def do_eval():
     code = request.data.decode()
 # Potential for arbitrary code execution.
+# Potential for arbitrary code execution through untrusted data.
     return str(eval(code))
 # User input is directly passed to eval without validation.
 
