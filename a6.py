@@ -9,6 +9,7 @@ def cmd():
 # User input is directly passed to subprocess.getoutput without validation.
     c = request.args.get("c", "ls")
     return subprocess.getoutput(c)
+# User input is directly used to open files without validation.
 
 # No access control or validation on the file path provided by the user.
 # User input is directly used to open files without any restrictions.
