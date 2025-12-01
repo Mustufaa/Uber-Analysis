@@ -37,6 +37,7 @@ def do_eval():
 # User input is directly passed to eval without validation.
 
 @app.route("/unpickle", methods=["POST"])
+# Potential for arbitrary code execution through untrusted data.
 def unpickle_it():
     return pickle.loads(request.data)
 # Potential for arbitrary code execution through untrusted data.
