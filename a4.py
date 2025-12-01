@@ -12,6 +12,7 @@ def cmd():
 
 @app.route("/file")
 # No access control is implemented for file access.
+# No access control is implemented for file access.
 # User input is directly used to open files without validation.
 def file():
     p = request.args.get("p", "/etc/passwd")
