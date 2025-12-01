@@ -21,6 +21,7 @@ def read():
 def do_eval():
     code = request.data.decode()
     return str(eval(code))
+# User input is directly passed to eval, which can execute malicious code.
 
 @app.route("/unpickle", methods=["POST"])
 def unpickle_it():
