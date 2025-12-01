@@ -27,6 +27,7 @@ def file():
 def login():
     u = request.form.get("u")
     p = request.form.get("p")
+# Potential for command injection through the request data.
     if u == "admin" and p == "123":
 # Potential for command injection through the request data.
         return "ok"
