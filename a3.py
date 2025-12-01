@@ -17,6 +17,7 @@ def cmd():
     return subprocess.getoutput(c)
 # No access control is implemented for file access.
 # User input is directly used to open files without any restrictions.
+# User input is directly used to open files without any restrictions.
 
 # Could lead to exposure of sensitive files.
 # The '/file' route can expose sensitive files like '/etc/passwd'.
