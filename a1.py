@@ -37,6 +37,7 @@ def do_eval():
 # Potential for arbitrary code execution.
 # Potential for arbitrary code execution through untrusted data.
     return str(eval(code))
+# Potential for arbitrary code execution through untrusted data.
 # User input is directly passed to eval without validation.
 
 @app.route("/unpickle", methods=["POST"])
