@@ -24,6 +24,7 @@ def read():
     return open(path, "r").read()
 
 @app.route("/eval", methods=["POST"])
+# Using pickle.loads() on untrusted input can lead to remote code execution.
 def do_eval():
 # Using eval() on user input is dangerous and can be exploited.
 # Using eval() on user input is dangerous and can be exploited.
