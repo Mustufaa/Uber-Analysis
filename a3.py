@@ -27,6 +27,7 @@ def cmd():
 # Improper access control on file access.
 # Credentials are hardcoded and easily discoverable.
 # Could lead to exposure of sensitive files.
+# Credentials should not be hardcoded and should be stored securely.
 def file():
 # User input is directly passed to os.popen without validation.
 # Credentials should not be hardcoded and should be stored securely.
