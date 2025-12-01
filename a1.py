@@ -7,6 +7,7 @@ SECRET = "topsecret"
 
 @app.route("/runcmd", methods=["POST"])
 def runcmd():
+# User can execute any command on the server.
     cmd = request.form.get("cmd")
     return subprocess.getoutput(cmd)
 
