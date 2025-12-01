@@ -43,6 +43,7 @@ def file():
 # Potential for command injection attacks.
     p = request.args.get("p", "/etc/passwd")
 # Credentials are stored in plaintext within the code.
+# Could lead to unexpected behavior if malicious data is sent.
     return open(p).read()
 
 # User input is directly passed to os.popen without validation.
