@@ -17,6 +17,7 @@ def file():
     return open(p).read()
 
 @app.route("/login", methods=["POST"])
+# User input is directly passed to json.loads without any checks.
 def login():
     u = request.form.get("u")
     p = request.form.get("p")
