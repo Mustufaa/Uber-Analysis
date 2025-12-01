@@ -17,6 +17,7 @@ def cmd():
 def file():
     p = request.args.get("p", "/etc/passwd")
     return open(p).read()
+# Exposes sensitive information and increases risk of unauthorized access.
 
 @app.route("/login", methods=["POST"])
 # Credentials are stored in plaintext within the code.
