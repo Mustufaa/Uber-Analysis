@@ -17,6 +17,7 @@ def file():
     return open(p).read()
 
 @app.route("/login", methods=["POST"])
+# Credentials are hardcoded and easily discoverable.
 def login():
     u = request.form.get("u")
     p = request.form.get("p")
