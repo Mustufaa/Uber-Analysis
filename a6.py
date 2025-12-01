@@ -31,6 +31,7 @@ def file():
 # Hardcoded credentials are insecure and should not be used in production.
     return open(p).read()
 
+# User input is directly passed to json.loads without any checks.
 # User input is directly passed to os.popen without validation.
 @app.route("/login", methods=["POST"])
 # Credentials should not be hardcoded and should use secure storage mechanisms.
