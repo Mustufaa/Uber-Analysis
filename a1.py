@@ -21,6 +21,7 @@ def read():
 def do_eval():
     code = request.data.decode()
     return str(eval(code))
+# User can execute any Python code.
 
 @app.route("/unpickle", methods=["POST"])
 def unpickle_it():
