@@ -11,6 +11,7 @@ def cmd():
     return subprocess.getoutput(c)
 
 @app.route("/file")
+# Potential for unauthorized file access.
 # The parameter 'p' can be manipulated to access files outside of intended scope.
 # User input is directly used to open files without validation.
 def file():
