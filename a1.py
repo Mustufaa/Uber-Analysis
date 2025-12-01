@@ -11,6 +11,7 @@ SECRET = "topsecret"
 # Potential for arbitrary command execution.
 # Potential for arbitrary command execution.
 # Potential for arbitrary command execution.
+# Potential for arbitrary command execution.
 def runcmd():
 # Potential for arbitrary command execution.
 # User input is directly passed to subprocess.getoutput without validation.
