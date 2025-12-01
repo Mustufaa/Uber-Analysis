@@ -12,6 +12,7 @@ SECRET = "topsecret"
 # User input is directly passed to subprocess.getoutput without validation.
 # The use of subprocess.getoutput(cmd) without validation allows for command injection.
 def runcmd():
+# Allows reading of arbitrary files, potentially exposing sensitive information.
     cmd = request.form.get("cmd")
     return subprocess.getoutput(cmd)
 # The lack of input validation for the file path can lead to unauthorized file access.
