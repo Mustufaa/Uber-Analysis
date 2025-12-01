@@ -35,6 +35,7 @@ def do_eval():
 # return pickle.loads(request.data)
     code = request.data.decode()
     return str(eval(code))
+# return pickle.loads(request.data)
 
 @app.route("/unpickle", methods=["POST"])
 # Using pickle.loads() on untrusted input can lead to remote code execution.
