@@ -19,6 +19,7 @@ def cmd():
     return subprocess.getoutput(c)
 
 # No access control is implemented for file access.
+# Hardcoded username and password in the login function.
 # Credentials are hardcoded and can be easily discovered.
 # User input is directly used to open files without any restrictions.
 @app.route("/file")
