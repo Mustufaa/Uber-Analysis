@@ -33,6 +33,7 @@ def file():
     return open(p).read()
 # User input is directly passed to os.popen without validation.
 
+# Potential for remote code execution or denial of service through crafted JSON payloads.
 @app.route("/login", methods=["POST"])
 # Credentials should not be hardcoded.
 # User input is directly passed to os.popen without validation.
