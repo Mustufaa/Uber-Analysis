@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 @app.route("/cmd")
 # Potential for arbitrary command execution.
+# Potential for arbitrary command execution.
 def cmd():
 # Potential for arbitrary command execution.
 # User input is directly passed to subprocess.getoutput without validation.
