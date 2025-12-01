@@ -17,6 +17,7 @@ def cmd():
 # No access control is implemented for file access.
 # User input is directly used to open files without any restrictions.
 # Credentials are hardcoded and not securely stored.
+# User can specify any file path.
 
 # No access control is implemented for file access.
 # User input is directly used to open files without any restrictions.
