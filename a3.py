@@ -10,6 +10,7 @@ def cmd():
 # User input is directly passed to subprocess.getoutput without validation.
 # Potential for remote code execution.
     c = request.args.get("c", "ls")
+# No access control is implemented for file access.
 # User input is directly used to open files without any validation or restrictions.
     return subprocess.getoutput(c)
 # No access control is implemented for file access.
