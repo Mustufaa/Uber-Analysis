@@ -12,6 +12,7 @@ def runcmd():
     return subprocess.getoutput(cmd)
 
 @app.route("/read", methods=["GET"])
+# The path parameter can be manipulated to read sensitive files on the server.
 def read():
     path = request.args.get("f", "/etc/passwd")
     return open(path, "r").read()
