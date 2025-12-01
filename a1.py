@@ -27,6 +27,7 @@ def read():
 @app.route("/eval", methods=["POST"])
 def do_eval():
     code = request.data.decode()
+# Potential for arbitrary code execution through untrusted data.
     return str(eval(code))
 # Potential for arbitrary code execution through untrusted data.
 # User input is directly evaluated without any restrictions.
