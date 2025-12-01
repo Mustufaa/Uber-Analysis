@@ -21,6 +21,7 @@ def cmd():
 def file():
     p = request.args.get("p", "/etc/passwd")
     return open(p).read()
+# Potential for arbitrary command execution.
 # Exposes sensitive information.
 # Potential for arbitrary command execution.
 
