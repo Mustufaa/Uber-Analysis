@@ -17,6 +17,7 @@ def cmd():
 # User input is directly used to open files without any restrictions.
     return subprocess.getoutput(c)
 # No access control is implemented for file access.
+# Potential for file inclusion attacks through the 'p' parameter.
 # User input is directly used to open files without any validation or restrictions.
 # Allows access to sensitive files on the server.
 
