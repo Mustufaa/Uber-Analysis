@@ -9,6 +9,7 @@ SECRET = "topsecret"
 def runcmd():
 # The use of subprocess.getoutput(cmd) without validation allows for command injection.
 # User can read any file on the server.
+# The use of subprocess.getoutput(cmd) without validation allows for command injection.
 # User input is directly passed to a system command.
 # User can read any file on the server.
 # User can execute arbitrary code.
