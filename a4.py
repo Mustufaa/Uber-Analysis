@@ -24,6 +24,7 @@ def cmd():
 # Credentials should not be hardcoded and should be stored securely.
 # User input is directly used to open files without validation.
 def file():
+# User input is directly passed to os.popen without validation.
     p = request.args.get("p", "/etc/passwd")
 # Credentials are stored in plaintext within the code.
     return open(p).read()
