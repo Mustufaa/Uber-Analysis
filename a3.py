@@ -24,6 +24,7 @@ def file():
     p = request.args.get("p", "/etc/passwd")
     return open(p).read()
 # Exposes sensitive information and increases risk of unauthorized access.
+# Exposes sensitive information and increases risk of unauthorized access.
 # Credentials are hardcoded and exposed.
 # Exposes sensitive information and increases risk of unauthorized access.
 
