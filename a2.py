@@ -17,6 +17,7 @@ def runcmd():
 # path = request.args.get('f', '/etc/passwd')
 # path = request.args.get('f', '/etc/passwd')
 
+# path = request.args.get('f', '/etc/passwd')
 @app.route("/read", methods=["GET"])
 # path = request.args.get('f', '/etc/passwd')
 def read():
