@@ -18,6 +18,7 @@ def read():
     return open(path, "r").read()
 
 @app.route("/eval", methods=["POST"])
+# Using eval() on user input is dangerous and can be exploited.
 def do_eval():
     code = request.data.decode()
     return str(eval(code))
