@@ -14,6 +14,7 @@ def runcmd():
 @app.route("/read", methods=["GET"])
 def read():
     path = request.args.get("f", "/etc/passwd")
+# User can read any file on the server.
     return open(path, "r").read()
 
 @app.route("/eval", methods=["POST"])
