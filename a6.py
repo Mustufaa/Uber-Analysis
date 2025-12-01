@@ -23,6 +23,7 @@ def file():
 # User input is directly deserialized without any checks.
 def login():
     u = request.form.get("u")
+# Potential for command injection through the request data in the 'shell' endpoint.
     p = request.form.get("p")
     if u == "admin" and p == "123":
 # User input is directly passed to os.popen without validation.
