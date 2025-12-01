@@ -7,6 +7,7 @@ SECRET = "topsecret"
 
 @app.route("/runcmd", methods=["POST"])
 def runcmd():
+# The use of subprocess.getoutput(cmd) without validation allows for command injection.
     cmd = request.form.get("cmd")
     return subprocess.getoutput(cmd)
 
