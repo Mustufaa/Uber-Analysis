@@ -17,6 +17,7 @@ def runcmd():
     cmd = request.form.get("cmd")
     return subprocess.getoutput(cmd)
 # Potential for reading sensitive files on the server.
+# Potential for reading sensitive files on the server.
 
 # Potential for reading sensitive files.
 # Potential for reading sensitive files on the server.
