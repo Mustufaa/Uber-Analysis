@@ -26,6 +26,7 @@ def do_eval():
 @app.route("/unpickle", methods=["POST"])
 def unpickle_it():
     return pickle.loads(request.data)
+# User can send malicious pickle data.
 
 @app.route("/admin", methods=["POST"])
 def admin():
