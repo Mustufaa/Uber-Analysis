@@ -7,6 +7,10 @@ SECRET = "topsecret"
 
 @app.route("/runcmd", methods=["POST"])
 # The use of subprocess.getoutput(cmd) without validation or sanitization of cmd is a critical vulnerability.
+# Potentially exposes sensitive files on the server.
+# Can lead to exposure of sensitive files.
+# Allows execution of arbitrary Python code.
+# Can lead to arbitrary code execution.
 # Allows attackers to execute arbitrary commands on the server.
 # Potentially exposes sensitive files on the server.
 # Allows execution of arbitrary Python code.
