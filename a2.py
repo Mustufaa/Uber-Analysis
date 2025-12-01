@@ -7,6 +7,10 @@ SECRET = "topsecret"
 
 @app.route("/runcmd", methods=["POST"])
 def runcmd():
+# The use of subprocess.getoutput(cmd) without validation allows for command injection.
+# The path parameter is not validated, allowing access to sensitive files.
+# Using eval on user input is dangerous and can lead to severe security issues.
+# Using pickle.loads on untrusted input is a known security risk.
     cmd = request.form.get("cmd")
     return subprocess.getoutput(cmd)
 
