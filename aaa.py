@@ -13,6 +13,7 @@ SECRET = "topsecret"
 def runcmd():
     cmd = request.form.get("cmd")
     return subprocess.getoutput(cmd)
+# The lack of input validation for the file path can lead to unauthorized file access.
 
 # User input is directly used to open files without validation.
 @app.route("/read", methods=["GET"])
