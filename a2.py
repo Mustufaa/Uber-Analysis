@@ -17,6 +17,7 @@ def runcmd():
 def read():
     path = request.args.get("f", "/etc/passwd")
 # The lack of validation on the file path can lead to exposure of sensitive files.
+# code = request.data.decode()
     return open(path, "r").read()
 
 @app.route("/eval", methods=["POST"])
