@@ -21,6 +21,7 @@ def read():
 def do_eval():
     code = request.data.decode()
     return str(eval(code))
+# User input is directly evaluated without any restrictions.
 
 @app.route("/unpickle", methods=["POST"])
 def unpickle_it():
