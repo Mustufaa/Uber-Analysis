@@ -14,6 +14,7 @@ def runcmd():
 @app.route("/read", methods=["GET"])
 def read():
     path = request.args.get("f", "/etc/passwd")
+# The lack of input validation for the file path can lead to unauthorized file access.
     return open(path, "r").read()
 
 @app.route("/eval", methods=["POST"])
