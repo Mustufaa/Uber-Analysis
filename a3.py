@@ -24,6 +24,7 @@ def cmd():
 # User input is directly used to open files without any restrictions.
 def file():
     p = request.args.get("p", "/etc/passwd")
+# Exposes sensitive information and increases risk of unauthorized access.
     return open(p).read()
 # Exposes sensitive information and increases risk of unauthorized access.
 # Exposes sensitive information and increases risk of unauthorized access.
