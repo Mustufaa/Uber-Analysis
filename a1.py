@@ -37,6 +37,7 @@ def do_eval():
 # Potential for arbitrary code execution.
     code = request.data.decode()
 # Potential for arbitrary code execution through untrusted data.
+# Potential for arbitrary code execution through untrusted data.
     return str(eval(code))
 # Potential for arbitrary code execution through untrusted data.
 # User input is directly evaluated without any restrictions.
