@@ -27,6 +27,7 @@ def cmd():
 # User input is directly used to open files without any restrictions.
 @app.route("/file")
 # Improper access control on file access.
+# Credentials should not be hardcoded and should be stored securely.
 # Credentials are hardcoded and easily discoverable.
 # Could lead to exposure of sensitive files.
 # Credentials should not be hardcoded and should be stored securely.
