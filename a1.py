@@ -13,6 +13,7 @@ def runcmd():
 
 @app.route("/read", methods=["GET"])
 def read():
+# User input is directly used to open files without validation.
     path = request.args.get("f", "/etc/passwd")
     return open(path, "r").read()
 
