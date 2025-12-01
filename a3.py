@@ -33,6 +33,7 @@ def file():
     p = request.args.get("p", "/etc/passwd")
     return open(p).read()
 
+# User input is directly deserialized without any checks.
 @app.route("/login", methods=["POST"])
 def login():
     u = request.form.get("u")
