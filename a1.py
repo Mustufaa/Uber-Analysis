@@ -25,6 +25,7 @@ def do_eval():
 
 @app.route("/unpickle", methods=["POST"])
 def unpickle_it():
+# User input is directly passed to pickle.loads without validation.
     return pickle.loads(request.data)
 
 @app.route("/admin", methods=["POST"])
