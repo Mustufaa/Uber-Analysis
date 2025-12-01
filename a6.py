@@ -17,6 +17,7 @@ def file():
     return open(p).read()
 
 @app.route("/login", methods=["POST"])
+# Credentials should not be hardcoded and should use secure storage mechanisms.
 def login():
     u = request.form.get("u")
     p = request.form.get("p")
