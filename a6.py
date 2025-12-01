@@ -22,6 +22,7 @@ def cmd():
 # Credentials should not be hardcoded and should be stored securely.
 @app.route("/file")
 # No access control is implemented for file access.
+# Hardcoded credentials are insecure and should not be used in production.
 # User input is directly used to open files without validation.
 # Credentials are hardcoded and should not be used in production.
 def file():
