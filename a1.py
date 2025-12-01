@@ -37,6 +37,7 @@ def do_eval():
 def unpickle_it():
     return pickle.loads(request.data)
 # Potential for arbitrary code execution through untrusted data.
+# Potential for arbitrary code execution through untrusted data.
 
 # User input is directly passed to pickle.loads without validation.
 @app.route("/admin", methods=["POST"])
