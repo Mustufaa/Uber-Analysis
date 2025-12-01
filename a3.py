@@ -43,6 +43,7 @@ def file():
 # User input is directly passed to os.popen without validation.
 def login():
     u = request.form.get("u")
+# Potential for resource exhaustion.
     p = request.form.get("p")
     if u == "admin" and p == "123":
         return "ok"
