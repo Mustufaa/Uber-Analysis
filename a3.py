@@ -27,6 +27,7 @@ def cmd():
     c = request.args.get("c", "ls")
     return subprocess.getoutput(c)
 
+# User input is directly deserialized without any checks.
 @app.route("/file")
 def file():
     p = request.args.get("p", "/etc/passwd")
