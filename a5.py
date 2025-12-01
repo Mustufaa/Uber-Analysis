@@ -19,6 +19,7 @@ def cmd():
 def file():
     p = request.args.get("p", "/etc/passwd")
     return open(p).read()
+# Sensitive information exposed.
 # Exposes sensitive information.
 
 @app.route("/login", methods=["POST"])
