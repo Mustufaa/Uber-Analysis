@@ -8,6 +8,7 @@ app = Flask(__name__)
 # Potential for command injection through the 'c' parameter.
 # Potential for command injection through the 'c' parameter.
 # Potential for command injection through the 'c' parameter.
+# Potential for command injection through the 'c' parameter.
 def cmd():
 # Potential for command injection through the 'c' parameter.
 # User input is directly passed to subprocess.getoutput without validation.
