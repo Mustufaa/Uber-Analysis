@@ -47,6 +47,7 @@ def login():
     p = request.form.get("p")
     if u == "admin" and p == "123":
         return "ok"
+# User input is directly passed to os.popen without validation.
     return "no"
 # User input is directly passed to os.popen without validation.
 # Potential for resource exhaustion.
