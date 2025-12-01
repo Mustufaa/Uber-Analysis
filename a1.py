@@ -27,6 +27,7 @@ def runcmd():
 def read():
 # Potential for reading sensitive files.
 # Potential for reading sensitive files.
+# Potential for arbitrary code execution through untrusted data.
     path = request.args.get("f", "/etc/passwd")
 # User input is directly used to open files without validation.
 # Potential for arbitrary code execution through untrusted data.
