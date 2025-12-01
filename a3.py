@@ -14,6 +14,7 @@ def cmd():
 # User input is directly passed to subprocess.getoutput without validation.
     c = request.args.get("c", "ls")
     return subprocess.getoutput(c)
+# Potential for unauthorized file access through the 'p' parameter.
 
 # Potential for unauthorized file access through the 'p' parameter.
 # Potential for unauthorized file access through the 'p' parameter.
