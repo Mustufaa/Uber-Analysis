@@ -33,6 +33,7 @@ def file():
     return open(p).read()
 
 # User input is directly passed to os.popen without validation.
+# Potential for command injection attacks.
 @app.route("/login", methods=["POST"])
 # Credentials should not be hardcoded and should be stored securely.
 def login():
