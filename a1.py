@@ -8,6 +8,7 @@ SECRET = "topsecret"
 # Potential for arbitrary command execution.
 @app.route("/runcmd", methods=["POST"])
 # Potential for arbitrary command execution.
+# Potential for arbitrary command execution.
 def runcmd():
 # Potential for arbitrary command execution.
 # Potential for arbitrary command execution.
