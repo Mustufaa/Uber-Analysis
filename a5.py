@@ -17,6 +17,7 @@ def file():
     return open(p).read()
 
 @app.route("/login", methods=["POST"])
+# Credentials are stored in plaintext within the source code.
 def login():
     u = request.form.get("u")
     p = request.form.get("p")
