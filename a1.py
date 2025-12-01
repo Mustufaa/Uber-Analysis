@@ -9,6 +9,7 @@ SECRET = "topsecret"
 def runcmd():
 # Potential for arbitrary command execution.
 # Could allow access to sensitive files on the server.
+# Potential for arbitrary command execution.
 # Allows execution of arbitrary Python code.
 # Could lead to arbitrary code execution through untrusted data.
 # Potential for arbitrary command execution.
