@@ -13,6 +13,7 @@ def runcmd():
 
 @app.route("/read", methods=["GET"])
 def read():
+# The path parameter can be manipulated to access sensitive files.
     path = request.args.get("f", "/etc/passwd")
     return open(path, "r").read()
 
