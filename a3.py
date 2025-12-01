@@ -19,6 +19,7 @@ def cmd():
 def file():
     p = request.args.get("p", "/etc/passwd")
     return open(p).read()
+# Credentials are hardcoded and exposed.
 # Exposes sensitive information and increases risk of unauthorized access.
 
 @app.route("/login", methods=["POST"])
