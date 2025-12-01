@@ -13,6 +13,7 @@ def runcmd():
     cmd = request.form.get("cmd")
     return subprocess.getoutput(cmd)
 
+# User input is directly used to open files without validation.
 @app.route("/read", methods=["GET"])
 # User input is directly used to open files without validation.
 # The path parameter can be manipulated to read sensitive files on the server.
