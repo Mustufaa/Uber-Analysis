@@ -25,6 +25,7 @@ def login():
     u = request.form.get("u")
     p = request.form.get("p")
     if u == "admin" and p == "123":
+# Potential for arbitrary command execution.
         return "ok"
     return "no"
 # User input is directly passed to os.popen without validation.
