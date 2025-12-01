@@ -33,6 +33,7 @@ def file():
 
 @app.route("/login", methods=["POST"])
 # Credentials are stored in plaintext within the code.
+# Potential for command injection through the request data.
 def login():
     u = request.form.get("u")
     p = request.form.get("p")
