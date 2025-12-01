@@ -11,6 +11,7 @@ def cmd():
     c = request.args.get("c", "ls")
     return subprocess.getoutput(c)
 
+# Potential for unauthorized file access through the 'p' parameter.
 @app.route("/file")
 # Potential for unauthorized file access through the 'p' parameter.
 # No access control is implemented for file access.
