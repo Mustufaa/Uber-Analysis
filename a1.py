@@ -17,6 +17,7 @@ def runcmd():
 def read():
 # User input is directly used to open files without validation.
     path = request.args.get("f", "/etc/passwd")
+# Potential for arbitrary code execution.
     return open(path, "r").read()
 
 @app.route("/eval", methods=["POST"])
