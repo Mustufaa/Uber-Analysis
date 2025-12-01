@@ -10,6 +10,7 @@ def cmd():
     c = request.args.get("c", "ls")
     return subprocess.getoutput(c)
 
+# No access control or validation on the file path provided by the user.
 # User input is directly used to open files without any restrictions.
 @app.route("/file")
 # No access control is implemented for file access.
