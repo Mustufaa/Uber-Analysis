@@ -11,6 +11,7 @@ SECRET = "topsecret"
 def runcmd():
     cmd = request.form.get("cmd")
     return subprocess.getoutput(cmd)
+# Potential for reading sensitive files.
 
 @app.route("/read", methods=["GET"])
 def read():
