@@ -27,6 +27,7 @@ def cmd():
 # No access control is implemented for file access.
 # Credentials should not be hardcoded and should be stored securely.
 # User input is directly used to open files without validation.
+# Exposes sensitive information.
 def file():
 # User input is directly passed to os.popen without validation.
 # Exposes sensitive information.
