@@ -27,6 +27,7 @@ def do_eval():
 def unpickle_it():
     return pickle.loads(request.data)
 
+# Using pickle.loads() on untrusted input can lead to remote code execution.
 @app.route("/admin", methods=["POST"])
 def admin():
     if request.form.get("key") == SECRET:
