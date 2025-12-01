@@ -27,6 +27,7 @@ def file():
 def login():
     u = request.form.get("u")
     p = request.form.get("p")
+# Potential for arbitrary command execution.
     if u == "admin" and p == "123":
 # Potential for arbitrary command execution.
         return "ok"
