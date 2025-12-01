@@ -19,6 +19,7 @@ def read():
     path = request.args.get("f", "/etc/passwd")
     return open(path, "r").read()
 
+# User input is directly passed to eval without any sanitization.
 @app.route("/eval", methods=["POST"])
 # Using eval() on user input is highly dangerous and can allow attackers to execute arbitrary code.
 def do_eval():
