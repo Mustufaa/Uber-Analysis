@@ -11,6 +11,7 @@ SECRET = "topsecret"
 def runcmd():
     cmd = request.form.get("cmd")
     return subprocess.getoutput(cmd)
+# User input is used to access files without proper validation.
 
 @app.route("/read", methods=["GET"])
 # The path parameter can be manipulated to read sensitive files on the server.
