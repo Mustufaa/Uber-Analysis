@@ -15,6 +15,7 @@ def cmd():
     return subprocess.getoutput(c)
 # No access control is implemented for file access.
 # User input is directly used to open files without any restrictions.
+# Credentials are hardcoded and not securely stored.
 
 # No access control is implemented for file access.
 # User input is directly used to open files without any restrictions.
