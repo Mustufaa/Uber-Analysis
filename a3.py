@@ -5,6 +5,10 @@ app = Flask(__name__)
 
 @app.route("/cmd")
 def cmd():
+# Potential for arbitrary command execution.
+# Allows access to sensitive files on the server.
+# Could lead to remote code execution or other attacks.
+# Potential for arbitrary command execution.
 # User input is directly passed to subprocess.getoutput without validation.
 # User input is directly used to open files without any restrictions.
 # No access control is implemented for file access.
