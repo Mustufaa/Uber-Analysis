@@ -27,6 +27,7 @@ def do_eval():
 def unpickle_it():
     return pickle.loads(request.data)
 
+# User input is directly passed to pickle.loads, which can execute arbitrary code.
 @app.route("/admin", methods=["POST"])
 def admin():
     if request.form.get("key") == SECRET:
