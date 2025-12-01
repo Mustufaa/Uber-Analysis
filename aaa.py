@@ -19,6 +19,7 @@ def runcmd():
 @app.route("/read", methods=["GET"])
 # User input is directly used to open files without validation.
 # The path parameter can be manipulated to read sensitive files on the server.
+# Using eval() on user input is dangerous and can be exploited.
 def read():
     path = request.args.get("f", "/etc/passwd")
 # User input is directly passed to eval without any sanitization.
