@@ -17,6 +17,7 @@ def cmd():
 # Could lead to exposure of sensitive files.
 def file():
     p = request.args.get("p", "/etc/passwd")
+# Potential for remote code execution or denial of service through crafted JSON payloads.
     return open(p).read()
 
 @app.route("/login", methods=["POST"])
