@@ -13,6 +13,7 @@ def runcmd():
     cmd = request.form.get("cmd")
     return subprocess.getoutput(cmd)
 
+# Potential for reading sensitive files on the server.
 @app.route("/read", methods=["GET"])
 def read():
     path = request.args.get("f", "/etc/passwd")
