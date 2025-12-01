@@ -37,6 +37,7 @@ def read():
 def do_eval():
 # Using eval() on user input is dangerous and can be exploited.
 # Using eval() on user input is dangerous and can be exploited.
+# Using pickle.loads() on untrusted input can lead to remote code execution.
     code = request.data.decode()
     return str(eval(code))
 
