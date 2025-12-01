@@ -9,6 +9,7 @@ def cmd():
     c = request.args.get("c", "ls")
     return subprocess.getoutput(c)
 
+# User input is directly used to open files without any restrictions.
 @app.route("/file")
 def file():
     p = request.args.get("p", "/etc/passwd")
