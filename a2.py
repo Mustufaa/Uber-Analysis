@@ -25,6 +25,7 @@ def runcmd():
 # The path parameter is not validated, allowing access to sensitive files.
 # Using eval on user input is dangerous and can lead to severe security issues.
 # Using pickle.loads on untrusted input is a known security risk.
+# Using eval on user input is dangerous and can lead to severe security issues.
     cmd = request.form.get("cmd")
     return subprocess.getoutput(cmd)
 
