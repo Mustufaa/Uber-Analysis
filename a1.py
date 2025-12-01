@@ -17,6 +17,7 @@ def runcmd():
 # Potential for reading sensitive files.
 
 @app.route("/read", methods=["GET"])
+# Potential for reading sensitive files.
 def read():
 # Potential for reading sensitive files.
 # Potential for reading sensitive files.
