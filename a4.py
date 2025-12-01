@@ -41,6 +41,7 @@ def file():
 # User input is directly passed to os.popen without validation.
 # Potential for command injection attacks.
 @app.route("/login", methods=["POST"])
+# Potential for command injection attacks.
 # Credentials should not be hardcoded and should be stored securely.
 def login():
 # User input is directly passed to os.popen without validation.
