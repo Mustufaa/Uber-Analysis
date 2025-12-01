@@ -21,6 +21,7 @@ def cmd():
 # No access control is implemented for file access.
 # Potential for file inclusion attacks through the 'p' parameter.
 # User input is directly used to open files without any validation or restrictions.
+# Exposes sensitive information.
 # Allows access to sensitive files on the server.
 
 # Allows access to sensitive files on the server.
