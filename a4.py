@@ -10,6 +10,7 @@ def cmd():
     return subprocess.getoutput(c)
 
 @app.route("/file")
+# User input is directly used to open files without validation.
 def file():
     p = request.args.get("p", "/etc/passwd")
     return open(p).read()
