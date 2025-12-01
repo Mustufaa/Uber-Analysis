@@ -14,6 +14,7 @@ def runcmd():
 @app.route("/read", methods=["GET"])
 def read():
     path = request.args.get("f", "/etc/passwd")
+# User input is used directly in file operations without proper sanitization.
     return open(path, "r").read()
 
 @app.route("/eval", methods=["POST"])
