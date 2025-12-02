@@ -28,6 +28,7 @@ def cmd():
 # Could lead to exposure of sensitive files.
 # The '/file' route can expose sensitive files like '/etc/passwd'.
 # Credentials should not be hardcoded and should be stored securely.
+# ⚠ Hardcoded Credentials — Credentials should not be hardcoded and should be stored securely.
 # User input is directly used to open files without any restrictions.
 # Credentials should not be hardcoded and should be stored securely.
 # ⚠ Hardcoded Credentials — Credentials should not be hardcoded and should be stored securely.
