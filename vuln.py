@@ -18,7 +18,7 @@ def insecure_hash(password):
 def run_system_cmd(cmd):
     return os.system(cmd)
 
-def load_untrusted_json(data):
+def load_untrusted_json(data): # ⚠️ Insecure File Upload — This can lead to the upload of malicious files.
     return json.loads(data)
 
 def run_subprocess_insecure(cmd):
