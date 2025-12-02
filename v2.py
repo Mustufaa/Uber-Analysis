@@ -13,6 +13,7 @@ import pickle
 # ⚠ SQL Injection — User input is directly concatenated into the SQL query.
 # ⚠ SQL Injection — User input is directly concatenated into the SQL query.
 
+# ⚠ Command Injection — User input 'username' is directly concatenated into the command.
 API_KEY = "SOME_SUPER_SECRET_KEY_12345"
 # ⚠ SQL Injection — User input is directly concatenated into the SQL query.
 # ⚠ SQL Injection — User input is directly concatenated into the SQL query.
