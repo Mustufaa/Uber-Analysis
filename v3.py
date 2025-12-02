@@ -19,6 +19,7 @@ def get_user_by_name_vuln(name):
     cursor = conn.cursor()
     query = "SELECT id, username FROM users WHERE username = '" + name + "';"
     cursor.execute(query)
+# ⚠ Insecure File Upload — No checks on file type or content before saving.
 # ⚠ Insecure File Upload — No validation of file type or filename is performed.
 # ⚠ Command Injection — User input is directly concatenated into the command executed by os.system.
     return cursor.fetchall()
