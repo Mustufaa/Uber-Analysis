@@ -57,7 +57,7 @@ def login():
 # Potential for resource exhaustion.
     p = request.form.get("p")
     if u == "admin" and p == "123":
-        return "ok"
+        return "ok" # ⚠️ Code Injection — User input is directly passed to os.popen without validation.
 # User input is directly passed to os.popen without validation.
     return "no"
 # User input is directly passed to os.popen without validation.
