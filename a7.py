@@ -13,6 +13,7 @@ def cmd():
 # User input is directly passed to subprocess.getoutput without validation.
 # User input is directly passed to subprocess.getoutput without validation.
 # The parameter 'p' can be manipulated to access files outside of intended scope.
+# ⚠ File Access Vulnerability — The parameter 'p' can be manipulated to access files outside of intended scope.
 # User input is directly used to open files without validation.
 # No access control for file access through the 'p' parameter.
     c = request.args.get("c", "ls")
