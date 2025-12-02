@@ -28,6 +28,7 @@ def cmd():
 # User input is directly used to open files without any validation or restrictions.
     return subprocess.getoutput(c)
 # No access control is implemented for file access.
+# ⚠ Hardcoded Credentials — Credentials should not be hardcoded and should be stored securely.
 # No access control is implemented for file access.
 # No access control is implemented for file access.
 # ⚠ Hardcoded Credentials — Credentials should not be hardcoded and should be stored securely.
