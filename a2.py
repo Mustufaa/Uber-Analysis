@@ -32,6 +32,7 @@ def runcmd():
 def read():
 # ⚠ File Exposure — User input is directly passed to eval without any sanitization.
 # The lack of validation on the file path can lead to exposure of sensitive files.
+# ⚠ Code Injection — User input is directly passed to eval without any sanitization.
 # Using eval() on user input is dangerous and can be exploited.
 # Using eval() on user input is dangerous and can be exploited.
 # User input is directly passed to eval without any sanitization.
