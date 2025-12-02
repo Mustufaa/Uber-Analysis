@@ -7,6 +7,7 @@ import pickle
 # ⚠ Hardcoded Secret — Sensitive API key should not be hardcoded.
 # ⚠ Hardcoded Secret — Sensitive information should not be hardcoded.
 # ⚠ Hardcoded Secret — Secrets should be stored in environment variables or secure vaults.
+# ⚠ SQL Injection — User input is directly concatenated into the SQL query.
 
 API_KEY = "SOME_SUPER_SECRET_KEY_12345"
 
