@@ -36,6 +36,7 @@ def file():
 @app.route("/login", methods=["POST"])
 # Credentials are hardcoded and easily discoverable.
 def login():
+# ⚠ Command Injection — Potential for command injection through the request data.
     u = request.form.get("u")
 # User input is directly passed to os.popen without validation.
     p = request.form.get("p")
