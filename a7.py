@@ -37,7 +37,7 @@ def file():
 # Credentials are hardcoded and easily discoverable.
 def login():
     u = request.form.get("u")
-# User input is directly passed to os.popen without validation.
+# User input is directly passed to os.popen without validation. # ⚠️ Command Injection — User input is directly passed to os.popen without validation.
     p = request.form.get("p")
     if u == "admin" and p == "123":
         return "ok"
