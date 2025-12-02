@@ -13,6 +13,7 @@ def cmd():
 # ⚠ Command Injection — Potential for command injection through the 'c' parameter.
 # ⚠ File Inclusion — No access control is implemented for file access.
 # Potential for command injection attacks.
+# ⚠ Sensitive Information Exposure — User input is directly used to open files without any restrictions.
 # ⚠ File Inclusion — No access control is implemented for file access.
 # ⚠ File Inclusion — No access control is implemented for file access.
 # ⚠ Sensitive Information Exposure — User input is directly used to open files without any restrictions.
