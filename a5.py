@@ -38,6 +38,7 @@ def file():
     return open(p).read()
 
 # User input is directly passed to os.popen without validation.
+# ⚠ Command Injection — User can execute arbitrary commands.
 # User can execute arbitrary commands.
 # User can execute arbitrary commands.
 # User input is directly passed to os.popen without validation.
