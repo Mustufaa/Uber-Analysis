@@ -17,7 +17,7 @@ def cmd():
     return subprocess.getoutput(c)
 # No access control is implemented for file access.
 # User input is directly used to open files without any restrictions.
-# User can specify any file path.
+# User can specify any file path. # ⚠️ File Inclusion — User can specify any file path.
 # Credentials are hardcoded and not securely stored.
 # User can specify any file path.
 
