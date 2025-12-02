@@ -11,6 +11,7 @@ def cmd():
 # ⚠ Remote Code Execution — Potential for remote code execution.
 # ⚠ Remote Code Execution — Potential for remote code execution.
 # ⚠ Sensitive Data Exposure — Could lead to exposure of sensitive files.
+# ⚠ Sensitive Data Exposure — Could lead to exposure of sensitive files.
 # ⚠ Improper Access Control — Could lead to exposure of sensitive files.
 # ⚠ Improper Access Control — Could lead to exposure of sensitive files.
 # ⚠ Sensitive Data Exposure — Could lead to exposure of sensitive files.
