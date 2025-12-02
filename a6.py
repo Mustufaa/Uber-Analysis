@@ -39,7 +39,7 @@ def login():
 # User input is directly passed to json.loads without any checks.
     u = request.form.get("u")
 # User input is directly passed to os.popen without validation.
-    p = request.form.get("p") # ⚠️ Insecure JSON Handling — This can lead to JSON injection vulnerabilities.
+    p = request.form.get("p") # ⚠️ Insecure JSON Handling — This can lead to JSON injection vulnerabilities. # ⚠️ Insecure JSON Handling — User input is directly passed to json.loads without any checks.
     if u == "admin" and p == "123":
         return "ok"
 # User input is directly passed to os.popen without validation.
