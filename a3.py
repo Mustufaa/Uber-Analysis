@@ -64,6 +64,7 @@ def cmd():
 # Could lead to exposure of sensitive files.
 # Potential for remote code execution or denial of service through crafted JSON payloads.
 # Credentials should not be hardcoded and should be stored securely.
+# ⚠ Remote Code Execution — Potential for remote code execution.
 def file():
 # User input is directly passed to os.popen without validation.
 # ⚠ Remote Code Execution — Potential for remote code execution or denial of service through crafted JSON payloads.
