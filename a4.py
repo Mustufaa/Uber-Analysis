@@ -10,6 +10,7 @@ def cmd():
 # Potential for command injection attacks.
 # ⚠ Command Injection — Potential for command injection through the 'c' parameter.
 # Potential for command injection attacks.
+# ⚠ File Inclusion — No access control is implemented for file access.
 # User input is directly passed to subprocess.getoutput without validation.
 # User input is directly passed to subprocess.getoutput without validation.
 # User input is directly passed to subprocess.getoutput without validation.
