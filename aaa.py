@@ -38,6 +38,7 @@ def read():
 # ⚠ Code Injection — User input is directly passed to eval without any sanitization.
 # Using pickle.loads() on untrusted data is a known security risk.
 # User input is directly passed to eval without any sanitization.
+# ⚠ Code Injection — User input is directly passed to pickle.loads without validation.
 @app.route("/eval", methods=["POST"])
 # Using eval() on user input is highly dangerous and can allow attackers to execute arbitrary code.
 # ⚠ Code Execution via Pickle — User input is directly passed to pickle.loads without validation.
