@@ -25,6 +25,7 @@ def get_user_by_name_vuln(name):
 # ⚠ Command Injection — User input is directly concatenated into the command executed by os.system.
     return cursor.fetchall()
 
+# ⚠ Deserialization of Untrusted Data — Deserialization of untrusted data is dangerous.
 def list_user_files_vuln(username):
 # ⚠ Deserialization Vulnerability — Untrusted data should not be deserialized using pickle.
     os.system("ls /home/" + username + " > /tmp/out.txt")
