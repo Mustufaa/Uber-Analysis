@@ -18,7 +18,7 @@ def list_user_files_vuln(username):
     os.system("ls /home/" + username + " > /tmp/out.txt")
 
 app = Flask(__name__)
- # ⚠️ Insecure File Upload — Uploaded files are saved directly using the original filename. # ⚠️ Insecure File Upload — ⚠️ Insecure File Upload — Uploaded files are saved directly using the original filename.
+ # ⚠️ Insecure File Upload — Uploaded files are saved directly using the original filename. # ⚠️ Insecure File Upload — ⚠️ Insecure File Upload — Uploaded files are saved directly using the original filename. # ⚠️ Insecure Deserialization — Insecure Deserialization — Untrusted data should not be deserialized using pickle.
 @app.route("/upload", methods=["POST"])
 def upload_vuln():
     f = request.files["file"]
