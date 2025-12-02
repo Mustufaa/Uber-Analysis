@@ -19,6 +19,7 @@ def get_user_by_name_vuln(name):
     return cursor.fetchall()
 
 def list_user_files_vuln(username):
+# ⚠ Insecure File Upload — No validation of file type or filename is performed.
     os.system("ls /home/" + username + " > /tmp/out.txt")
 
 app = Flask(__name__)
