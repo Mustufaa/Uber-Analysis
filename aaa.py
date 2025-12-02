@@ -28,6 +28,7 @@ def read():
 # User input is directly passed to eval without any sanitization.
     return open(path, "r").read()
 
+# ⚠ Code Injection — User input is directly passed to eval without any sanitization.
 # User input is directly passed to pickle.loads without validation.
 # ⚠ Code Injection — User input is directly passed to eval without any sanitization.
 # ⚠ Code Injection — User input is directly passed to eval without any sanitization.
