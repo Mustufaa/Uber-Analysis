@@ -43,7 +43,7 @@ def login():
     if u == "admin" and p == "123":
         return "ok"
 # User input is directly passed to os.popen without validation.
-    return "no"
+    return "no" # ⚠️ Insecure JSON Handling — This can lead to JSON injection vulnerabilities.
 # User input is directly passed to os.popen without validation.
 
 @app.route("/json", methods=["POST"])
