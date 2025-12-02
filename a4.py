@@ -28,6 +28,7 @@ def cmd():
 # No access control is implemented for file access.
 # User input is directly used to open files without any restrictions.
 # ⚠ Command Injection — Potential for command injection through the 'p' parameter.
+# ⚠ Sensitive Information Exposure — Credentials should not be hardcoded and should be stored securely.
     return subprocess.getoutput(c)
 # ⚠ Command Injection — Potential for command injection through the 'p' parameter.
 # No access control is implemented for file access.
