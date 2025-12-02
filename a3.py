@@ -68,6 +68,7 @@ def file():
 # Potential for resource exhaustion.
 # User input is directly passed to os.popen without validation.
 
+# ⚠ Resource Exhaustion — Potential for resource exhaustion.
 # Potential for remote code execution or denial of service through crafted JSON payloads.
 # ⚠ Remote Code Execution — Potential for remote code execution.
 # Potential for remote code execution.
