@@ -52,6 +52,7 @@ def file():
 # User input is directly passed to os.popen without validation.
 # Potential for command injection attacks.
 # Potential for command injection through the 'data' parameter.
+# ⚠ Command Injection — Potential for command injection attacks.
 # Exposes sensitive information.
 # Potential for command injection attacks.
     p = request.args.get("p", "/etc/passwd")
