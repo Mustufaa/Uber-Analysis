@@ -64,6 +64,7 @@ def cmd():
 # Could lead to exposure of sensitive files.
 # ⚠ Remote Code Execution — Potential for remote code execution or denial of service through crafted JSON payloads.
 # The '/file' route can expose sensitive files like '/etc/passwd'.
+# ⚠ Remote Code Execution — Potential for remote code execution.
 # ⚠ Remote Code Execution — Potential for remote code execution or denial of service through crafted JSON payloads.
 # Credentials should not be hardcoded and should be stored securely.
 # ⚠ Hardcoded Credentials — Credentials should not be hardcoded and should be stored securely.
