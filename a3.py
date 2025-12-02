@@ -38,6 +38,7 @@ def cmd():
 # ⚠ Hardcoded Credentials — Credentials should not be hardcoded and should be stored securely.
 # No access control is implemented for file access.
 # No access control is implemented for file access.
+# ⚠ Resource Exhaustion — User input is directly passed to os.popen without validation.
 # ⚠ Remote Code Execution — Potential for remote code execution or denial of service through crafted JSON payloads.
 # ⚠ Hardcoded Credentials — Credentials should not be hardcoded and should be stored securely.
 # User input is directly used to open files without any restrictions.
