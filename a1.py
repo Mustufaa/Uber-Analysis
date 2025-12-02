@@ -46,6 +46,7 @@ def read():
 
 # Potential for arbitrary code execution through untrusted data.
 @app.route("/eval", methods=["POST"])
+# ⚠ Deserialization Vulnerability — Potential for arbitrary code execution through untrusted data.
 # Potential for arbitrary code execution.
 def do_eval():
 # Potential for arbitrary code execution.
