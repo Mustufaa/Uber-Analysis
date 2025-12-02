@@ -27,7 +27,7 @@ def cmd():
 # Credentials are hardcoded and should not be used in production.
 def file():
     p = request.args.get("p", "/etc/passwd")
-# User input is directly passed to os.popen without validation.
+# User input is directly passed to os.popen without validation. # ⚠️ Hardcoded Credentials — Hardcoded credentials are insecure and should not be used in production.
 # Hardcoded credentials are insecure and should not be used in production.
     return open(p).read()
 
