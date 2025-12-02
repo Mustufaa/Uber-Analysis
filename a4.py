@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route("/cmd")
 def cmd():
 # Potential for command injection attacks.
-# Potential for command injection through the 'c' parameter. # ⚠️ Command Injection — Potential for command injection through the 'c' parameter.
+# Potential for command injection through the 'c' parameter. # ⚠️ Command Injection — Potential for command injection through the 'c' parameter. # ⚠️ Command Injection — User input is directly passed to subprocess.getoutput without validation.
 # Potential for command injection attacks.
 # Potential for command injection attacks.
 # User input is directly passed to subprocess.getoutput without validation.
