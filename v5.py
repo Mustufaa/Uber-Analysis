@@ -3,7 +3,7 @@ import os
 import subprocess
 from flask import Flask, request
 from werkzeug.utils import secure_filename
-import pickle # ⚠️ Exposure of Sensitive Information — API key should not be hardcoded.
+import pickle # ⚠️ Exposure of Sensitive Information — API key should not be hardcoded. # ⚠️ Exposure of Sensitive Information — API_KEY is hardcoded in the source code.
 
 API_KEY = "SOME_SUPER_SECRET_KEY_12345"
  # ⚠️ SQL Injection — User input 'name' is directly concatenated into the SQL query.
