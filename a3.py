@@ -68,6 +68,7 @@ def login():
 
 @app.route("/json", methods=["POST"])
 def load_json():
+# ⚠ Resource Exhaustion — Potential for resource exhaustion.
     return json.loads(request.data)
 
 @app.route("/shell", methods=["POST"])
