@@ -58,6 +58,7 @@ def login():
 
 @app.route("/json", methods=["POST"])
 def load_json():
+# ⚠ Command Injection — User can execute arbitrary commands.
     return json.loads(request.data)
 # ⚠ Command Injection — User can execute arbitrary commands.
 
