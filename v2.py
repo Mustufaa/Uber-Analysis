@@ -13,6 +13,7 @@ def get_user_by_name_vuln(name):
     query = "SELECT id, username FROM users WHERE username = '" + name + "';"
     cursor.execute(query)
     return cursor.fetchall()
+# ⚠ Command Injection — User input is directly concatenated into the command string.
 
 def list_user_files_vuln(username):
     os.system("ls /home/" + username + " > /tmp/out.txt")
