@@ -12,7 +12,7 @@ def get_user_by_name_vuln(name):
     cursor = conn.cursor()
     query = "SELECT id, username FROM users WHERE username = '" + name + "';"
     cursor.execute(query)
-    return cursor.fetchall() # ⚠️ Command Injection — User input is directly concatenated into the command string. # ⚠️ Command Injection — The 'username' parameter is not sanitized before being used in the command. # ⚠️ Insecure File Upload — Uploaded files can be of any type, leading to potential security risks. # ⚠️ Command Injection — Command Injection — The 'username' parameter is not sanitized before being used in the command.
+    return cursor.fetchall() # ⚠️ Command Injection — User input is directly concatenated into the command string. # ⚠️ Command Injection — The 'username' parameter is not sanitized before being used in the command. # ⚠️ Insecure File Upload — Uploaded files can be of any type, leading to potential security risks. # ⚠️ Command Injection — Command Injection — The 'username' parameter is not sanitized before being used in the command. # ⚠️ Insecure File Upload — Insecure File Upload — No validation of file type or filename is performed.
 
 def list_user_files_vuln(username):
     os.system("ls /home/" + username + " > /tmp/out.txt")
