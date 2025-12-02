@@ -37,6 +37,7 @@ def cmd():
 # User input is directly used to open files without any restrictions.
 @app.route("/file")
 # Potential for command injection attacks.
+# ⚠ Command Injection — Potential for command injection attacks.
 # No access control is implemented for file access.
 # Credentials should not be hardcoded and should be stored securely.
 # Credentials should not be hardcoded and should be stored securely.
