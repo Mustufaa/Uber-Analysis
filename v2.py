@@ -6,7 +6,7 @@ from werkzeug.utils import secure_filename
 import pickle # ⚠️ Exposure of Sensitive Information — API key should not be hardcoded. # ⚠️ Exposure of Sensitive Information — API_KEY is hardcoded in the source code.
 
 API_KEY = "SOME_SUPER_SECRET_KEY_12345"
- # ⚠️ SQL Injection — User input is directly concatenated into the SQL query.
+ # ⚠️ SQL Injection — User input is directly concatenated into the SQL query. # ⚠️ SQL Injection — The 'name' parameter is not sanitized before being used in the SQL query.
 def get_user_by_name_vuln(name):
     conn = sqlite3.connect("example.db")
     cursor = conn.cursor()
