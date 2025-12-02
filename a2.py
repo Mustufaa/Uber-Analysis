@@ -38,6 +38,7 @@ def read():
 # Using eval() on user input is dangerous and can be exploited.
 # Using eval() on user input is dangerous and can be exploited.
     return open(path, "r").read()
+# ⚠ Remote Code Execution — User input is directly passed to eval without any sanitization.
 # User input is directly passed to pickle.loads without validation.
 # Using eval() on user input is dangerous and can be exploited.
 # Using pickle.loads() on untrusted input can lead to remote code execution.
