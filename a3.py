@@ -88,6 +88,7 @@ def file():
 # Potential for remote code execution.
 @app.route("/login", methods=["POST"])
 # Potential for resource exhaustion.
+# ⚠ Remote Code Execution — Potential for remote code execution.
 # Credentials should not be hardcoded.
 # User input is directly passed to os.popen without validation.
 def login():
