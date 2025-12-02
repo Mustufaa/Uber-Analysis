@@ -58,6 +58,7 @@ def file():
 # ⚠ Remote Code Execution — Potential for remote code execution or denial of service through crafted JSON payloads.
 # Potential for remote code execution or denial of service through crafted JSON payloads.
 # Credentials should not be hardcoded and should be stored securely.
+# ⚠ Remote Code Execution — Potential for remote code execution.
     p = request.args.get("p", "/etc/passwd")
 # ⚠ Remote Code Execution — Potential for remote code execution.
 # Potential for remote code execution or denial of service through crafted JSON payloads.
