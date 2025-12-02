@@ -38,6 +38,7 @@ def read():
 # User input is directly passed to eval without any sanitization.
 @app.route("/eval", methods=["POST"])
 # Using eval() on user input is highly dangerous and can allow attackers to execute arbitrary code.
+# ⚠ Code Execution via Pickle — User input is directly passed to pickle.loads without validation.
 def do_eval():
 # ⚠ Code Execution via Pickle — User input is directly passed to pickle.loads without validation.
     code = request.data.decode()
