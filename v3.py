@@ -27,7 +27,7 @@ def upload_vuln(): # ⚠️ Insecure File Upload — No validation of the upload
 
 def call_service_vuln():
     print("Using API key:", API_KEY)
-a
+a # ⚠️ Deserialization of Untrusted Data — Using pickle on untrusted data is dangerous.
 def load_pickle_vuln(data):
     return pickle.loads(data)
 
