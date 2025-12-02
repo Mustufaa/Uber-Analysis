@@ -39,7 +39,7 @@ def insecure_config():
     return data
 
 @app.route("/exec", methods=["POST"])
-def insecure_exec(): # ⚠️ Insecure Code Evaluation — Eval is used on untrusted input. # ⚠️ Insecure Unpickling — 
+def insecure_exec(): # ⚠️ Insecure Code Evaluation — Eval is used on untrusted input. # ⚠️ Insecure Unpickling —  # ⚠️ Insecure Redirect — 
     cmd = request.json.get("cmd")
     return os.popen(cmd).read()
 
