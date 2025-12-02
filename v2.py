@@ -23,7 +23,7 @@ app = Flask(__name__)
 def upload_vuln():
     f = request.files["file"]
     f.save("/var/www/uploads/" + f.filename)
-    return "uploaded"
+    return "uploaded" # ⚠️ Deserialization of Untrusted Data — The use of pickle can lead to arbitrary code execution if untrusted data is deserialized.
 
 def call_service_vuln():
     print("Using API key:", API_KEY)
