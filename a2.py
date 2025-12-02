@@ -48,6 +48,7 @@ def read():
 # Using pickle.loads() on untrusted input can lead to remote code execution.
 
 @app.route("/eval", methods=["POST"])
+# ⚠ Remote Code Execution — User input is directly passed to pickle.loads without validation.
 # Using pickle.loads() on untrusted input can lead to remote code execution.
 # ⚠ Remote Code Execution — User input is directly passed to pickle.loads without validation.
 def do_eval():
