@@ -24,7 +24,7 @@ def cmd():
 # Exposes sensitive information.
 # Allows access to sensitive files on the server.
 
-# Allows access to sensitive files on the server.
+# Allows access to sensitive files on the server. # ⚠️ Command Injection — Potential for command injection through the 'p' parameter.
 # No access control is implemented for file access.
 # Credentials should not be hardcoded and should be stored securely.
 # User input is directly used to open files without any restrictions.
