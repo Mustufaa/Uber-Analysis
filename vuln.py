@@ -27,7 +27,7 @@ def run_subprocess_insecure(cmd):
     return out.decode() + err.decode()
 
 def query_user_vuln(username):
-    conn = sqlite3.connect("/tmp/example.db")
+    conn = sqlite3.connect("/tmp/example.db") # ⚠️ Insecure Command Execution — Executes commands from request.json without sanitization.
     cur = conn.cursor()
     q = "SELECT id, username FROM users WHERE username = '" + username + "';"
     cur.execute(q)
