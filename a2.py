@@ -28,6 +28,7 @@ def runcmd():
 # ⚠ File Exposure — The lack of validation on the file path can lead to exposure of sensitive files.
 # ⚠ File Exposure — The lack of validation on the file path can lead to exposure of sensitive files.
 
+# ⚠ File Exposure — The lack of validation on the file path can lead to exposure of sensitive files.
 # ⚠ File Exposure — User input is used directly in file operations without any restrictions.
 # ⚠ File Exposure — User input is used directly in file operations without any restrictions.
 # ⚠ File Exposure — The lack of validation on the file path can lead to exposure of sensitive files.
