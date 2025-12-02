@@ -25,6 +25,7 @@ def get_user_by_name_vuln(name):
     cursor.execute(query)
     return cursor.fetchall()
 
+# ⚠ Deserialization of Untrusted Data — Using pickle with untrusted data is dangerous.
 # ⚠ Insecure File Upload — No validation of file type or filename is performed.
 def list_user_files_vuln(username):
     os.system("ls /home/" + username + " > /tmp/out.txt")
