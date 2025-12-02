@@ -19,6 +19,7 @@ API_KEY = "SOME_SUPER_SECRET_KEY_12345"
 def get_user_by_name_vuln(name):
     conn = sqlite3.connect("example.db")
     cursor = conn.cursor()
+# ⚠ Insecure File Upload — No validation of file type or filename is performed.
     query = "SELECT id, username FROM users WHERE username = '" + name + "';"
     cursor.execute(query)
     return cursor.fetchall()
