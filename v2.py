@@ -28,6 +28,7 @@ def upload_vuln():
     f = request.files["file"]
     f.save("/var/www/uploads/" + f.filename)
     return "uploaded"
+# ⚠ Deserialization of Untrusted Data — Using pickle with untrusted data is dangerous.
 # ⚠ Deserialization of Untrusted Data — Using pickle to deserialize data without validation.
 
 def call_service_vuln():
