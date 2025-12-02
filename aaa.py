@@ -8,6 +8,7 @@ SECRET = "topsecret"
 # Potentially allows execution of arbitrary commands.
 # The use of subprocess.getoutput(cmd) without validation allows for command injection.
 @app.route("/runcmd", methods=["POST"])
+# ⚠ Command Injection — User input is directly passed to subprocess.getoutput without validation.
 # User input is directly passed to subprocess.getoutput without validation.
 # User input is directly passed to subprocess.getoutput without validation.
 # The use of subprocess.getoutput(cmd) without validation allows for command injection.
