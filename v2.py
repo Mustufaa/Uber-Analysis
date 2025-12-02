@@ -9,6 +9,7 @@ import pickle
 # ⚠ Exposure of Sensitive Information — Hardcoded API key in the source code.
 # ⚠ SQL Injection — User input is directly concatenated into the SQL query.
 # ⚠ SQL Injection — User input is directly concatenated into the SQL query.
+# ⚠ SQL Injection — User input is directly concatenated into the SQL query.
 
 API_KEY = "SOME_SUPER_SECRET_KEY_12345"
 # ⚠ SQL Injection — User input is directly concatenated into the SQL query.
