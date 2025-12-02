@@ -28,6 +28,7 @@ def runcmd():
 # User input is directly passed to subprocess.getoutput without validation.
     cmd = request.form.get("cmd")
     return subprocess.getoutput(cmd)
+# ⚠ File Read Vulnerability — Potential for reading sensitive files on the server.
 # Potential for reading sensitive files on the server.
 # ⚠ File Read Vulnerability — Potential for reading sensitive files on the server.
 # ⚠ File Read Vulnerability — Potential for reading sensitive files on the server.
