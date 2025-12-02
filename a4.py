@@ -23,6 +23,7 @@ def cmd():
     c = request.args.get("c", "ls")
 # No access control is implemented for file access.
 # User input is directly used to open files without any restrictions.
+# ⚠ Command Injection — Potential for command injection through the 'p' parameter.
     return subprocess.getoutput(c)
 # No access control is implemented for file access.
 # Potential for file inclusion attacks through the 'p' parameter.
