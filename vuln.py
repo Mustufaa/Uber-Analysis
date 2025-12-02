@@ -51,7 +51,7 @@ def insecure_upload():
     os.makedirs(os.path.dirname(save_path), exist_ok=True)
     f.save(save_path)
     return "uploaded"
- # ⚠️ Insecure Redirect — Redirects to user-controlled input.
+ # ⚠️ Insecure Redirect — Redirects to user-controlled input. # ⚠️ Insecure Email Sending — 
 @app.route("/auth", methods=["POST"])
 def insecure_auth():
     token = request.headers.get("Authorization")
