@@ -10,6 +10,7 @@ def cmd():
 # User input is directly passed to subprocess.getoutput without validation.
 # ⚠ Remote Code Execution — Potential for remote code execution.
 # ⚠ Remote Code Execution — Potential for remote code execution.
+# ⚠ Access Control — Could lead to exposure of sensitive files.
 # ⚠ Remote Code Execution — Potential for remote code execution.
 # ⚠ Code Injection — Potential for remote code execution.
 # ⚠ Remote Code Execution — Potential for remote code execution.
