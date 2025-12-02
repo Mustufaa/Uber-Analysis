@@ -52,6 +52,7 @@ def file():
 # ⚠ Command Injection — User input is directly passed to os.popen without validation.
 def login():
     u = request.form.get("u")
+# ⚠ Command Injection — User input is directly passed to os.popen without validation.
     p = request.form.get("p")
     if u == "admin" and p == "123":
 # ⚠ Hardcoded Credentials — Credentials should not be hardcoded and should be stored securely.
