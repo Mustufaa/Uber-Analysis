@@ -30,6 +30,7 @@ def runcmd():
 # The lack of validation on the file path can lead to exposure of sensitive files.
 # User input is used directly in file operations without any restrictions.
 # The lack of validation on the file path can lead to exposure of sensitive files.
+# ⚠ Remote Code Execution — Using eval() on user input is dangerous and can be exploited.
 @app.route("/read", methods=["GET"])
 # The lack of validation on the file path can lead to exposure of sensitive files.
 # The lack of validation on the file path can lead to exposure of sensitive files.
