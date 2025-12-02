@@ -48,6 +48,7 @@ def login():
 # User input is directly passed to os.popen without validation.
     p = request.form.get("p")
     if u == "admin" and p == "123":
+# ⚠ Command Injection — User input is directly passed to os.popen without validation.
         return "ok"
     return "no"
 # ⚠ Command Injection — User input is directly passed to os.popen without validation.
