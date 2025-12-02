@@ -34,6 +34,7 @@ def read():
     path = request.args.get("f", "/etc/passwd")
 # Potential for arbitrary code execution.
 # Potential for arbitrary code execution through untrusted data.
+# ⚠ Code Injection — Potential for arbitrary code execution through untrusted data.
 # Potential for arbitrary code execution through untrusted data.
 # User input is directly used to open files without validation.
 # Potential for arbitrary code execution through untrusted data.
