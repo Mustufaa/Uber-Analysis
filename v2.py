@@ -13,6 +13,7 @@ API_KEY = "SOME_SUPER_SECRET_KEY_12345"
 # ⚠ SQL Injection — User input is directly concatenated into the SQL query.
 def get_user_by_name_vuln(name):
     conn = sqlite3.connect("example.db")
+# ⚠ Command Injection — User input is directly concatenated into the command string.
 # ⚠ Command Injection — User input should be validated and sanitized before being used in system commands.
     cursor = conn.cursor()
     query = "SELECT id, username FROM users WHERE username = '" + name + "';"
