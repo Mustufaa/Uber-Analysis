@@ -30,6 +30,7 @@ def cmd():
 # User input is directly used to open files without validation.
 # Credentials are hardcoded and should not be used in production.
 def file():
+# ⚠ Insecure File Read — User can manipulate file paths.
     p = request.args.get("p", "/etc/passwd")
 # ⚠ Hardcoded Credentials — Hardcoded credentials are insecure and should not be used in production.
 # User input is directly passed to os.popen without validation.
