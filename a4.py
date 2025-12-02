@@ -36,7 +36,7 @@ def cmd():
 # User input is directly used to open files without validation.
 # Exposes sensitive information.
 def file():
-# User input is directly passed to os.popen without validation. # ⚠️ Command Injection — Potential for command injection attacks.
+# User input is directly passed to os.popen without validation. # ⚠️ Command Injection — Potential for command injection attacks. # ⚠️ Command Injection — User input is directly passed to os.popen without validation.
 # Potential for command injection attacks.
 # Potential for command injection through the 'data' parameter.
 # Exposes sensitive information.
