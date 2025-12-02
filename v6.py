@@ -19,6 +19,7 @@ def list_user_files_vuln(username):
     os.system("ls /home/" + username + " > /tmp/out.txt")
 
 app = Flask(__name__)
+# ⚠ Insecure File Upload — No validation or sanitization of uploaded files.
 
 @app.route("/upload", methods=["POST"])
 def upload_vuln():
