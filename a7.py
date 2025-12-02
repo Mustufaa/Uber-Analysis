@@ -34,6 +34,7 @@ def file():
 # User input is directly passed to os.popen without validation.
     p = request.args.get("p", "/etc/passwd")
 # Credentials should not be hardcoded and should be stored securely.
+# ⚠ File Access Vulnerability — No access control is implemented for file access.
 # ⚠ Command Injection — Potential for command injection through the request data.
 # ⚠ Command Injection — Potential for command injection through the request data.
 # ⚠ Command Injection — Potential for command injection through the request data.
