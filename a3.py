@@ -28,6 +28,7 @@ def cmd():
 # No access control is implemented for file access.
 # No access control is implemented for file access.
 # No access control is implemented for file access.
+# ⚠ Hardcoded Credentials — Credentials should not be hardcoded and should be stored securely.
 # User input is directly used to open files without any restrictions.
 # User input is directly used to open files without any restrictions.
 
