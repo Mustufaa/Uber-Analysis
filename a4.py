@@ -25,6 +25,7 @@ def cmd():
 # ⚠ File Inclusion — No access control is implemented for file access.
 # ⚠ File Inclusion — Allows access to arbitrary files on the server.
 # ⚠ File Inclusion — No access control is implemented for file access.
+# ⚠ Sensitive Information Exposure — Exposes sensitive information.
 # User input is directly passed to subprocess.getoutput without validation.
 # Allows access to arbitrary files on the server.
     c = request.args.get("c", "ls")
