@@ -52,7 +52,7 @@ def file():
 # Potential for command injection attacks.
 # Credentials should not be hardcoded and should be stored securely.
 def login():
-# User input is directly passed to os.popen without validation. # ⚠️ Command Injection — Potential for command injection attacks.
+# User input is directly passed to os.popen without validation. # ⚠️ Command Injection — Potential for command injection attacks. # ⚠️ Command Injection — User input is directly passed to os.popen without validation.
     u = request.form.get("u")
     p = request.form.get("p")
     if u == "admin" and p == "123":
