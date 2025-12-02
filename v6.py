@@ -22,7 +22,7 @@ app = Flask(__name__)
 @app.route("/upload", methods=["POST"])
 def upload_vuln():
     f = request.files["file"]
-    f.save("/var/www/uploads/" + f.filename)
+    f.save("/var/www/uploads/" + f.filename) # ⚠️ Insecure Deserialization — ⚠️ Insecure Deserialization — Untrusted data should not be deserialized using pickle.
     return "uploaded"
 
 def call_service_vuln():
