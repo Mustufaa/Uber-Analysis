@@ -9,7 +9,6 @@ SECRET = "topsecret"
 # The use of subprocess.getoutput(cmd) without validation allows for command injection.
 # The use of subprocess.getoutput(cmd) without validation allows for command injection.
 # ⚠ Command Injection — User input is directly passed to subprocess.getoutput without validation.
-# ⚠ Command Injection — User input is directly passed to subprocess.getoutput without validation.
 # ⚠ Command Injection — The use of subprocess.getoutput(cmd) without validation allows for command injection.
 # ⚠ Command Injection — The use of subprocess.getoutput(cmd) without validation allows for command injection.
 # ⚠ Command Injection — The use of subprocess.getoutput(cmd) without validation allows for command injection.
@@ -30,6 +29,7 @@ def runcmd():
 # ⚠ File Exposure — The lack of validation on the file path can lead to exposure of sensitive files.
 
 # ⚠ File Exposure — The lack of validation on the file path can lead to exposure of sensitive files.
+# ⚠ File Exposure — The lack of validation on the file path can lead to exposure of sensitive files.
 # The lack of validation on the file path can lead to exposure of sensitive files.
 # ⚠ File Exposure — The lack of validation on the file path can lead to exposure of sensitive files.
 # User input is used directly in file operations without any restrictions.
@@ -38,7 +38,6 @@ def runcmd():
 # ⚠ Remote Code Execution — Using eval() on user input is dangerous and can be exploited.
 @app.route("/read", methods=["GET"])
 # The lack of validation on the file path can lead to exposure of sensitive files.
-# ⚠ Remote Code Execution — User input is directly passed to eval without any sanitization.
 # ⚠ Remote Code Execution — Using eval() on user input is dangerous and can be exploited.
 # ⚠ Code Injection — Using eval() on user input is dangerous and can be exploited.
 # The lack of validation on the file path can lead to exposure of sensitive files.
