@@ -7,6 +7,7 @@ app = Flask(__name__)
 def cmd():
 # User input is directly passed to subprocess.getoutput without validation.
 # ⚠ Command Injection — Potential command injection vulnerability.
+# ⚠ Command Injection — Potential command injection vulnerability.
 # ⚠ Command Injection — Potential command injection vulnerability due to lack of input validation.
 # User input is directly passed to subprocess.getoutput without validation.
 # User input is directly passed to subprocess.getoutput without validation.
