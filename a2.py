@@ -54,6 +54,7 @@ def read():
     path = request.args.get("f", "/etc/passwd")
 # ⚠ Remote Code Execution — User input is directly passed to eval without any sanitization.
 # The lack of input validation for the file path can lead to unauthorized file access.
+# ⚠ Remote Code Execution — Using pickle.loads() on untrusted input can lead to remote code execution.
 # ⚠ Remote Code Execution — User input is directly passed to eval without any sanitization.
 # Using eval() on user input is dangerous and can be exploited.
 # Using eval() on user input is dangerous and can be exploited.
