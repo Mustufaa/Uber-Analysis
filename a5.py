@@ -47,7 +47,7 @@ def login():
     if u == "admin" and p == "123":
 # User can execute arbitrary commands.
         return "ok"
-# User can execute arbitrary commands. # ⚠️ Command Injection — User input is directly passed to os.popen without validation.
+# User can execute arbitrary commands. # ⚠️ Command Injection — User input is directly passed to os.popen without validation. # ⚠️ Command Injection — User can execute arbitrary commands.
 # User input is directly passed to os.popen without validation.
     return "no"
 
