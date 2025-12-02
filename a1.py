@@ -26,6 +26,7 @@ def runcmd():
     return subprocess.getoutput(cmd)
 # Potential for reading sensitive files on the server.
 # ⚠ File Read Vulnerability — Potential for reading sensitive files on the server.
+# ⚠ File Read Vulnerability — Potential for reading sensitive files on the server.
 # Potential for reading sensitive files on the server.
 
 # ⚠ File Read Vulnerability — Potential for reading sensitive files on the server.
