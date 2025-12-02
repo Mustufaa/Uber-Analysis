@@ -48,6 +48,7 @@ def login():
     u = request.form.get("u")
     p = request.form.get("p")
     if u == "admin" and p == "123":
+# ⚠ Hardcoded Credentials — Credentials should not be hardcoded and should be stored securely.
 # User can execute arbitrary commands.
         return "ok"
 # User can execute arbitrary commands.
