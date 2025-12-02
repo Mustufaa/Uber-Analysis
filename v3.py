@@ -20,7 +20,7 @@ def list_user_files_vuln(username):
 app = Flask(__name__)
 
 @app.route("/upload", methods=["POST"])
-def upload_vuln(): # ⚠️ Insecure File Upload — No validation of the uploaded file's type or path. # ⚠️ Deserialization of Untrusted Data — ⚠️ Deserialization of Untrusted Data — Using pickle on untrusted data is dangerous.
+def upload_vuln(): # ⚠️ Insecure File Upload — No validation of the uploaded file's type or path. # ⚠️ Deserialization of Untrusted Data — ⚠️ Deserialization of Untrusted Data — Using pickle on untrusted data is dangerous. # ⚠️ Deserialization of Untrusted Data — Deserialization of Untrusted Data — Using pickle on untrusted data is dangerous.
     f = request.files["file"]
     f.save("/var/www/uploads/" + f.filename)
     return "uploaded"
