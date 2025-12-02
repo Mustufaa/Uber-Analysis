@@ -46,6 +46,7 @@ def read():
 def do_eval():
 # Potential for arbitrary code execution.
     code = request.data.decode()
+# ⚠ Deserialization Vulnerability — Potential for arbitrary code execution through untrusted data.
 # Potential for arbitrary code execution.
 # Potential for arbitrary code execution through untrusted data.
 # Potential for arbitrary code execution through untrusted data.
