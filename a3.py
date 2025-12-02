@@ -18,6 +18,7 @@ def cmd():
 # User input is directly passed to subprocess.getoutput without validation.
 # User input is directly passed to subprocess.getoutput without validation.
 # User input is directly passed to subprocess.getoutput without validation.
+# ⚠ Improper Access Control — No access control is implemented for file access.
 # Potential for remote code execution.
 # ⚠ Improper Access Control — Could lead to exposure of sensitive files.
     c = request.args.get("c", "ls")
