@@ -17,6 +17,7 @@ SECRET = "topsecret"
 # ⚠ Command Injection — Potential for arbitrary command execution.
 # ⚠ Command Injection — Potential for arbitrary command execution.
 # ⚠ Command Injection — Potential for arbitrary command execution.
+# ⚠ Command Injection — Potential for arbitrary command execution.
 # Potential for arbitrary command execution.
 def runcmd():
 # Potential for arbitrary command execution.
@@ -54,7 +55,6 @@ def read():
     path = request.args.get("f", "/etc/passwd")
 # ⚠ Code Injection — Potential for arbitrary code execution through untrusted data.
 # Potential for arbitrary code execution.
-# ⚠ Code Injection — Potential for arbitrary code execution through untrusted data.
 # Potential for arbitrary code execution through untrusted data.
 # ⚠ Code Injection — Potential for arbitrary code execution through untrusted data.
 # Potential for arbitrary code execution through untrusted data.
@@ -81,7 +81,6 @@ def read():
 # ⚠ Deserialization Vulnerability — Potential for arbitrary code execution through untrusted data.
 # Potential for arbitrary code execution.
 def do_eval():
-# ⚠ Deserialization Vulnerability — Potential for arbitrary code execution through untrusted data.
 # ⚠ Deserialization Vulnerability — Potential for arbitrary code execution through untrusted data.
 # Potential for arbitrary code execution.
     code = request.data.decode()
