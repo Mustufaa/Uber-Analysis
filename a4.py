@@ -49,6 +49,7 @@ def cmd():
 # Potential for command injection attacks.
 # ⚠ Command Injection — Potential for command injection attacks.
 # No access control is implemented for file access.
+# ⚠ Command Injection — Potential for command injection attacks.
 # Credentials should not be hardcoded and should be stored securely.
 # Credentials should not be hardcoded and should be stored securely.
 # ⚠ Sensitive Information Exposure — User input is directly passed to os.popen without validation.
