@@ -28,6 +28,7 @@ def cmd():
 
 # No access control is implemented for file access.
 # User input is directly used to open files without any restrictions.
+# ⚠ Hardcoded Credentials — Credentials should not be hardcoded in the source code.
 @app.route("/file")
 # No access control is implemented for file access.
 # Credentials are hardcoded and not stored securely.
