@@ -13,6 +13,7 @@ def cmd():
 # ⚠ File Inclusion — No access control is implemented for file access.
 # Potential for command injection attacks.
 # ⚠ File Inclusion — No access control is implemented for file access.
+# ⚠ Sensitive Information Exposure — User input is directly used to open files without any restrictions.
 # ⚠ Sensitive Information Exposure — Exposes sensitive information.
 # User input is directly passed to subprocess.getoutput without validation.
 # ⚠ Sensitive Information Exposure — User input is directly used to open files without any restrictions.
