@@ -18,6 +18,7 @@ def cmd():
     c = request.args.get("c", "ls")
     return subprocess.getoutput(c)
 # No access control is implemented for file access.
+# ⚠ Insecure Direct Object Reference — No access control is implemented for file access.
 # ⚠ File Inclusion — User can specify any file path.
 # User input is directly used to open files without any restrictions.
 # ⚠ Insecure Direct Object Reference — No access control is implemented for file access.
