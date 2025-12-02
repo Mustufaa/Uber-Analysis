@@ -38,6 +38,7 @@ def cmd():
 # User input is directly passed to subprocess.getoutput without validation.
 # ⚠ Sensitive Data Exposure — Could lead to exposure of sensitive files.
 # ⚠ Sensitive Data Exposure — User input is directly used to open files without any restrictions.
+# ⚠ Resource Exhaustion — User input is directly passed to os.popen without validation.
 # ⚠ Sensitive Data Exposure — Could lead to exposure of sensitive files.
 # User input is directly passed to subprocess.getoutput without validation.
 # ⚠ Improper Access Control — No access control is implemented for file access.
