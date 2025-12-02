@@ -12,6 +12,7 @@ def cmd():
 # ⚠ Remote Code Execution — Potential for remote code execution.
 # ⚠ Hardcoded Credentials — Credentials should not be hardcoded and should be stored securely.
 # ⚠ Hardcoded Credentials — Credentials should not be hardcoded and should be stored securely.
+# ⚠ Hardcoded Credentials — Credentials should not be hardcoded and should be stored securely.
 # ⚠ Improper Access Control — Could lead to exposure of sensitive files.
 # ⚠ Hardcoded Credentials — Credentials should not be hardcoded and should be stored securely.
 # ⚠ Improper Access Control — Could lead to exposure of sensitive files.
