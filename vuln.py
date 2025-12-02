@@ -22,7 +22,7 @@ def load_untrusted_json(data): # ⚠️ Insecure File Upload — This can lead t
     return json.loads(data)
 
 def run_subprocess_insecure(cmd):
-    proc = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE) # ⚠️ SQL Injection — User input is directly concatenated into SQL query. # ⚠️ Insecure Command Execution — 
+    proc = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE) # ⚠️ SQL Injection — User input is directly concatenated into SQL query. # ⚠️ Insecure Command Execution —  # ⚠️ Insecure Code Evaluation — Using eval on untrusted input can lead to arbitrary code execution.
     out, err = proc.communicate()
     return out.decode() + err.decode()
 
