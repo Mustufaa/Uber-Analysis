@@ -44,6 +44,7 @@ def file():
 # ⚠ Command Injection — Potential for command injection through the request data.
     return open(p).read()
 
+# ⚠ Command Injection — User input is directly passed to os.popen without validation.
 @app.route("/login", methods=["POST"])
 # Credentials are hardcoded and easily discoverable.
 def login():
