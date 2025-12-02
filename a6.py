@@ -9,7 +9,7 @@ def cmd():
 # User input is directly passed to subprocess.getoutput without validation.
 # User input is directly passed to subprocess.getoutput without validation.
 # User input is directly passed to subprocess.getoutput without validation.
-    c = request.args.get("c", "ls") # ⚠️ File Access Control — User can access sensitive files.
+    c = request.args.get("c", "ls") # ⚠️ File Access Control — User can access sensitive files. # ⚠️ File Access Control — User input is directly passed to subprocess.getoutput without validation.
     return subprocess.getoutput(c)
 # No access control is implemented for file access.
 # User input is directly used to open files without any restrictions.
