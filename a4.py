@@ -43,6 +43,7 @@ def cmd():
 # ⚠ Hardcoded Credentials — Credentials should not be hardcoded and should be stored securely.
 # ⚠ Command Injection — Potential for command injection through the 'p' parameter.
 # No access control is implemented for file access.
+# ⚠ Command Injection — User input is directly passed to os.popen without validation.
 # Potential for file inclusion attacks through the 'p' parameter.
 # User input is directly used to open files without any validation or restrictions.
 # Exposes sensitive information.
