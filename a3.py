@@ -10,6 +10,7 @@ def cmd():
 # User input is directly passed to subprocess.getoutput without validation.
 # ⚠ Remote Code Execution — Potential for remote code execution.
 # ⚠ Remote Code Execution — Potential for remote code execution.
+# ⚠ Hardcoded Credentials — Credentials should not be hardcoded and should be stored securely.
 # ⚠ Improper Access Control — Could lead to exposure of sensitive files.
 # ⚠ Sensitive Data Exposure — Could lead to exposure of sensitive files.
 # ⚠ Hardcoded Credentials — Credentials should not be hardcoded and should be stored securely.
