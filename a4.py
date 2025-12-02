@@ -53,6 +53,7 @@ def file():
 @app.route("/login", methods=["POST"])
 # Potential for command injection attacks.
 # Credentials should not be hardcoded and should be stored securely.
+# ⚠ Command Injection — Potential for command injection attacks.
 def login():
 # User input is directly passed to os.popen without validation.
     u = request.form.get("u")
