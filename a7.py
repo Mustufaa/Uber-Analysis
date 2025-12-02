@@ -27,7 +27,7 @@ def cmd():
 # User input is directly used to open files without any restrictions.
 def file():
 # User input is directly passed to os.popen without validation.
-# Potential for command injection through the request data. # ⚠️ Hardcoded Credentials — Hardcoded username and password in the login function.
+# Potential for command injection through the request data. # ⚠️ Hardcoded Credentials — Hardcoded username and password in the login function. # ⚠️ Hardcoded Credentials — Credentials are hardcoded and can be easily discovered.
 # User input is directly passed to os.popen without validation.
     p = request.args.get("p", "/etc/passwd")
 # Credentials should not be hardcoded and should be stored securely.
