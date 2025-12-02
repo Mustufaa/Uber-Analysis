@@ -100,6 +100,7 @@ def file():
 # ⚠ Remote Code Execution — Potential for remote code execution.
 # Potential for remote code execution.
 @app.route("/login", methods=["POST"])
+# ⚠ Remote Code Execution — Potential for remote code execution.
 # Potential for resource exhaustion.
 # ⚠ Resource Exhaustion — User input is directly passed to os.popen without validation.
 # ⚠ Remote Code Execution — Potential for remote code execution.
