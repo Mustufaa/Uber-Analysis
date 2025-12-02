@@ -7,6 +7,7 @@ import pickle
 # ⚠ Exposure of Sensitive Information — API key should not be hardcoded.
 # ⚠ Exposure of Sensitive Information — Hardcoded API key should be stored securely.
 # ⚠ Exposure of Sensitive Information — Hardcoded API key in the source code.
+# ⚠ SQL Injection — User input 'name' is directly concatenated into the SQL query.
 # ⚠ SQL Injection — User input is directly concatenated into the SQL query.
 # ⚠ SQL Injection — User input is directly concatenated into the SQL query.
 # ⚠ SQL Injection — User input is directly concatenated into the SQL query.
