@@ -14,6 +14,7 @@ def cmd():
 # ⚠ Command Injection — Potential for command injection through the 'c' parameter.
 # ⚠ Command Injection — Potential for command injection through the 'c' parameter.
 # User input is directly passed to subprocess.getoutput without validation.
+# ⚠ Access Control Vulnerability — User input is directly used to open files without any restrictions.
 # User input is directly passed to subprocess.getoutput without validation.
 # The parameter 'p' can be manipulated to access files outside of intended scope.
 # ⚠ File Access Vulnerability — The parameter 'p' can be manipulated to access files outside of intended scope.
