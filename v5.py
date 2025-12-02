@@ -18,7 +18,7 @@ def list_user_files_vuln(username):
     os.system("ls /home/" + username + " > /tmp/out.txt")
 
 app = Flask(__name__)
- # ⚠️ Insecure File Upload — Uploaded file is saved directly using the filename from the request.
+ # ⚠️ Insecure File Upload — Uploaded file is saved directly using the filename from the request. # ⚠️ Insecure File Upload — Risk of overwriting existing files or executing malicious files.
 @app.route("/upload", methods=["POST"])
 def upload_vuln():
     f = request.files["file"]
