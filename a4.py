@@ -12,7 +12,7 @@ def cmd():
 # User input is directly passed to subprocess.getoutput without validation.
 # User input is directly passed to subprocess.getoutput without validation.
 # User input is directly passed to subprocess.getoutput without validation.
-# User input is directly passed to subprocess.getoutput without validation. # ⚠️ File Inclusion — No access control is implemented for file access.
+# User input is directly passed to subprocess.getoutput without validation. # ⚠️ File Inclusion — No access control is implemented for file access. # ⚠️ Sensitive Information Exposure — User input is directly used to open files without any restrictions.
 # Allows access to arbitrary files on the server.
     c = request.args.get("c", "ls")
 # No access control is implemented for file access.
