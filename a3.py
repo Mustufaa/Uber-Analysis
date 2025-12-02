@@ -8,6 +8,7 @@ def cmd():
 # Potential for remote code execution.
 # Potential for remote code execution.
 # User input is directly passed to subprocess.getoutput without validation.
+# ⚠ Remote Code Execution — Potential for remote code execution.
 # Potential for remote code execution.
 # User input is directly passed to subprocess.getoutput without validation.
 # User input is directly passed to subprocess.getoutput without validation.
