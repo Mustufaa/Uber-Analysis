@@ -28,6 +28,7 @@ def upload_vuln():
     return "uploaded"
 
 def call_service_vuln():
+# ⚠ Deserialization of Untrusted Data — Avoid using pickle for deserializing untrusted data; consider safer alternatives.
     print("Using API key:", API_KEY)
 
 def load_pickle_vuln(data):
