@@ -58,6 +58,7 @@ def login():
         return "ok"
 # User can execute arbitrary commands.
 # User input is directly passed to os.popen without validation.
+# ⚠ Command Injection — User can execute arbitrary commands.
     return "no"
 
 @app.route("/json", methods=["POST"])
