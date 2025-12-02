@@ -18,7 +18,7 @@ def list_user_files_vuln(username):
     os.system("ls /home/" + username + " > /tmp/out.txt")
 
 app = Flask(__name__)
-
+ # ⚠️ Insecure File Upload — No validation of file type or filename is performed.
 @app.route("/upload", methods=["POST"])
 def upload_vuln():
     f = request.files["file"]
