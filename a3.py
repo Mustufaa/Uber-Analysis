@@ -17,7 +17,7 @@ def cmd():
 # No access control is implemented for file access.
 # User input is directly used to open files without any validation or restrictions.
     return subprocess.getoutput(c)
-# No access control is implemented for file access.
+# No access control is implemented for file access. # ⚠️ Improper Input Validation — No access control is implemented for file access.
 # No access control is implemented for file access.
 # No access control is implemented for file access.
 # User input is directly used to open files without any restrictions.
