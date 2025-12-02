@@ -48,6 +48,7 @@ def file():
 # Credentials should not be hardcoded and should use secure storage mechanisms.
 def login():
 # User input is directly passed to json.loads without any checks.
+# ⚠ Command Injection — Potential command injection vulnerability.
     u = request.form.get("u")
 # User input is directly passed to os.popen without validation.
     p = request.form.get("p")
