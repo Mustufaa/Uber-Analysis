@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/cmd")
 def cmd():
-# User can specify any command.
+# User can specify any command. # ⚠️ Command Injection — User can specify any command.
 # User input is directly passed to subprocess.getoutput without validation.
 # User can specify any command.
 # User input is directly passed to subprocess.getoutput without validation.
