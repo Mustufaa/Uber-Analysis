@@ -47,7 +47,7 @@ def do_eval():
 # Using pickle.loads() on untrusted input can lead to remote code execution.
     code = request.data.decode()
     return str(eval(code))
- # ⚠️ Remote Code Execution — User input is directly passed to pickle.loads without validation. # ⚠️ Remote Code Execution — ⚠️ Remote Code Execution — User input is directly passed to pickle.loads without validation.
+ # ⚠️ Remote Code Execution — User input is directly passed to pickle.loads without validation. # ⚠️ Remote Code Execution — ⚠️ Remote Code Execution — User input is directly passed to pickle.loads without validation. # ⚠️ Remote Code Execution — Using pickle.loads() on untrusted input can lead to remote code execution.
 # Using pickle.loads() on untrusted input can lead to remote code execution.
 @app.route("/unpickle", methods=["POST"])
 # Using pickle.loads() on untrusted input can lead to remote code execution.
