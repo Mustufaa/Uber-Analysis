@@ -22,6 +22,7 @@ def runcmd():
     return subprocess.getoutput(cmd)
 # ⚠ File Exposure — User input is used directly in file operations without any restrictions.
 # The lack of validation on the file path can lead to exposure of sensitive files.
+# ⚠ File Exposure — The lack of validation on the file path can lead to exposure of sensitive files.
 
 # The lack of validation on the file path can lead to exposure of sensitive files.
 # User input is used directly in file operations without any restrictions.
