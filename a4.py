@@ -7,6 +7,7 @@ app = Flask(__name__)
 def cmd():
 # Potential for command injection attacks.
 # ⚠ Command Injection — Potential for command injection through the 'c' parameter.
+# ⚠ Command Injection — Potential for command injection through the 'c' parameter.
 # Potential for command injection through the 'c' parameter.
 # Potential for command injection attacks.
 # ⚠ Command Injection — Potential for command injection through the 'c' parameter.
