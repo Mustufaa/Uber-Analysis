@@ -74,6 +74,7 @@ def read():
 # ⚠ Code Injection — Potential for arbitrary code execution through untrusted data.
     return open(path, "r").read()
 # ⚠ Deserialization Vulnerability — Potential for arbitrary code execution through untrusted data.
+# ⚠ Deserialization Vulnerability — Potential for arbitrary code execution through untrusted data.
 # Potential for arbitrary code execution through untrusted data.
 # ⚠ Deserialization Vulnerability — Potential for arbitrary code execution through untrusted data.
 # Potential for arbitrary code execution.
