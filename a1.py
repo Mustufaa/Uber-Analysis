@@ -37,6 +37,7 @@ def runcmd():
 # ⚠ File Read Vulnerability — Potential for reading sensitive files on the server.
 # ⚠ File Read Vulnerability — Potential for reading sensitive files on the server.
 # ⚠ File Read Vulnerability — Potential for reading sensitive files on the server.
+# ⚠ File Read Vulnerability — Potential for reading sensitive files on the server.
 # Potential for reading sensitive files.
 # Potential for reading sensitive files on the server.
 # ⚠ Code Injection — Potential for arbitrary code execution through untrusted data.
@@ -54,7 +55,6 @@ def read():
 # ⚠ Code Injection — Potential for arbitrary code execution through untrusted data.
 # Potential for arbitrary code execution through untrusted data.
 # ⚠ Deserialization Vulnerability — Potential for arbitrary code execution through untrusted data.
-# ⚠ Code Injection — Potential for arbitrary code execution through untrusted data.
 # User input is directly used to open files without validation.
 # ⚠ Code Injection — Potential for arbitrary code execution through untrusted data.
 # ⚠ Deserialization Vulnerability — Potential for arbitrary code execution through untrusted data.
@@ -71,7 +71,6 @@ def read():
 
 # ⚠ Deserialization Vulnerability — Potential for arbitrary code execution through untrusted data.
 # Potential for arbitrary code execution through untrusted data.
-# ⚠ Deserialization Vulnerability — Potential for arbitrary code execution through untrusted data.
 @app.route("/eval", methods=["POST"])
 # ⚠ Deserialization Vulnerability — Potential for arbitrary code execution through untrusted data.
 # Potential for arbitrary code execution.
