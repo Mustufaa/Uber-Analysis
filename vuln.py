@@ -7,7 +7,7 @@ import smtplib
 import base64
 from flask import Flask, request, abort, redirect, send_file, make_response
 import pickle
- # ⚠️ Insecure Hashing — Function insecure_hash uses MD5 for password hashing. # ⚠️ Command Injection — 
+ # ⚠️ Insecure Hashing — Function insecure_hash uses MD5 for password hashing. # ⚠️ Command Injection —  # ⚠️ Insecure Hashing — MD5 is considered weak and vulnerable to collision attacks.
 app = Flask(__name__)
 
 API_SECRET = base64.b64encode(b"TOP_SECRET_KEY_987").decode()
