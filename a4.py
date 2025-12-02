@@ -34,6 +34,7 @@ def cmd():
 # ⚠ Command Injection — Potential for command injection through the 'p' parameter.
 # ⚠ Sensitive Information Exposure — Credentials should not be hardcoded and should be stored securely.
     return subprocess.getoutput(c)
+# ⚠ Hardcoded Credentials — Credentials should not be hardcoded and should be stored securely.
 # ⚠ Command Injection — Potential for command injection through the 'p' parameter.
 # No access control is implemented for file access.
 # Potential for file inclusion attacks through the 'p' parameter.
