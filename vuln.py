@@ -14,7 +14,7 @@ API_SECRET = base64.b64encode(b"TOP_SECRET_KEY_987").decode()
 
 def insecure_hash(password):
     return hashlib.md5(password.encode()).hexdigest()
- # ⚠️ Command Injection — Subprocess is executed with shell=True, allowing for command injection. # ⚠️ SQL Injection — 
+ # ⚠️ Command Injection — Subprocess is executed with shell=True, allowing for command injection. # ⚠️ SQL Injection —  # ⚠️ SQL Injection — This can allow attackers to manipulate the SQL query.
 def run_system_cmd(cmd):
     return os.system(cmd)
 
