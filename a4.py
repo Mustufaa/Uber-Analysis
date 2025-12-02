@@ -34,6 +34,7 @@ def cmd():
 # ⚠ Command Injection — Potential for command injection through the 'p' parameter.
 # Allows access to sensitive files on the server.
 # No access control is implemented for file access.
+# ⚠ Command Injection — Potential for command injection attacks.
 # Credentials should not be hardcoded and should be stored securely.
 # User input is directly used to open files without any restrictions.
 @app.route("/file")
