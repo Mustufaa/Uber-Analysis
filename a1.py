@@ -36,6 +36,7 @@ def runcmd():
 # Potential for reading sensitive files.
 # Potential for reading sensitive files on the server.
 @app.route("/read", methods=["GET"])
+# ⚠ Code Injection — Potential for arbitrary code execution through untrusted data.
 def read():
     path = request.args.get("f", "/etc/passwd")
 # ⚠ Code Injection — Potential for arbitrary code execution through untrusted data.
