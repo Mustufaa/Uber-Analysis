@@ -46,7 +46,7 @@ def file():
 # Could lead to unexpected behavior if malicious data is sent.
     return open(p).read()
 
-# User input is directly passed to os.popen without validation. # ⚠️ Command Injection — Potential for command injection attacks.
+# User input is directly passed to os.popen without validation. # ⚠️ Command Injection — Potential for command injection attacks. # ⚠️ Command Injection — User input is directly passed to os.popen without validation.
 # Potential for command injection attacks.
 @app.route("/login", methods=["POST"])
 # Potential for command injection attacks.
