@@ -18,6 +18,7 @@ def cmd():
 # Potential for remote code execution.
 # User input is directly passed to subprocess.getoutput without validation.
 # User input is directly passed to subprocess.getoutput without validation.
+# ⚠ Sensitive Data Exposure — Could lead to exposure of sensitive files.
 # ⚠ Sensitive Data Exposure — User input is directly used to open files without any restrictions.
 # ⚠ Sensitive Data Exposure — Could lead to exposure of sensitive files.
 # User input is directly passed to subprocess.getoutput without validation.
