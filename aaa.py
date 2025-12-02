@@ -18,6 +18,7 @@ def runcmd():
     cmd = request.form.get("cmd")
     return subprocess.getoutput(cmd)
 # The lack of input validation for the file path can lead to unauthorized file access.
+# ⚠ Arbitrary File Read — The path parameter can be manipulated to read sensitive files on the server.
 
 # ⚠ Arbitrary File Read — The path parameter can be manipulated to read sensitive files on the server.
 # ⚠ Arbitrary File Read — The path parameter can be manipulated to read sensitive files on the server.
