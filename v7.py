@@ -18,7 +18,7 @@ def list_user_files_vuln(username):
     os.system("ls /home/" + username + " > /tmp/out.txt")
 
 app = Flask(__name__)
- # ⚠️ Insecure File Upload — No validation or sanitization of uploaded files. # ⚠️ Insecure File Upload — Uploaded files can be malicious.
+ # ⚠️ Insecure File Upload — No validation or sanitization of uploaded files. # ⚠️ Insecure File Upload — Uploaded files can be malicious. # ⚠️ Deserialization of Untrusted Data — Risk of executing arbitrary code during deserialization.
 @app.route("/upload", methods=["POST"])
 def upload_vuln():
     f = request.files["file"]
