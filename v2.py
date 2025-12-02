@@ -13,6 +13,7 @@ API_KEY = "SOME_SUPER_SECRET_KEY_12345"
 # ⚠ SQL Injection — User input is directly concatenated into the SQL query.
 # ⚠ SQL Injection — User input should be parameterized to prevent SQL injection.
 # ⚠ SQL Injection — User input is directly concatenated into the SQL query.
+# ⚠ Command Injection — User input is directly concatenated into the command string.
 
 # ⚠ SQL Injection — User input is directly concatenated into the SQL query.
 def get_user_by_name_vuln(name):
