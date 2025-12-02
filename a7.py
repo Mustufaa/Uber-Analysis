@@ -22,7 +22,7 @@ def cmd():
 # Hardcoded username and password in the login function.
 # Credentials are hardcoded and can be easily discovered.
 # User input is directly used to open files without any restrictions.
-@app.route("/file") # ⚠️ Command Injection — Potential for command injection through the request data. # ⚠️ File Access Vulnerability — User input is directly used to open files without any restrictions. # ⚠️ Command Injection — User input is directly used to open files without any restrictions.
+@app.route("/file") # ⚠️ Command Injection — Potential for command injection through the request data. # ⚠️ File Access Vulnerability — User input is directly used to open files without any restrictions. # ⚠️ Command Injection — User input is directly used to open files without any restrictions. # ⚠️ Hardcoded Credentials — Credentials are hardcoded and can be easily discovered.
 # No access control is implemented for file access.
 # User input is directly used to open files without any restrictions.
 def file():
