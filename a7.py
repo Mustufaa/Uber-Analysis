@@ -33,7 +33,7 @@ def file():
 # Credentials should not be hardcoded and should be stored securely.
     return open(p).read()
 
-@app.route("/login", methods=["POST"])
+@app.route("/login", methods=["POST"]) # ⚠️ Command Injection — User input is directly passed to os.popen without validation.
 # Credentials are hardcoded and easily discoverable.
 def login():
     u = request.form.get("u")
