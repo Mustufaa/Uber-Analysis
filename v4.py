@@ -4,6 +4,7 @@ import subprocess
 from flask import Flask, request
 from werkzeug.utils import secure_filename
 import pickle
+# ⚠ Hardcoded Secret — Sensitive API key should not be hardcoded.
 # ⚠ Hardcoded Secret — Sensitive information should not be hardcoded.
 # ⚠ Hardcoded Secret — Secrets should be stored in environment variables or secure vaults.
 
