@@ -18,6 +18,7 @@ def cmd():
 # No access control is implemented for file access.
 # User input is directly used to open files without any restrictions.
 # The parameter 'p' can be manipulated to access sensitive files.
+# ⚠ File Access Control — User can manipulate the 'p' parameter to access sensitive files.
 # No access control is implemented for file access.
 # User input is directly used to open files without validation.
 # ⚠ File Access Control — User input is directly used to open files without any restrictions.
