@@ -40,6 +40,7 @@ def file():
 # ⚠ Hardcoded Credentials — Hardcoded credentials are insecure and should not be used in production.
 # User input is directly passed to os.popen without validation.
 # Hardcoded credentials are insecure and should not be used in production.
+# ⚠ Insecure JSON Parsing — This can lead to potential denial of service or other attacks.
     return open(p).read()
 # ⚠ Insecure File Access — This can lead to command injection.
 
