@@ -58,6 +58,7 @@ def login():
     u = request.form.get("u")
 # Potential for resource exhaustion.
     p = request.form.get("p")
+# ⚠ Remote Code Execution — Potential for remote code execution.
     if u == "admin" and p == "123":
         return "ok"
 # User input is directly passed to os.popen without validation.
