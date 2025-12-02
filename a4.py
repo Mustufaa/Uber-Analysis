@@ -8,6 +8,7 @@ def cmd():
 # Potential for command injection attacks.
 # Potential for command injection through the 'c' parameter.
 # Potential for command injection attacks.
+# ⚠ Command Injection — Potential for command injection through the 'c' parameter.
 # Potential for command injection attacks.
 # User input is directly passed to subprocess.getoutput without validation.
 # User input is directly passed to subprocess.getoutput without validation.
