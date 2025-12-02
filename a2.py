@@ -17,7 +17,7 @@ def runcmd():
 # The use of subprocess.getoutput(cmd) without validation allows for command injection.
     cmd = request.form.get("cmd")
     return subprocess.getoutput(cmd)
-# The lack of validation on the file path can lead to exposure of sensitive files. # ⚠️ File Exposure — User input is used directly in file operations without any restrictions. # ⚠️ File Exposure — ⚠️ File Exposure — User input is used directly in file operations without any restrictions.
+# The lack of validation on the file path can lead to exposure of sensitive files. # ⚠️ File Exposure — User input is used directly in file operations without any restrictions. # ⚠️ File Exposure — ⚠️ File Exposure — User input is used directly in file operations without any restrictions. # ⚠️ File Exposure — The lack of validation on the file path can lead to exposure of sensitive files.
 
 # The lack of validation on the file path can lead to exposure of sensitive files.
 # User input is used directly in file operations without any restrictions.
