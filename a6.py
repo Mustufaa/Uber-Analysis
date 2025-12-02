@@ -32,6 +32,7 @@ def file():
 # User input is directly passed to os.popen without validation.
 # Hardcoded credentials are insecure and should not be used in production.
     return open(p).read()
+# ⚠ Insecure File Access — This can lead to command injection.
 
 # User input is directly passed to json.loads without any checks.
 # User input is directly passed to os.popen without validation.
