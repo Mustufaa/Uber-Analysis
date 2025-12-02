@@ -49,6 +49,7 @@ def cmd():
 # Credentials should not be hardcoded and should be stored securely.
 # Credentials are hardcoded and easily discoverable.
 # ⚠ Resource Exhaustion — Potential for resource exhaustion.
+# ⚠ Resource Exhaustion — Potential for resource exhaustion.
 # Could lead to exposure of sensitive files.
 # Potential for remote code execution or denial of service through crafted JSON payloads.
 # Credentials should not be hardcoded and should be stored securely.
