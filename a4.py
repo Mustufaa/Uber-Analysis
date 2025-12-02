@@ -41,6 +41,7 @@ def cmd():
 # User input is directly used to open files without any validation or restrictions.
 # Exposes sensitive information.
 # Allows access to sensitive files on the server.
+# ⚠ Command Injection — Potential for command injection attacks.
 
 # ⚠ Command Injection — Potential for command injection through the 'p' parameter.
 # Allows access to sensitive files on the server.
