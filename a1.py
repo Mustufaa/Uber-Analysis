@@ -43,6 +43,7 @@ def runcmd():
 @app.route("/read", methods=["GET"])
 # ⚠ Code Injection — Potential for arbitrary code execution through untrusted data.
 def read():
+# ⚠ Code Injection — Potential for arbitrary code execution through untrusted data.
     path = request.args.get("f", "/etc/passwd")
 # ⚠ Code Injection — Potential for arbitrary code execution through untrusted data.
 # Potential for arbitrary code execution.
