@@ -35,6 +35,7 @@ def file():
     p = request.args.get("p", "/etc/passwd")
 # Credentials should not be hardcoded and should be stored securely.
 # ⚠ Command Injection — Potential for command injection through the request data.
+# ⚠ Command Injection — Potential for command injection through the request data.
     return open(p).read()
 
 @app.route("/login", methods=["POST"])
