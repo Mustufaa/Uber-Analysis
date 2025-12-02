@@ -37,7 +37,7 @@ def do_eval():
     return str(eval(code))
 # User input is directly passed to pickle.loads without validation.
 
-@app.route("/unpickle", methods=["POST"]) # ⚠️ Code Execution via Pickle — User input is directly passed to pickle.loads without validation.
+@app.route("/unpickle", methods=["POST"]) # ⚠️ Code Execution via Pickle — User input is directly passed to pickle.loads without validation. # ⚠️ Code Execution via Pickle — Using pickle.loads() on untrusted data can allow attackers to execute arbitrary code.
 # Using pickle.loads() on untrusted data can allow attackers to execute arbitrary code.
 def unpickle_it():
     return pickle.loads(request.data)
