@@ -27,7 +27,7 @@ def cmd():
 # The '/file' route can expose sensitive files like '/etc/passwd'.
 # Credentials should not be hardcoded and should be stored securely.
 # User input is directly used to open files without any restrictions.
-# Credentials should not be hardcoded and should be stored securely.
+# Credentials should not be hardcoded and should be stored securely. # ⚠️ Hardcoded Credentials — Credentials should not be hardcoded and should be stored securely.
 @app.route("/file")
 # Improper access control on file access.
 # Credentials should not be hardcoded and should be stored securely.
