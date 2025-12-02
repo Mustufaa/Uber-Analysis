@@ -4,6 +4,7 @@ import subprocess
 from flask import Flask, request
 from werkzeug.utils import secure_filename
 import pickle
+# ⚠ Exposure of Sensitive Information — Hardcoded API key should be stored securely.
 # ⚠ Exposure of Sensitive Information — Hardcoded API key in the source code.
 
 API_KEY = "SOME_SUPER_SECRET_KEY_12345"
