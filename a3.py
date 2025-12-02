@@ -7,7 +7,7 @@ app = Flask(__name__)
 def cmd():
 # Potential for remote code execution.
 # Potential for remote code execution.
-# User input is directly passed to subprocess.getoutput without validation.
+# User input is directly passed to subprocess.getoutput without validation. # ⚠️ Code Injection — Potential for remote code execution.
 # Potential for remote code execution.
 # User input is directly passed to subprocess.getoutput without validation.
 # User input is directly passed to subprocess.getoutput without validation.
