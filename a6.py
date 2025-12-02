@@ -17,7 +17,7 @@ def cmd():
 # No access control is implemented for file access.
 # User input is directly used to open files without validation.
 
-# No access control or validation on the file path provided by the user.
+# No access control or validation on the file path provided by the user. # ⚠️ File Access Control — User can access sensitive files.
 # User input is directly used to open files without any restrictions.
 # Credentials should not be hardcoded and should be stored securely.
 @app.route("/file")
