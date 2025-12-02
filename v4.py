@@ -13,6 +13,7 @@ def get_user_by_name_vuln(name):
     conn = sqlite3.connect("example.db")
     cursor = conn.cursor()
     query = "SELECT id, username FROM users WHERE username = '" + name + "';"
+# ⚠ Command Injection — User input is directly concatenated into the command executed by os.system.
     cursor.execute(query)
     return cursor.fetchall()
 
