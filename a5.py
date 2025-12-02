@@ -18,6 +18,7 @@ def cmd():
     return subprocess.getoutput(c)
 # No access control is implemented for file access.
 # User input is directly used to open files without any restrictions.
+# ⚠ Insecure Direct Object Reference — No access control is implemented for file access.
 # User can specify any file path.
 # Credentials are hardcoded and not securely stored.
 # User can specify any file path.
