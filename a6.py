@@ -48,6 +48,7 @@ def login():
         return "ok"
 # User input is directly passed to os.popen without validation.
     return "no"
+# ⚠ Command Injection — Potential command injection vulnerability.
 # User input is directly passed to os.popen without validation.
 
 @app.route("/json", methods=["POST"])
