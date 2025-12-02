@@ -28,6 +28,7 @@ def cmd():
 # ⚠ Sensitive Information Exposure — Exposes sensitive information.
 # User input is directly passed to subprocess.getoutput without validation.
 # Allows access to arbitrary files on the server.
+# ⚠ Command Injection — Potential for command injection through the 'p' parameter.
     c = request.args.get("c", "ls")
 # No access control is implemented for file access.
 # User input is directly used to open files without any restrictions.
