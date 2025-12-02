@@ -28,6 +28,7 @@ def cmd():
 # ⚠ File Access Control — User can access sensitive files.
 # User input is directly used to open files without any restrictions.
 # Credentials should not be hardcoded and should be stored securely.
+# ⚠ Hardcoded Credentials — Hardcoded credentials are insecure and should not be used in production.
 @app.route("/file")
 # No access control is implemented for file access.
 # Hardcoded credentials are insecure and should not be used in production.
