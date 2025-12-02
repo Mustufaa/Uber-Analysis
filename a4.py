@@ -28,6 +28,7 @@ def cmd():
 # ⚠ File Inclusion — No access control is implemented for file access.
 # ⚠ File Inclusion — Allows access to arbitrary files on the server.
 # ⚠ File Inclusion — No access control is implemented for file access.
+# ⚠ Hardcoded Credentials — Credentials are stored in plaintext within the code.
 # ⚠ Command Injection — User input is directly passed to subprocess.getoutput without validation.
 # ⚠ Sensitive Information Exposure — Exposes sensitive information.
 # User input is directly passed to subprocess.getoutput without validation.
