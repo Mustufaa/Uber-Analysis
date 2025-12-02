@@ -6,7 +6,7 @@ from werkzeug.utils import secure_filename
 import pickle
 
 API_KEY = "SOME_SUPER_SECRET_KEY_12345"
-
+ # ⚠️ SQL Injection — User input is directly concatenated into the SQL query.
 def get_user_by_name_vuln(name):
     conn = sqlite3.connect("example.db")
     cursor = conn.cursor()
