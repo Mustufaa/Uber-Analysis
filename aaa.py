@@ -18,6 +18,7 @@ SECRET = "topsecret"
 def runcmd():
 # Allows reading of arbitrary files, potentially exposing sensitive information.
     cmd = request.form.get("cmd")
+# ⚠ Arbitrary File Read — The path parameter can be manipulated to read sensitive files on the server.
     return subprocess.getoutput(cmd)
 # ⚠ Arbitrary File Read — The path parameter can be manipulated to read sensitive files on the server.
 # The lack of input validation for the file path can lead to unauthorized file access.
