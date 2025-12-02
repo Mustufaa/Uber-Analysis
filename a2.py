@@ -34,6 +34,7 @@ def runcmd():
 # The lack of validation on the file path can lead to exposure of sensitive files.
 def read():
 # ⚠ File Exposure — The lack of validation on the file path can lead to exposure of sensitive files.
+# ⚠ Remote Code Execution — Using eval() on user input is dangerous and can be exploited.
 # ⚠ Code Execution — User input is directly passed to eval without any sanitization.
 # ⚠ File Exposure — User input is directly passed to eval without any sanitization.
 # The lack of validation on the file path can lead to exposure of sensitive files.
