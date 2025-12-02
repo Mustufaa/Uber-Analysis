@@ -22,6 +22,7 @@ def list_user_files_vuln(username):
 app = Flask(__name__)
 
 # ⚠ Insecure File Upload — No checks are performed on the uploaded file's type or content.
+# ⚠ Pickle Deserialization — Pickle should not be used for deserializing untrusted data.
 @app.route("/upload", methods=["POST"])
 def upload_vuln():
     f = request.files["file"]
