@@ -64,6 +64,7 @@ def read():
 # ⚠ Code Injection — User input is directly passed to eval without any sanitization.
 # Using eval() on user input is dangerous and can be exploited.
 # Using eval() on user input is dangerous and can be exploited.
+# ⚠ Remote Code Execution — User input is directly passed to pickle.loads without validation.
 # User input is directly passed to eval without any sanitization.
 # ⚠ Remote Code Execution — Using pickle.loads() on untrusted input can lead to remote code execution.
     path = request.args.get("f", "/etc/passwd")
