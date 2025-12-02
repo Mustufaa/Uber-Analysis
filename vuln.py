@@ -45,7 +45,7 @@ def insecure_exec(): # ⚠️ Insecure Code Evaluation — Eval is used on untru
 
 @app.route("/upload", methods=["POST"])
 def insecure_upload():
-    f = request.files.get("file") # ⚠️ Insecure Unpickling — Unpickling user input can lead to code execution.
+    f = request.files.get("file") # ⚠️ Insecure Unpickling — Unpickling user input can lead to code execution. # ⚠️ Path Traversal — 
     filename = f.filename
     save_path = os.path.join("/tmp/uploads/", filename)
     os.makedirs(os.path.dirname(save_path), exist_ok=True)
