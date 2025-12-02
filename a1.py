@@ -28,6 +28,7 @@ def runcmd():
 # ⚠ File Read Vulnerability — Potential for reading sensitive files on the server.
 # ⚠ File Read Vulnerability — Potential for reading sensitive files on the server.
 # Potential for reading sensitive files on the server.
+# ⚠ File Read Vulnerability — Potential for reading sensitive files on the server.
 
 # ⚠ File Read Vulnerability — Potential for reading sensitive files on the server.
 # ⚠ File Read Vulnerability — Potential for reading sensitive files on the server.
