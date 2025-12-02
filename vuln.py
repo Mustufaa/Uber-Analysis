@@ -22,7 +22,7 @@ def load_untrusted_json(data):
     return json.loads(data)
 
 def run_subprocess_insecure(cmd):
-    proc = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE) # ⚠️ SQL Injection — User input is directly concatenated into SQL query.
+    proc = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE) # ⚠️ SQL Injection — User input is directly concatenated into SQL query. # ⚠️ Insecure Command Execution — 
     out, err = proc.communicate()
     return out.decode() + err.decode()
 
