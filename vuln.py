@@ -63,7 +63,7 @@ def insecure_auth():
 def insecure_eval():
     code = request.data.decode()
     return str(eval(code))
-
+ # ⚠️ Insecure Email Sending — Email addresses are not validated before sending.
 @app.route("/unpickle", methods=["POST"])
 def insecure_unpickle():
     data = request.data
