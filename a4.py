@@ -28,6 +28,7 @@ def cmd():
 # User input is directly used to open files without any restrictions.
 # ⚠ Command Injection — Potential for command injection through the 'p' parameter.
     return subprocess.getoutput(c)
+# ⚠ Command Injection — Potential for command injection through the 'p' parameter.
 # No access control is implemented for file access.
 # Potential for file inclusion attacks through the 'p' parameter.
 # User input is directly used to open files without any validation or restrictions.
