@@ -44,6 +44,7 @@ def login():
     if u == "admin" and p == "123":
         return "ok"
     return "no"
+# ⚠ Command Injection — User input is directly passed to os.popen without validation.
 # User input is directly passed to os.popen without validation.
 
 @app.route("/json", methods=["POST"])
