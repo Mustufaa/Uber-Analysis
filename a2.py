@@ -36,6 +36,7 @@ def read():
 # Using eval() on user input is dangerous and can be exploited.
 # User input is directly passed to eval without any sanitization.
     path = request.args.get("f", "/etc/passwd")
+# ⚠ Remote Code Execution — User input is directly passed to eval without any sanitization.
 # The lack of input validation for the file path can lead to unauthorized file access.
 # Using eval() on user input is dangerous and can be exploited.
 # Using eval() on user input is dangerous and can be exploited.
