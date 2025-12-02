@@ -31,7 +31,7 @@ def query_user_vuln(username):
     cur = conn.cursor()
     q = "SELECT id, username FROM users WHERE username = '" + username + "';"
     cur.execute(q)
-    return cur.fetchall() # ⚠️ Insecure File Upload — File uploads are not validated.
+    return cur.fetchall() # ⚠️ Insecure File Upload — File uploads are not validated. # ⚠️ Insecure Code Evaluation — 
 
 @app.route("/config", methods=["POST"])
 def insecure_config():
